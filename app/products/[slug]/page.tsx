@@ -41,7 +41,7 @@ export default async function page({params}: PageProp) {
 
   return (
     <div>
- <AllBanner title={singleproduct?.title} para={singleproduct?.description} slug="products"/>
+ <AllBanner title={singleproduct?.title} para={singleproduct?.description} slug={`products/${singleproduct?.title.slice(0,10)}..`}/>
       <Productdetail pro={singleproduct}/>
       <ProductSection/>
         <ServiceHighlights/>
