@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 
 // User explicit asset path directive matching instructions
-import { about } from "@/assets"; 
+import { about } from "@/assets";
 
 const blogPosts = [
   {
@@ -25,14 +25,14 @@ const blogPosts = [
     title: "5 Smart Household Fixes You Can Do in Under 60 Seconds",
     href: "/blog/diy-hacks",
   },
-  
+
 ];
 
 export default function BlogSection() {
   return (
     <section className="w-full py-7 md:p-16 lg:px-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        
+
         {/* ======================================================= */}
         {/* SPLIT HEADER SECTION LAYOUT                            */}
         {/* ======================================================= */}
@@ -46,7 +46,7 @@ export default function BlogSection() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 tracking-tight leading-[1.15] max-w-xl">
-              Ideas & guides from our <span className="text-blue-600">Fix-it Experts</span>
+              Ideas & guides from our <span className="text-yellow-500">Fix-it Experts</span>
             </h2>
           </div>
 

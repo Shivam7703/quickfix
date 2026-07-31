@@ -92,8 +92,8 @@ function ButtonSecondary({
   wrapperClass: string;
 }) {
   const classes = `
-    inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-lg w-full
-    text-sm font-semibold tracking-wide transition-all duration-300 group
+    inline-flex items-center justify-center sm:gap-2.5 sm:px-6 py-3 px-4 gap-1.5 text-xs rounded-lg w-full
+    sm:text-sm font-semibold tracking-wide transition-all duration-300 group
     relative overflow-hidden border backdrop-blur-sm shadow-sm active:scale-[0.98]
     
     /* Luxury styling matching light layout using core colors */

@@ -42,7 +42,7 @@ export default function Footer() {
             
             <div className="space-y-2">
               <h4 className="text-blue-800 text-sm md:text-base font-bold tracking-tight">
-                Bonding Strength <br /> Through Innovation
+                Bonding Strength Through Innovation
               </h4>
               <p className="text-zinc-500 text-xs md:text-sm leading-relaxed max-w-sm">
                 Quickfix is a trusted adhesive brand dedicated to delivering instant, durable, and reliable bonding solutions for everyday repairs and professional applications.
@@ -57,9 +57,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5 text-xs md:text-sm font-medium text-zinc-700">
               <li><Link href="/about" className="hover:text-blue-600 transition-colors">About Us</Link></li>
-              <li><Link href="/story" className="hover:text-blue-600 transition-colors">Our Story</Link></li>
-              <li><Link href="/community" className="hover:text-blue-600 transition-colors">Community</Link></li>
-              <li><Link href="/manufacturing" className="hover:text-blue-600 transition-colors">Manufacturing</Link></li>
+              <li><Link href="/story" className="hover:text-blue-600 transition-colors">Career</Link></li>
+             
               <li><Link href="/sustainability" className="hover:text-blue-600 transition-colors">sustainability</Link></li>
               <li><Link href="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms" className="hover:text-blue-600 transition-colors">T&C</Link></li>

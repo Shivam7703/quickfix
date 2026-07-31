@@ -29,7 +29,7 @@ export default function ServiceHighlights() {
             className="group flex items-center gap-5 px-6 py-4 bg-white border border-blue-400/70 shadow-sm rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-blue-600 cursor-pointer"
           >
             {/* Icon Container with Light Blue Background */}
-            <div className="flex-shrink-0 w-14 h-14 rounded-full bg-blue-500 text-white flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+            <div className="shrink-0 w-14 h-14 rounded-full bg-blue-500 text-white flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
               {item.icon}
             </div>
 

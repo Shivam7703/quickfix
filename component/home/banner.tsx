@@ -115,7 +115,7 @@ const swiperOptions = {
                 >
                   {slide.title.split(" ").map((word, index) => 
                     word.toLowerCase().includes("trusted") || word.toLowerCase().includes("power")
-                      ? <span key={index} className="text-red-500">{word} </span>
+                      ? <span key={index} className="text-yellow-500">{word} </span>
                       : word + " "
                   )}
                 </motion.h2>

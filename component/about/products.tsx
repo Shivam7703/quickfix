@@ -25,21 +25,21 @@ export default function AboutProducts() {
   return (
     <section className="py-16 px-4 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        
+
         {/* Left Side: Heading, Subtitle & CTA Button */}
         <div className="lg:col-span-4 space-y-5">
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-blue-700 tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-blue-700 tracking-tight">
               OUR PRODUCTS
             </h2>
             <div className="w-24 h-1 bg-blue-600 mt-3 rounded-full"></div>
           </div>
-          
+
           <p className="text-zinc-600 text-base md:text-lg font-medium">
             Adhesive Solutions for Every Need
           </p>
 
-                       <Buttonmain href="/about-us" text="Our Products" variant="primary" />
+          <Buttonmain href="/about-us" text="Our Products" variant="primary" />
 
         </div>
 

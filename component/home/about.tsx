@@ -19,14 +19,14 @@ export default function AboutSection() {
     <section className="w-full p-6 md:p-16 lg:p-24 bg-white overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-          
+
           {/* ======================================================= */}
           {/* LEFT SIDE: PREMIUM IMAGE WITH FLOATING CARD ACCENTS    */}
           {/* ======================================================= */}
           <div className="lg:col-span-6 relative w-full aspect-square md:aspect-4/5 max-h-120">
 
             {/* Main Picture Wrapper */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -64,7 +64,7 @@ export default function AboutSection() {
           {/* RIGHT SIDE: LUXURY COPYWRITING & ADVANTAGE TILES        */}
           {/* ======================================================= */}
           <div className="lg:col-span-6 space-y-4">
-            
+
             {/* Tagline header element */}
             <div className="flex items-center gap-3">
               <span className="w-1 h-6 bg-yellow-500 block rounded-full" />
@@ -79,9 +79,9 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl md:text-5xl font-bold text-zinc-900 tracking-tight leading-tight"
+              className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight"
             >
-              Engineering High-Performance Adhesive Solutions <span className="text-blue-600">Since 1970</span>.
+              Engineering High-Performance Adhesive Solutions <span className="text-yellow-500">Since 1970</span>.
             </motion.h3>
 
             {/* Detailed Description Paragraph */}
@@ -111,7 +111,7 @@ export default function AboutSection() {
               ))}
             </motion.div>
 
-              <Buttonmain href="/about-us" text="Our Heritage Journey" variant="primary" />
+            <Buttonmain href="/about-us" text="Our Heritage Journey" variant="primary" />
 
           </div>
 

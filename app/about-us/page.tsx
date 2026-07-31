@@ -1,5 +1,6 @@
 import Aboutchoose from '@/component/about/choose'
 import FeatureCards from '@/component/about/feature'
+import AboutCeo from '@/component/about/founder'
 import ServiceHighlights from '@/component/about/highlight'
 import AboutProducts from '@/component/about/products'
 import Story from '@/component/about/story'
@@ -14,6 +15,7 @@ function page() {
       <AllBanner title='about us' para='Our pinpoint dispensing tech allows for an exact, controlled application. No mess, no runoff—just the need it.' slug="about-us"/>
       <AboutSection/>
       <Story/>
+      <AboutCeo/>
       <FeatureCards/>
       <Aboutchoose/>
       <AboutProducts/>

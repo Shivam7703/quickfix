@@ -16,7 +16,7 @@ export default function Home() {
      <HomeBanner/>
      <Boxes/>
      <AboutSection/>
-     <ServicesSection/>
+     {/* <ServicesSection/> */}
      <ProductSection/>
      <WhyChooseSection/>
      <Process/>

@@ -60,7 +60,7 @@ export default function ServicesSection() {
       disableOnInteraction: false,
     },
     loop: true,
-    
+
     navigation: {
       nextEl: `.${uniqueId}-next`,
       prevEl: `.${uniqueId}-prev`,
@@ -78,7 +78,7 @@ export default function ServicesSection() {
     // Fixed: Added `relative` layout class to anchor custom absolute navigation arrows safely
     <section className="w-full py-6 md:p-16 lg:px-24 bg-zinc-100 text-center overflow-hidden relative services-swiper-section">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* ======================================================= */}
         {/* HEADER AREA                                             */}
         {/* ======================================================= */}
@@ -88,9 +88,9 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-bold text-zinc-900 tracking-tight"
+            className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight"
           >
-            Excellence at <span className="text-blue-600">Every Stage.</span>
+            Excellence at <span className="text-yellow-500">Every Stage.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -168,7 +168,7 @@ export default function ServicesSection() {
         <FaArrowLeftLong />
       </button>
 
-     
+
     </section>
   );
 }

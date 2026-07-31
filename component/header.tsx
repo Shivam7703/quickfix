@@ -15,7 +15,7 @@ import Buttonmain from "./global/button";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about-us" },
-  { name: "Services", href: "/services" },
+  // { name: "Services", href: "/services" },
  {
   name: "Products",
   href: "/products",
@@ -207,7 +207,7 @@ const [isHidden, setIsHidden] = useState(false);
       </div>
 
       {/* Red Highlight Branding Strip */}
-      <div className="bg-red-500 text-white text-center py-1.5 text-[10px] md:text-xs font-medium tracking-wide uppercase shadow-inner">
+      <div className="bg-blue-600 text-white text-center py-1.5 text-[10px] md:text-xs font-medium tracking-wide uppercase shadow-inner">
         India's Trusted Instant Adhesive Brand
       </div>
 

@@ -35,12 +35,12 @@ export default function WhyChooseSection() {
     <section className="w-full py-7 md:p-16 lg:px-24 bg-zinc-100 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 ">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* ======================================================= */}
           {/* LEFT CONTENT AREA: HEADINGS & GRID CARDS                 */}
           {/* ======================================================= */}
           <div className="lg:col-span-6 space-y-4">
-            
+
             {/* Top Border Accent Header */}
             <div className="flex items-center gap-3">
               <span className="w-1 h-6 bg-yellow-500 block rounded-full" />
@@ -51,25 +51,25 @@ export default function WhyChooseSection() {
 
             {/* Main Headline */}
             <motion.h3
-                         initial={{ opacity: 0, y: 15 }}
-                         whileInView={{ opacity: 1, y: 0 }}
-                         viewport={{ once: true }}
-                         transition={{ duration: 0.5, delay: 0.1 }}
-                         className="text-3xl md:text-5xl font-bold text-zinc-900 tracking-tight leading-tight"
-                       >
-                         Engineering High-Performance Adhesive Solutions <span className="text-blue-600">Since 1970</span>.
-                       </motion.h3>
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight"
+            >
+              Engineering High-Performance Adhesive Solutions <span className="text-yellow-500">Since 1970</span>.
+            </motion.h3>
 
             {/* Subtle Gradient Tag */}
-           <motion.p
-                         initial={{ opacity: 0, y: 15 }}
-                         whileInView={{ opacity: 1, y: 0 }}
-                         viewport={{ once: true }}
-                         transition={{ duration: 0.5, delay: 0.2 }}
-                         className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal"
-                       >
-                         Wembley Laboratories has remained at the absolute forefront of manufacturing high-grade consumer, institutional, and custom B2B adhesive arrays. From our hallmark flagship formulation.
-                       </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal"
+            >
+              Wembley Laboratories has remained at the absolute forefront of manufacturing high-grade consumer, institutional, and custom B2B adhesive arrays. From our hallmark flagship formulation.
+            </motion.p>
 
             {/* Feature 2x2 Grid Systems */}
             <div className="grid grid-cols-2 gap-3 sm:gap-6 pt-4">
@@ -105,7 +105,7 @@ export default function WhyChooseSection() {
           {/* RIGHT CONTENT AREA: CURVED OVERLAY IMAGE SHOWCASE        */}
           {/* ======================================================= */}
           <div className="lg:col-span-6 relative w-full aspect-4/3 md:aspect-[1.25] h-full min-h-100 lg:min-h-130">
-            
+
             {/* Main Picture Wrapper with Prototype Curved Cut Border */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}

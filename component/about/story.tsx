@@ -34,14 +34,14 @@ export default function Story() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-3xl md:text-4xl font-bold text-zinc-900 tracking-tight leading-tight"
         >
-          Strong <span className="text-blue-600">Bonds.</span> <br /> <span className="text-blue-600">Smarter</span> Solutions.
+          Strong <span className="text-yellow-500">Bonds.</span> <br /> <span className="text-yellow-500">Smarter</span> Solutions.
         </motion.h3>
       </div>
 
       {/* Cards Section */}
       {data?.map((cards, index) => (
-        <div 
-          key={index} 
+        <div
+          key={index}
           className="lg:px-9 px-4 space-y-2 md:space-y-3 md:border-r max-md:border-b border-yellow-400 last:border-none"
         >
           <h3 className="text-base font-bold sm:text-lg text-zinc-900">{cards?.heading}</h3>

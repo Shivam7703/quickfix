@@ -33,7 +33,7 @@ export default function FaqSection() {
     <section className="w-full py-7 md:p-16 lg:px-24 bg-zinc-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start relative">
-          
+
           {/* ======================================================= */}
           {/* LEFT SIDE: HEADINGS & SUB-TEXT LAYOUTS                  */}
           {/* ======================================================= */}
@@ -50,7 +50,7 @@ export default function FaqSection() {
             </div>
 
             {/* Main Section Header */}
-            <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 tracking-tight leading-tight">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight">
               Frequently asked <br /> questions
             </h2>
 
@@ -73,9 +73,9 @@ export default function FaqSection() {
           <div className="lg:col-span-6 space-y-4 w-full">
             {faqData.map((item) => {
               const isOpen = openId === item.id;
-              
+
               return (
-                <div 
+                <div
                   key={item.id}
                   className="w-full bg-blue-50/80 border border-blue-100 shadow-2xs rounded-xl overflow-hidden transition-all duration-300"
                 >

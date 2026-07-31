@@ -11,8 +11,10 @@ import gal1 from "@/assets/home/gal1.jpg";
 import gal2 from "@/assets/home/gal2.jpg";
 import gal3 from "@/assets/home/gal3.jpg";
 import gal4 from "@/assets/home/gal4.jpg";
-
-
+import ceo from "@/assets/home/ceo.jpg"
+import sus1 from "@/assets/home/sustain1.jpg"
+import sus2 from "@/assets/home/sustain2.jpg"
+import team from "@/assets/home/team.jpg"
 
 // products
 import noimg from "@/assets/products/noimage.jpg";
@@ -126,7 +128,7 @@ import wemlac2 from "@/assets/products/wemlac2.webp";
 
 
 
-export {noimg,logo, banner1, banner2, banner3, about, about1, about2, choose, process, gal1, gal2, gal3, gal4, 
+export {team,sus1,sus2,ceo, noimg,logo, banner1, banner2, banner3, about, about1, about2, choose, process, gal1, gal2, gal3, gal4, 
 
     // product
 allPurposeAdhesive1, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper,  pvcSolventCement1, pvcSolventCement2,   pvcSolventCement3,

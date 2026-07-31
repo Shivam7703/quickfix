@@ -34,30 +34,30 @@ export default function Process() {
   return (
     <div className="w-full py-7 md:p-16 lg:px-24 bg-white ">
       <div className="max-w-7xl mx-auto px-4">
-        
+
         {/* ======================================================= */}
         {/* HEADER BRANDING STRIP                                    */}
         {/* ======================================================= */}
-      
+
 
         {/* ======================================================= */}
         {/* MAIN RESPONSIVE CONTENT SPLIT GRID                      */}
         {/* ======================================================= */}
         <div className="grid grid-cols-1 relative lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
+
           {/* LEFT SIDE: VISUAL IMAGE WITH BOTTOM TEXT CALLOUT BAND */}
           <div className="lg:col-span-6 lg:sticky lg:top-12 space-y-6 w-full">
-              <div className="space-y-3 mb-12 text-left">
-          <div className="flex items-center gap-2.5">
-            <span className="w-1 h-5 bg-yellow-500 block rounded-full" />
-            <span className="text-xs md:text-sm font-bold tracking-widest text-zinc-700 uppercase">
-              Our Process
-            </span>
-          </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 tracking-tight leading-[1.15] max-w-xl">
-            Formulated for unbreakable target <span className="text-blue-600">bond</span>
-          </h2>
-        </div>
+            <div className="space-y-3 mb-12 text-left">
+              <div className="flex items-center gap-2.5">
+                <span className="w-1 h-5 bg-yellow-500 block rounded-full" />
+                <span className="text-xs md:text-sm font-bold tracking-widest text-zinc-700 uppercase">
+                  Our Process
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight leading-[1.15] max-w-xl">
+                Formulated for unbreakable target <span className="text-yellow-500">bond</span>
+              </h2>
+            </div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -72,16 +72,16 @@ export default function Process() {
                 className="object-cover rounded-2xl  object-center"
                 sizes="(max-w-1024px) 100vw, 45vw"
               />
-               {/* Prototype Signature Blue Border Accent Callout text box */}
-            <div className="flex w-[70%] absolute bg-white shadow-xl shadow-black/30 rounded-lg items-stretch gap-4 px-4 py-3 bottom-2 -right-3">
-              <span className="w-1 bg-yellow-600 block shrink-0 rounded-full" />
-              <p className="text-zinc-800 text-xs md:text-sm leading-relaxed font-normal">
-                Our process is engineered to maximize adhesive performance and reliability for every type of repair. By combining advanced chemical engineering with user-friendly application design, we ensure seamless, permanent fixes every single time.
-              </p>
-            </div>
+              {/* Prototype Signature Blue Border Accent Callout text box */}
+              <div className="flex w-[70%] absolute bg-white shadow-xl shadow-black/30 rounded-lg items-stretch gap-4 px-4 py-3 bottom-2 -right-3">
+                <span className="w-1 bg-yellow-600 block shrink-0 rounded-full" />
+                <p className="text-zinc-800 text-xs md:text-sm leading-relaxed font-normal">
+                  Our process is engineered to maximize adhesive performance and reliability for every type of repair. By combining advanced chemical engineering with user-friendly application design, we ensure seamless, permanent fixes every single time.
+                </p>
+              </div>
             </motion.div>
 
-           
+
           </div>
 
           {/* RIGHT SIDE: SEQUENTIAL TYPOGRAPHY ROW LISTINGS */}

@@ -25,11 +25,11 @@ export default function ContactSection() {
             <div className="flex items-center gap-3">
               <span className="w-1 h-6 bg-yellow-500 block rounded-full" />
               <span className="text-xs md:text-sm font-bold tracking-widest text-zinc-700 uppercase">
-                Get In Touch           
-             </span>
+                Get In Touch
+              </span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-zinc-800 tracking-tight">
-Contact Us Today!
+            <h2 className="text-3xl md:text-5xl font-extrabold text-zinc-800 tracking-tight">
+              Contact Us Today!
             </h2>
             <p className="text-zinc-600 mt-2 text-sm md:text-base leading-relaxed">
               Have questions about our high-performance adhesive solutions or need bulk assistance? Reach out to our team today.
@@ -60,7 +60,7 @@ Contact Us Today!
                 <h3 className="font-bold text-zinc-900 text-base">Email Us</h3>
                 <p className="text-zinc-500 text-sm"><a href="mailto:
 info@wembleysquickfix.com">
-info@wembleysquickfix.com</a></p>
+                  info@wembleysquickfix.com</a></p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ info@wembleysquickfix.com</a></p>
               <div>
                 <h3 className="font-bold text-zinc-900 text-base">Our Location</h3>
                 <p className="text-zinc-500 text-sm mt-1 leading-relaxed">
-Wembley House, 527, Pace City II, Sector 37, Gurgaon – 122001 (INDIA)
+                  Wembley House, 527, Pace City II, Sector 37, Gurgaon – 122001 (INDIA)
                 </p>
               </div>
             </div>

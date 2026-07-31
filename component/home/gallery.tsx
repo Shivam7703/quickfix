@@ -14,7 +14,7 @@ export default function GallerySection() {
   return (
     <section className="w-full py-7 md:p-16 lg:px-24 bg-zinc-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        
+
         {/* ======================================================= */}
         {/* HEADER BRANDING AREA                                    */}
         {/* ======================================================= */}
@@ -25,8 +25,8 @@ export default function GallerySection() {
               Inside Wembley Labs
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 tracking-tight leading-tight max-w-2xl">
-            A glimpse into our heritage & <span className="text-blue-600">manufacturing</span> 
+          <h2 className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight max-w-2xl">
+            A glimpse into our heritage & <span className="text-yellow-500">manufacturing</span>
           </h2>
         </div>
 
@@ -34,7 +34,7 @@ export default function GallerySection() {
         {/* ASYMMETRIC GRID GALLERY LAYOUT                          */}
         {/* ======================================================= */}
         <div className="flex flex-wrap justify-between md:gap-y-10 gap-y-6">
-          
+
           {/* TOP LEFT IMAGE: Lab Processing View */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -67,10 +67,10 @@ export default function GallerySection() {
               className="object-cover object-center"
               sizes="(max-w-768px) 100vw, 50vw"
             />
-                      
+
           </motion.div>
 
- <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -84,10 +84,10 @@ export default function GallerySection() {
               className="object-cover object-center"
               sizes="(max-w-768px) 100vw, 50vw"
             />
-                      
+
           </motion.div>
 
-            <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
