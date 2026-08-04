@@ -3,9 +3,10 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FiArrowDownRight, FiUsers } from "react-icons/fi";
+import { FiArrowDownRight, FiPlay, FiUsers } from "react-icons/fi";
 // Right side product banner image import karein
-import { about } from "@/assets";
+import { about, gal2, gal4 } from "@/assets";
+import { BsFillPatchCheckFill } from "react-icons/bs";
 
 const featuresData = [
   {
@@ -32,8 +33,16 @@ const featuresData = [
 
 export default function WhyChooseSection() {
   return (
-    <section className="w-full py-7 md:p-16 lg:px-24 bg-zinc-100 overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-4 ">
+    <section className="w-full py-7 md:p-16 lg:px-24 bg-zinc-700 overflow-hidden relative">
+       <Image
+                src={gal4}
+                alt="Quickfix Craft and Repair Bonding Showcase"
+                fill
+                className="absolute w-full h-full -top-2 left-0 z-3 opacity-30 object-cover object-center"
+                priority
+              />
+      <div className="absolute bg-white h-full z-7 w-[60%] left-0 top-[3%]"></div>
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
           {/* ======================================================= */}
@@ -57,7 +66,7 @@ export default function WhyChooseSection() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight"
             >
-              Engineering High-Performance Adhesive Solutions <span className="text-yellow-500">Since 1970</span>.
+              Engineering High-Solutions <span className="text-yellow-500">Since 1970</span>.
             </motion.h3>
 
             {/* Subtle Gradient Tag */}
@@ -80,17 +89,16 @@ export default function WhyChooseSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-blue-50 hover:bg-white border border-blue-500/70 hover:border-amber-400 p-5 rounded-xl relative pt-8 transition-all duration-300 group shadow-xs shadow-blue-900/5 hover:shadow-xl"
+                  className="group"
                 >
                   {/* Top-Left Corner Absolute Icon Button */}
-                  <div className="absolute -top-4 left-4 w-9 h-9 bg-blue-700 text-white rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-amber-500 group-hover:rotate-45 shadow-md">
-                    <FiArrowDownRight size={16} />
-                  </div>
+                  
 
                   {/* Card Main Description Texts */}
                   <div className="space-y-2">
-                    <h3 className="text-sm sm:text-base font-bold text-blue-900 tracking-tight">
-                      {feature.title}
+                    <h3 className="text-sm sm:text-base font-bold flex text-blue-900 tracking-tight">
+                   <span>                    <BsFillPatchCheckFill className="group-hover:text-red-500 mr-2 text-yellow-500 text-xl"/>
+</span>   {feature.title}
                     </h3>
                     <p className="text-zinc-600 text-xs md:text-sm leading-relaxed font-normal">
                       {feature.description}
@@ -112,7 +120,7 @@ export default function WhyChooseSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="w-full h-full relative rounded-tr-[80px] rounded-bl-[80px] rounded-tl-2xl rounded-br-2xl overflow-hidden "
+              className="w-full h-full relative overflow-hidden "
             >
               <Image
                 src={about}
@@ -122,29 +130,27 @@ export default function WhyChooseSection() {
                 sizes="(max-w-1024px) 100vw, 50vw"
                 priority
               />
-
-              {/* Bottom Transparent Overlay Gradient Sheet */}
-              {/* <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent z-10" /> */}
-
-              {/* Bottom White Dynamic Trust Stamp Floating Element */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="absolute -bottom-1 -left-1   bg-zinc-100 py-6 px-8 rounded-lg  flex items-start gap-4 z-20 max-w-[85%] md:max-w-105"
-              >
-                <div className="w-10 h-10 rounded-full bg-yellow-200 text-amber-600 flex items-center justify-center shrink-0">
-                  <FiUsers size={20} />
-                </div>
-                <div>
-                  <h4 className="text-sm md:text-base font-bold text-zinc-900 leading-tight tracking-tight">
-                    Trusted by millions for fast repairs, creative projects, and everyday fixes
-                  </h4>
-                </div>
-              </motion.div>
             </motion.div>
+<motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="absolute -bottom-6 left-0 sm:left-4 bg-red-700 text-white p-5 sm:p-6 shadow-xl flex items-center justify-between gap-6 z-20 max-w-[85%] sm:max-w-85"
+            >
+              <div className="border-r border-red-500/60 pr-4">
+                <h4 className="text-sm md:text-base font-bold leading-tight tracking-wide">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, eius!                </h4>
+              </div>
 
+              {/* Play Button Icon */}
+              <button
+                aria-label="Play Video"
+                className="w-12 h-12 rounded-full bg-white text-red-700 flex items-center justify-center shrink-0 shadow-md hover:scale-105 active:scale-95 transition-transform duration-300 cursor-pointer"
+              >
+                <FiPlay size={20} className="fill-current ml-1" />
+              </button>
+            </motion.div>
           </div>
 
         </div>

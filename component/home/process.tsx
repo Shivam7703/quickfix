@@ -35,14 +35,6 @@ export default function Process() {
     <div className="w-full py-7 md:p-16 lg:px-24 bg-white ">
       <div className="max-w-7xl mx-auto px-4">
 
-        {/* ======================================================= */}
-        {/* HEADER BRANDING STRIP                                    */}
-        {/* ======================================================= */}
-
-
-        {/* ======================================================= */}
-        {/* MAIN RESPONSIVE CONTENT SPLIT GRID                      */}
-        {/* ======================================================= */}
         <div className="grid grid-cols-1 relative lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
           {/* LEFT SIDE: VISUAL IMAGE WITH BOTTOM TEXT CALLOUT BAND */}
@@ -85,7 +77,7 @@ export default function Process() {
           </div>
 
           {/* RIGHT SIDE: SEQUENTIAL TYPOGRAPHY ROW LISTINGS */}
-          <div className="lg:col-span-6 space-y-10 md:space-y-12 lg:pt-28">
+          <div className="lg:col-span-6 space-y-4 md:space-y-7 lg:pt-28">
             {processSteps.map((step, index) => (
               <motion.div
                 key={step.stepNumber}
@@ -93,21 +85,24 @@ export default function Process() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="flex items-start gap-6 md:gap-8 group"
+                className="shadow-xl rounded-full border group overflow-hidden relative"
               >
+                <div className="absolute z-1 bg-yellow-500 h-0 w-full top-0 left-0 group-hover:h-full duration-300"/>
+                <div className="flex items-center z-3 relative gap-6 md:gap-8 p-6 md:px-8">
                 {/* Large Prototype Blue Identity Digit */}
-                <span className="text-4xl md:text-6xl font-black text-blue-800 tracking-tighter leading-none shrink-0 select-none transition-colors duration-300 group-hover:text-amber-500">
+                <span className="text-4xl md:text-6xl font-black text-blue-800 tracking-tighter leading-none shrink-0 select-none transition-colors duration-300 group-hover:text-white">
                   {step.stepNumber}
                 </span>
 
                 {/* Text Blocks */}
                 <div className="space-y-2">
-                  <h3 className="text-base md:text-xl font-bold text-blue-900 group-hover:text-blue-700 transition-colors tracking-tight">
+                  <h3 className="text-base md:text-xl font-bold text-blue-900 group-hover:text-white transition-colors tracking-tight">
                     {step.title}
                   </h3>
-                  <p className="text-zinc-500 text-xs md:text-sm leading-relaxed font-normal max-w-md">
+                  <p className="text-zinc-600 group-hover:text-white text-xs md:text-sm leading-relaxed font-normal max-w-md">
                     {step.description}
                   </p>
+                </div>
                 </div>
               </motion.div>
             ))}

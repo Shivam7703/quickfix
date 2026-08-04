@@ -6,18 +6,14 @@ import { FaCircleCheck } from 'react-icons/fa6';
 
 export default function AboutCeo() {
   return (
-    <section className="bg-gradient-to-b from-slate-50 via-white to-slate-50 py-16 md:py-24 px-6 md:px-16 lg:px-24 border-y border-slate-100">
+    <section className="bg-zinc-100 py-16 md:py-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-        
+
         {/* Left Content Column (7 Columns wide on desktop) */}
         <div className="lg:col-span-7 space-y-8">
-          
+
           {/* Tag & Heading */}
           <div className="space-y-3">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-blue-50 text-blue-600 border border-blue-100">
-              <FaCircleCheck 
- className="w-3.5 h-3.5" /> Leadership & Vision
-            </span>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
               About Our CEO
             </h2>
@@ -36,7 +32,7 @@ export default function AboutCeo() {
 
           {/* Two Feature Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
-            
+
             {/* Feature 1 */}
             <div className="group p-5 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
@@ -86,7 +82,7 @@ export default function AboutCeo() {
         {/* Right Image Column with Name Card (5 Columns wide on desktop) */}
         <div className="lg:col-span-5 relative">
           <div className="relative mx-auto max-w-md lg:max-w-none">
-            
+
             {/* Background Decorative Element */}
             <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur-lg opacity-20 transform -rotate-1"></div>
 
@@ -105,7 +101,7 @@ export default function AboutCeo() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 leading-snug">
-                      Tejas Lamba
+                      Amarjit Singh Lamba
                     </h3>
                     <p className="text-xs font-semibold text-blue-600 tracking-wide uppercase">
                       Founder & Chief Executive Officer

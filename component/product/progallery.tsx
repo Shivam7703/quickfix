@@ -1,27 +1,17 @@
-"use client"; // Required for state hooks in Next.js App Router
+"use client"; 
 
 import React, { useState } from "react";
 import Image from "next/image";
 
-import { FaStar, FaFacebook, FaInstagram, FaPinterest, FaWhatsapp, FaPlus, FaMinus, FaCheckCircle, FaExclamationTriangle, FaHandPointRight } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
+import { FaStar,  FaExclamationTriangle, FaHandPointRight } from "react-icons/fa";
 
-import { quickguard1, cpvc2 } from '@/assets';
-import { MdOutlineVerifiedUser } from "react-icons/md";
-
-const sizes = ["30 ml", "500 ml", "100 ml", "50 ml", "10 ml"];
-const tags = ["Craft Adhesive", "Spray Glue", "Paper Adhesive", "DIY Supplies", "Arts & Crafts"];
 
 export default function ProductGallery({ data }: any) {
 
   const [mainImageSrc, setMainImageSrc] = useState(data?.imgs[0]);
-  const [selectedSize, setSelectedSize] = useState("500 ml");
-  const [quantity, setQuantity] = useState(1);
-
-  // Thumbnail images array - all using the same quickguard1 asset for display
+  
   const thumbnails = data?.imgs
-  const incrementQty = () => setQuantity((prev) => prev + 1);
-  const decrementQty = () => setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
+ 
 
   return (
     <main className="min-h-screen bg-white text-zinc-900 py-16 px-4 md:px-10">

@@ -11,16 +11,16 @@ import logo from "@/assets/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white text-zinc-600 font-sans border-t border-gray-100">
+    <footer className="w-full bg-white text-zinc-600 font-sans border-t border-gray-400">
       
       {/* ======================================================= */}
       {/* TOP STRIP: TRUSTED ADHESIVE BRAND BANNER                 */}
       {/* ======================================================= */}
-      <div className="w-full bg-blue-700 py-1 text-center px-4">
+      {/* <div className="w-full bg-blue-700 py-1 text-center px-4">
         <span className="text-white uppercase md:text-base text-sm tracking-wide">
           India&apos;s Trusted Instant Adhesive Brand
         </span>
-      </div>
+      </div> */}
 
       {/* ======================================================= */}
       {/* MAIN FOOTER CONTENT CONTENT LINKS SYSTEMS              */}

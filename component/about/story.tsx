@@ -15,7 +15,7 @@ const data = [
 
 export default function Story() {
   return (
-    <div className="grid lg:py-16 md:py-10 py-7 md:grid-cols-3 bg-zinc-100 lg:px-16">
+    <div className="grid lg:py-16 md:py-10 py-7 md:grid-cols-3 bg-white lg:px-16">
       {/* Header Section */}
       <div className="lg:px-9 px-4 space-y-4 md:border-r border-yellow-400">
         {/* Tagline header element */}
