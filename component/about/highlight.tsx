@@ -1,21 +1,26 @@
 import React from 'react';
 import { FaTruck, FaLock, FaHeadset } from 'react-icons/fa';
 
+import { FaCogs, FaCheckCircle, FaFlask } from "react-icons/fa";
+
 const services = [
   {
-    icon: <FaTruck className="text-2xl" />,
-    title: "Fast Delivery",
-    description: "Quick shipping across India.",
+    // FaCogs: Precision manufacturing aur production facilities ko dikhane ke liye gears sabse best hain
+    icon: <FaCogs className="text-2xl" />,
+    title: "Manufacturing Excellence",
+    description: "Advanced production facilities and precision manufacturing ensure consistent quality in every product.",
   },
   {
-    icon: <FaLock className=" text-2xl" />,
-    title: "Secure Payment",
-    description: "100% safe and encrypted checkout.",
+    // FaCheckCircle: Testing pass hone aur quality assurance (Bharosa/Guarantee) ke liye standard icon
+    icon: <FaCheckCircle className="text-2xl" />,
+    title: "Quality Assured",
+    description: "Every batch undergoes comprehensive testing to deliver dependable strength and reliable performance.",
   },
   {
-    icon: <FaHeadset className="text-2xl" />,
-    title: "Customer Support",
-    description: "We're here to help with product and order assistance.",
+    // FaFlask: Research, innovation, aur R&D labs ko darshane ke liye perfect visual
+    icon: <FaFlask className="text-2xl" />,
+    title: "Research & Innovation",
+    description: "Dedicated R&D continuously develops advanced adhesive technologies for evolving market requirements.",
   },
 ];
 

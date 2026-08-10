@@ -13,22 +13,22 @@ const data: CardItem[] = [
   {
     id: 1,
     icon: <ImLab />,
-    heading: 'ipsum Wembley Laboratories',
-    para: 'Wembley Laboratories Ltd was founded in the year 1952, by pioneering entrepreneur S. Amarjit Singh Lamba and his brothers. In their quest.',
+    heading: 'Trusted Manufacturing Excellence',
+    para: 'With over 70 years of manufacturing experience, Wembley Laboratories delivers high-performance adhesive solutions trusted for their consistent quality, reliability, and superior bonding performance.',
     bgColor: 'bg-blue-600',
   },
   {
     id: 2,
     icon: <ImLab />,
-    heading: 'ipsum Wembley Laboratories',
-    para: 'Wembley Laboratories Ltd was founded in the year 1952, by pioneering entrepreneur S. Amarjit Singh Lamba and his brothers. In their quest.',
+    heading: 'Research & Innovation',
+    para: 'Our dedicated research and development team continuously enhances existing products while developing innovative adhesive solutions that meet the changing requirements of consumers and industries.',
     bgColor: 'bg-yellow-500', // Replaced yellow-500 with amber-600 for white text contrast
   },
   {
     id: 3,
     icon: <ImLab />,
-    heading: 'ipsum Wembley Laboratories',
-    para: 'Wembley Laboratories Ltd was founded in the year 1952, by pioneering entrepreneur S. Amarjit Singh Lamba and his brothers. In their quest.',
+    heading: 'Wide Range of Adhesive Solutions',
+    para: 'From all-purpose adhesives and instant glues to epoxy systems, solvent cements, sealants, tapes, and specialty products, QuickFix offers solutions for domestic, commercial, and industrial bonding applications.',
     bgColor: 'bg-blue-600',
   },
 ];

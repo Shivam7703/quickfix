@@ -13,7 +13,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-      <AllBanner title='about us' para='Our pinpoint dispensing tech allows for an exact, controlled application. No mess, no runoff—just the need it.' slug="about-us"/>
+      <AllBanner title='about us' para="QuickFix is Wembley Laboratories' trusted adhesive brand, offering dependable bonding solutions for everyday repairs, professional work, and industrial applications." slug="about-us"/>
       <AboutSection/>
       <MissionVisionSection/>
       <Story/>

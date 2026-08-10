@@ -16,6 +16,7 @@ import "swiper/css/navigation";
 
 import { Productdata } from "@/data/productdata";
 import { createSlug } from "@/app/products/[slug]/page";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 // Interface for full product data
 export interface ProductItem {
@@ -65,7 +66,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
       {/* Card Image Container */}
       <Link
         href={`/products/${productSlug}`}
-        className="w-full aspect-square bg-[#eaeaea] rounded-xl p-6 flex items-center justify-center relative overflow-hidden mb-4 "
+        className="w-full aspect-square bg-radial from-white via-white  to-blue-100  rounded-xl p-4 flex items-center justify-center relative overflow-hidden mb-4 "
       >
         <Image
           src={product.imgs[0]}
@@ -164,7 +165,7 @@ const swiperOptions = {
 };
 
   return (
-    <section className="w-full md:p-16 lg:px-20 py-7 bg-white text-center overflow-hidden">
+    <section className="w-full md:p-16 lg:px-20 lg:pb-24 py-7 bg-white text-center overflow-hidden">
       <div className="max-w-7xl relative mx-auto px-6">
 
         {/* TOP BRAND HEADER TITLE */}
@@ -201,10 +202,11 @@ const swiperOptions = {
 
           {/* DESKTOP LEFT ARROW (Card Section Ke Left Floating Side) */}
           <button
-            className={`${uniqueId}-prev hidden md:flex absolute -left-3 lg:-left-6 top-2/3 -translate-y-1/2 z-30 w-11 h-11 rounded-full border border-zinc-200 bg-white/95 backdrop-blur-md text-zinc-700 shadow-lg hover:bg-blue-600 hover:text-white hover:border-blue-600 items-center justify-center transition-all duration-300 cursor-pointer active:scale-95 disabled:opacity-30 disabled:cursor-not-allowed`}
+            className={`${uniqueId}-prev hidden md:flex absolute -left-5 lg:-left-9 top-2/3 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-yellow-500 text-white shadow-lg hover:bg-blue-600 items-center justify-center transition-all duration-300 cursor-pointer`}
             aria-label="Previous slide"
           >
-            <FiChevronLeft size={22} />
+            <FaArrowLeftLong 
+             size={22} />
           </button>
 
           {/* SWIPER CAROUSEL */}
@@ -222,27 +224,26 @@ const swiperOptions = {
 
           {/* DESKTOP RIGHT ARROW (Card Section Ke Right Floating Side) */}
           <button
-            className={`${uniqueId}-next hidden md:flex absolute -right-3 lg:-right-6 top-2/3 -translate-y-1/2 z-30 w-11 h-11 rounded-full border border-zinc-200 bg-white/95 backdrop-blur-md text-zinc-700 shadow-lg hover:bg-blue-600 hover:text-white hover:border-blue-600 items-center justify-center transition-all duration-300 cursor-pointer active:scale-95 disabled:opacity-30 disabled:cursor-not-allowed`}
+            className={`${uniqueId}-next hidden md:flex absolute -right-5 lg:-right-9 top-2/3 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-yellow-500 shadow-lg hover:bg-blue-600 text-white  items-center justify-center transition-all duration-300 cursor-pointer`}
             aria-label="Next slide"
           >
-            <FiChevronRight size={22} />
+            <FaArrowRightLong  size={22} />
           </button>
-
         </div>
 
         {/* MOBILE NAVIGATION CONTROLS (Neeche Center Me) */}
         <div className="flex md:hidden items-center justify-center gap-4 mt-6">
           <button
-            className={`${uniqueId}-prev w-11 h-11 rounded-full border border-zinc-200 bg-white shadow-md text-zinc-700 active:scale-95 active:bg-blue-600 active:text-white flex items-center justify-center transition-all duration-200 cursor-pointer disabled:opacity-30`}
+            className={`${uniqueId}-prev w-11 h-11 rounded-full bg-yellow-500 text-white flex items-center justify-center transition-all duration-200 cursor-pointer  hover:bg-blue-500`}
             aria-label="Previous slide mobile"
           >
-            <FiChevronLeft size={22} />
+            <FaArrowLeftLong  size={22} />
           </button>
           <button
-            className={`${uniqueId}-next w-11 h-11 rounded-full border border-zinc-200 bg-white shadow-md text-zinc-700 active:scale-95 active:bg-blue-600 active:text-white flex items-center justify-center transition-all duration-200 cursor-pointer disabled:opacity-30`}
+            className={`${uniqueId}-next w-11 h-11 rounded-full bg-yellow-500 text-white flex items-center justify-center transition-all duration-200 cursor-pointer  hover:bg-blue-500`}
             aria-label="Next slide mobile"
           >
-            <FiChevronRight size={22} />
+            <FaArrowRightLong  size={22} />
           </button>
         </div>
 

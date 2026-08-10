@@ -25,7 +25,7 @@ export default function GallerySection() {
               Inside Wembley Labs
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight max-w-2xl">
+          <h2 className="text-3xl md:text-5xl font-bold capitalize text-zinc-900 tracking-tight leading-tight max-w-2xl">
             A glimpse into our heritage & <span className="text-yellow-500">manufacturing</span>
           </h2>
         </div>

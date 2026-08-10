@@ -13,7 +13,6 @@ import {
   LuHeartHandshake 
 } from 'react-icons/lu';
 
-// Image import path (Apne project path ke acc. adjust kar lein)
 import { team } from "@/assets"; 
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -21,6 +20,8 @@ const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
 };
+
+const data = [{id:1, title:"Career Development", description:" Unlock your potential with continuous learning, real-world experience, and opportunities to build a rewarding career."},{id:3, title:"Work-Life Balance", description:"We believe great work starts with a healthy balance, offering a positive environment that supports both your professional growth and personal well-being."},{id:2, title:"Collaborative Culture", description:" Join a supportive team where collaboration, respect, and fresh ideas drive innovation and shared success every day."},]
 
 export default function CareerSection() {
   const [fileName, setFileName] = useState<string>('');
@@ -49,12 +50,12 @@ export default function CareerSection() {
               <LuBriefcase className="w-3.5 h-3.5" /> Careers & Culture
             </span>
 
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Work With Us & <span className="text-yellow-500">Shape The Future</span>
+            <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+              Join the Team Behind Every <span className="text-yellow-500">Strong Bond</span>
             </h1>
 
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-              We are constantly looking for passionate thinkers, creators, and innovators to join our growing team. Collaborate on impactful projects and elevate your career in an inclusive environment.
+At Quickfix, we don't just manufacture adhesives we build opportunities. Join a workplace where innovation, collaboration, and continuous growth empower you to make a meaningful impact while creating solutions trusted by industries every day.
             </p>
 
             {/* Perks / Culture Highlights */}
@@ -100,6 +101,18 @@ export default function CareerSection() {
           </div>
         </motion.div>
 
+
+{/* 2nd part */}
+<div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10'>
+  {data.map((item) => (
+    <div 
+      key={item.id}
+      >
+      <h3 className="font-bold text-slate-900 text-lg sm:text-2xl">{item.title}</h3>
+      <p className="text-sm text-slate-500 mt-2 sm:text-base">{item.description}</p>
+    </div>
+  ))}
+</div>
 
         {/* ==================== 2. APPLICATION FORM & SEND CV BOX ==================== */}
         <motion.div 

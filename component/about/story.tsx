@@ -4,18 +4,18 @@ import React from 'react';
 
 const data = [
   {
-    heading: "lorem ipsum Wembley Laboratories",
-    para: "Wembley Laboratories Ltd was founded in the year 1952, by pioneering entrepreneur S. Amarjit Singh Lamba and his brothers. In their quest for new, innovative products suitable for the people of a newly independent India,",
+    heading: "Adhesive Solutions You Can Trust",
+    para: "QuickFix offers a diverse portfolio of adhesive products designed for household repairs, woodworking, plumbing, footwear, construction, automotive, and industrial applications, providing dependable performance across multiple materials.",
   },
   {
-    heading: "lorem ipsum Wembley Laboratories",
-    para: "Wembley Laboratories Ltd was founded in the year 1952, by pioneering entrepreneur S. Amarjit Singh Lamba and his brothers. In their quest for new, innovative products suitable for the people of a newly independent India,",
+    heading: "Quality That Delivers Confidence",
+    para: "Every QuickFix product is developed through stringent quality control processes and continuous product improvement to ensure reliable performance and customer satisfaction.",
   },
 ];
 
 export default function Story() {
   return (
-    <div className="grid lg:py-16 md:py-10 py-7 md:grid-cols-3 bg-white lg:px-16">
+    <div className="grid lg:py-16 md:py-10 py-7 gap-y-6 md:grid-cols-3 bg-white lg:px-16">
       {/* Header Section */}
       <div className="lg:px-9 px-4 space-y-4 md:border-r border-yellow-400">
         {/* Tagline header element */}
@@ -34,7 +34,7 @@ export default function Story() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-3xl md:text-4xl font-bold text-zinc-900 tracking-tight leading-tight"
         >
-          Strong <span className="text-yellow-500">Bonds.</span> <br /> <span className="text-yellow-500">Smarter</span> Solutions.
+          Reliable   <span className="text-yellow-500">Solutions</span> <br /> <span className="text-yellow-500">for Every</span>  Application
         </motion.h3>
       </div>
 
@@ -42,7 +42,7 @@ export default function Story() {
       {data?.map((cards, index) => (
         <div
           key={index}
-          className="lg:px-9 px-4 space-y-2 md:space-y-3 md:border-r max-md:border-b border-yellow-400 last:border-none"
+          className="lg:px-9 px-4 space-y-2 md:space-y-3 md:border-r border-yellow-400 last:border-none"
         >
           <h3 className="text-base font-bold sm:text-lg text-zinc-900">{cards?.heading}</h3>
           <p className="sm:text-sm text-xs text-zinc-600">{cards?.para}</p>

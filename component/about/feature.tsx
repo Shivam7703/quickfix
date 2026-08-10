@@ -1,24 +1,29 @@
 import React from 'react';
 import { FaLink, FaBolt, FaCheck } from 'react-icons/fa';
 
+import { FaIndustry, FaFlask, FaShieldAlt } from "react-icons/fa";
+
 const features = [
   {
-    icon: <FaLink className="text-white text-xl transition-transform duration-300 group-hover:scale-110" />,
+    // FaIndustry: Manufacturing aur production ko represent karne ke liye best hai
+    icon: <FaIndustry className="text-white text-xl transition-transform duration-300 group-hover:scale-110" />,
     iconBg: "bg-[#243c9b]",
-    title: "Superior Bond Strength",
-    description: "Our advanced adhesive formula creates powerful, long-lasting bonds for a wide variety of materials.",
+    title: "Superior Manufacturing Excellence",
+    description: "Built on over seven decades of manufacturing expertise, every Wembley product is developed through precision engineering, rigorous quality control, and advanced production processes to deliver consistent, dependable performance.",
   },
   {
-    icon: <FaBolt className="text-white text-xl transition-transform duration-300 group-hover:scale-110" />,
+    // FaFlask: Research, development aur innovation ko darshane ke liye standard icon
+    icon: <FaFlask className="text-white text-xl transition-transform duration-300 group-hover:scale-110" />,
     iconBg: "bg-[#f4b41a]",
-    title: "Fast Drying Formula",
-    description: "Quick curing technology helps reduce waiting time while delivering reliable and durable performance",
+    title: "Innovation Through Research",
+    description: "Our dedicated research and development team continuously enhances adhesive technologies, creating innovative formulations that meet evolving industry requirements while ensuring reliable performance across diverse applications.",
   },
   {
-    icon: <FaCheck className="text-white text-xl transition-transform duration-300 group-hover:scale-110" />,
+    // FaShieldAlt: Trust, reliability, aur quality assurance dikhane ke liye perfect hai
+    icon: <FaShieldAlt className="text-white text-xl transition-transform duration-300 group-hover:scale-110" />,
     iconBg: "bg-[#243c9b]",
-    title: "Trusted Quality",
-    description: "Manufactured with premium-grade materials and tested for consistent performance in every application.",
+    title: "Quality You Can Trust",
+    description: "Every product undergoes comprehensive testing from raw material selection to final packaging, ensuring consistent quality, superior reliability, and performance customers can depend on every day.",
   },
 ];
 

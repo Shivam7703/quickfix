@@ -51,6 +51,12 @@ import {
   wemlac2,
   pvshield2,
   noimg,
+  multipurpose,
+  multipurpose2,
+  ptfetape,
+  ptfetape2,
+  quickcolsh,
+  quickcolsh2
 } from "@/assets";
 
 export const Productdata = [
@@ -58,7 +64,7 @@ export const Productdata = [
   {
     id: 1,
     title: "Quickfix All Purpose Adhesive",
-    category: "All purpose adhesive",
+    category: "All Purpose Adhesive",
     description: "Quickfix is India's first indigenous all-purpose adhesive. It is a quick drying, clear and transparent adhesive which exhibits excellent bonding properties. Owing to its capacity to bond most substrates, it finds applications across various industries, as well as DIY and Household use.",
 "imgs": [
       allPurposeAdhesive1, allPurposeAdhesive2
@@ -743,7 +749,7 @@ export const Productdata = [
   title: "quickfix PTFE tape",
   category: "Thread Sealant",
   description: "Quickfix PTFE Tape is a premium quality thread seal tape perfect for joining threaded pipes. It is self-lubricating, non-hardening, non-toxic and non-flammable tape. Made from 100% PTFE (Polytetrafluoroethylene), it offers excellent chemical resistance and high temperature tolerance while filling irregular voids between threads to make joints easy to assemble and disassemble.",
-  imgs: [noimg],
+  imgs: [ptfetape, ptfetape2],
   sizes: {
     heading: [
       "Size",
@@ -1298,7 +1304,7 @@ export const Productdata = [
 {
   id: 20,
   title: "quickfix UPVC ball valve non threaded",
-  category: "Ball Valves",
+  category: "Ball Valve",
   description: "Quickfix UPVC Ball Valves are lightweight, corrosion resistant valves used to regulate flow in plumbing and irrigation systems. Made from unplasticized polyvinyl chloride, they offer excellent chemical resistance and durability for both residential and industrial applications.",
   imgs: [upvcValve2, upvcValve1],
   sizes: {
@@ -1418,9 +1424,9 @@ export const Productdata = [
 {
   id: 22,
   title: "quickcol wsh - synthetic resin adhesive",
-  category: "Wood Adhesives",
+  category: "Wood Adhesive",
   description: "QuickCol WSH is a single component PVA Emulsion Adhesive used for wood working and general bonding applications. QuickCol WSH strongly binds wood, plywood, laminates, veneers, MDF and all types of boards and cork. The bonds are strong and resistant to heat & water.",
-  imgs: [noimg,noimg,noimg],
+  imgs: [quickcolsh, quickcolsh2],
   sizes: {
     heading: [
       "Size",
@@ -1706,5 +1712,90 @@ export const Productdata = [
       ["1 Ltr.", "85.00", "100.30", "280.00", "N/A", "18"]
     ]
   }
+},
+
+{
+  id: 27,
+  title: "quickfix multipurpose solvent cement",
+  category: "Solvent Cement",
+  description: "Quickfix Multipurpose is a medium bodied, fast set orange Solvent Cement for use on all schedules and classes of CPVC, PVC, UPVC and ABS pipes and fitting up to 6” diameter. Meets ASTM D2564, D2235 & F 493.",
+  imgs: [multipurpose, multipurpose2],
+  sizes: {
+    heading: [
+      "Product Code",
+      "Size",
+      "Description",
+      "Box Qty",
+      "Shipper Qty",
+      "Dimensions (in Inches)",
+      "Gross Wt (in Kgs)"
+    ],
+    rows: [
+      ["LMS001", "100 ml", "MULTIPURPOSE SOL CEM", "N/A", "60", "13.4 x 11 x 7", "8.60"],
+      ["LMS002", "200 ml", "MULTIPURPOSE SOL CEM", "N/A", "40", "13.5 x 11 x 8", "9.90"]
+    ]
+  },
+  usage: [
+    "Used for joining and plugging rigid CPVC, UPVC, PVC & ABS pipes in Agriculture, Sewage, Household and Industrial plumbing."
+  ],
+  benefits: [
+    "Suitable for Hot & Cold Water piping.",
+    "Suitable for use in all climatic conditions.",
+    "Medium Bodied Orange Solvent cement.",
+    "Non Dripping - no loss in application.",
+    "Fast drying.",
+    "High solid contents ensuring leak proof joints.",
+    "Excellent gap filling ability.",
+    "Pipes can be put to use fast.",
+    "Available in easy to use, tin containers with daubers inside.",
+    "LOW – V.O.C. Solvent Cement meets California South Coast Air Quality Management District (SCAQMD) 1168/316A or BAAQMD Method 40 and various environmental requirements.",
+    "Meets performance requirements of ASTM D2564, D2235 & F493.",
+    "Long Shelf life - 18 months from the date of manufacturing."
+  ],
+  precaution: [],
+  price: []
+},
+
+
+{
+  id: 28,
+  title: "quickplumb – liquid pipe sealant",
+  category: "Thread Sealant",
+  description: "QuickPLUMB is a white liquid sealant used for joining threaded GI Pipes. It's flexibility and non-drying properties make the threaded joints easy to assemble and disassemble.",
+  imgs: [noimg,noimg,noimg],
+  sizes: {
+    heading: [
+      "Product Code",
+      "Size",
+      "Description",
+      "Box Qty",
+      "Shipper Qty",
+      "Dimensions (in Inches)",
+      "Gross Wt (in Kgs)"
+    ],
+    rows: [
+      ["QPS001", "20g", "QUICKPLUMB LIQUID SEALENT", "40", "320", "14.1 x 12.5 x 8.4", "10.00"],
+      ["QPS002", "40g", "QUICKPLUMB LIQUID SEALENT", "40", "320", "17 x 14 x 8.1", "17.00"],
+      ["QPS003", "100g", "QUICKPLUMB LIQUID SEALENT", "20", "160", "21 x 17 x 7", "20.00"],
+      ["QPS004", "200g", "QUICKPLUMB LIQUID SEALENT", "N/A", "70", "20.6 x 14.9 x 7.2", "18.00"],
+      ["QPS005", "500g", "QUICKPLUMB LIQUID SEALENT", "N/A", "30", "17.1 x 11 x 8.6", "17.00"]
+    ]
+  },
+  usage: [
+    "Used for joining and leak proofing open and concealed GI/CI threaded pipes. Remains flexible on drying, therefore joints can be dismantled easily."
+  ],
+  benefits: [
+    "White and non-hardening.",
+    "Fast drying with good resistance to corrosion.",
+    "Good gap filling ability.",
+    "Enhances the aesthetic value of fittings.",
+    "Enhances the reusability of pipes and fittings.",
+    "Makes joints leak proof.",
+    "No hard stains on hands.",
+    "Pipes can be put to use fast and can be dismantled when required.",
+    "Long Shelf-life of 12 months from the date of manufacturing."
+  ],
+  precaution: [],
+  price: []
 }
 ]

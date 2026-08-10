@@ -5,36 +5,33 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   FiChevronDown,
   FiHelpCircle,
-  FiSmile,
-  FiShield,
   FiMessageSquare,
 } from "react-icons/fi";
-import { FaCheckCircle } from "react-icons/fa";
 
 const faqData = [
   {
     id: 1,
-    question: "Is Wembley’s Quickfix safe for school projects and crafts?",
+    question: "What materials can QuickFix adhesives bond?",
     answer:
-      "Yes, Wembley's Quickfix formulations for arts, crafts, and stationery are engineered to be non-toxic, eco-friendly, and perfectly safe for students under standard usage conditions.",
+      "Different QuickFix products are designed to bond materials such as wood, glass, ceramics, leather, rubber, paper, fabrics, metals, and many plastics. Always select the adhesive recommended for your specific application.",
   },
   {
     id: 2,
-    question: "How long does it take for the glue to bond and dry completely?",
+    question: "Are QuickFix products suitable for industrial applications?",
     answer:
-      "Our advanced instant bonding technology establishes initial tensile surface attachment within 10 to 30 seconds. Complete structural cross-linking and full chemical cure finish inside 2 to 4 hours.",
+      "Yes. QuickFix manufactures products for household, DIY, commercial, plumbing, construction, woodworking, automotive, and industrial applications.",
   },
   {
     id: 3,
-    question: "Which surfaces are compatible with Quickfix ultra adhesives?",
+    question: "How should QuickFix adhesives be stored?",
     answer:
-      "Quickfix matrix structures are optimized to securely bind multiple substrates including ceramics, acrylic plastics, wood fibers, industrial leather, glass layers, and high-density polymers.",
+      "Storage instructions vary by product, but most should be stored in unopened containers in a cool, dry location away from excessive heat or freezing conditions.",
   },
   {
     id: 4,
-    question: "What is the shelf life of Quickfix products?",
+    question: "Does Wembley Laboratories have its own R&D and quality control?",
     answer:
-      "When stored in a cool, dry place away from direct sunlight with the cap tightly sealed, Quickfix adhesives maintain maximum potency for up to 24 months.",
+      "Yes. Wembley Laboratories operates a dedicated R&D laboratory and follows stringent quality control procedures throughout manufacturing and packaging.",
   },
 ];
 
@@ -93,7 +90,7 @@ export default function FaqSection() {
 
             {/* Subtext */}
             <p className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal max-w-md">
-              Got questions about drying time, surface compatibility, or strength? Here is everything you need to know about getting an unbreakable bond with Wembley’s Quickfix.
+            Have questions about our adhesive solutions, product applications, or manufacturing standards? Explore the answers to some of the most common queries and discover why professionals and consumers trust Wembley Laboratories for reliable bonding solutions.
             </p>
 
             {/* ======================================================= */}
@@ -101,48 +98,8 @@ export default function FaqSection() {
             {/* ======================================================= */}
             <div className=" max-w-md">
               
-
               <hr className="border-zinc-100 my-2" />
 
-              {/* 3 Metric Bars */}
-              <div className="space-y-3.5">
-                
-                {/* 1. Success Rate (BLUE) */}
-                <div className="space-y-1">
-                  <div className="flex justify-between sm:text-lg text-sm  text-zinc-800">
-                    <span className="flex items-center gap-1.5">
-                      Success Rate
-                    </span>
-                    <span className="text-blue-700 font-bold">98%</span>
-                  </div>
-                  <div className="w-full h-2 bg-zinc-100 rounded-full overflow-hidden">
-                    <div className="w-[98%] h-full bg-blue-600 rounded-full" />
-                  </div>
-                </div>
- {/* 1. Success Rate (BLUE) */}
-                <div className="space-y-1">
-                  <div className="flex justify-between sm:text-lg text-sm  text-zinc-800">
-                    <span className="flex items-center gap-1.5">
-                      Success Rate
-                    </span>
-                    <span className="text-blue-700 font-bold">88%</span>
-                  </div>
-                  <div className="w-full h-2 bg-zinc-100 rounded-full overflow-hidden">
-                    <div className="w-[88%] h-full bg-blue-600 rounded-full" />
-                  </div>
-                </div> {/* 1. Success Rate (BLUE) */}
-                <div className="space-y-1">
-                  <div className="flex justify-between sm:text-lg text-sm  text-zinc-800">
-                    <span className="flex items-center gap-1.5">
-                      Success Rate
-                    </span>
-                    <span className="text-blue-700 font-bold">60%</span>
-                  </div>
-                  <div className="w-full h-2 bg-zinc-100 rounded-full overflow-hidden">
-                    <div className="w-[60%] h-full bg-blue-600 rounded-full" />
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Contact Support Footer */}
@@ -223,7 +180,6 @@ export default function FaqSection() {
               );
             })}
           </div>
-
         </div>
       </div>
     </section>

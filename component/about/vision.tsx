@@ -10,18 +10,26 @@ import {
   FiCheckCircle,
   FiZap,
   FiGlobe,
+  FiLink,
+  FiShield,
+  FiUsers,
 } from "react-icons/fi";
+import { FaFlask, FaLightbulb } from "react-icons/fa";
 
 const missionPillars = [
-  { icon: FiCheckCircle, text: "100% Non-Toxic & Eco-Friendly Formulations" },
-  { icon: FiZap, text: "Instant 30-Second Tensile Adhesion" },
-  { icon: FiAward, text: "Industrial Grade Multi-Surface Versatility" },
+  { icon: FaLightbulb, text: "Continuous Product Innovation" }, 
+  
+  { icon: FiShield, text: "Reliable Quality Standards" },
+  
+  { icon: FiUsers, text: "Customer-Focused Solutions" }, 
 ];
 
 const visionPillars = [
-  { icon: FiGlobe, text: "Global Leadership in Sustainable Adhesives" },
-  { icon: FiTarget, text: "Zero-VOC & Clean Chemical Manufacturing" },
-  { icon: FiCompass, text: "Pioneering Next-Gen Smart Polymer Tech" },
+  { icon: FiAward, text: "Consistent Product Quality" },
+  
+  { icon: FiLink, text: "Reliable Bonding Performance" },
+  
+  { icon: FaFlask, text: "Continuous Research & Development" }, 
 ];
 
 export default function MissionVisionSection() {
@@ -56,11 +64,11 @@ export default function MissionVisionSection() {
           
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 tracking-tight leading-tight">
-            Our Mission & Our <span className="text-yellow-500">Values</span>
+            Our Mission & Our <span className="text-yellow-500"> Vision</span>
           </h2>
 
           <p className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal">
-            We are committed to delivering safe, ultra-strong adhesive solutions while pushing the boundaries of chemical safety and sustainable engineering.
+Driven by continuous innovation and uncompromising quality, we are committed to developing reliable adhesive solutions that meet the evolving needs of consumers and industries alike.
           </p>
         </div>
 
@@ -90,14 +98,14 @@ export default function MissionVisionSection() {
                 </div>
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 tracking-tight">
-                    Unbreakable Quality for Every Bond
+Delivering Quality in Every Product
                   </h3>
                 </div>
               </div>
 
               {/* Description */}
               <p className="text-zinc-600 text-sm sm:text-base leading-relaxed font-normal">
-                To empower students, artisans, and industrial professionals with non-toxic, high-performance adhesive technology that guarantees maximum structural integrity, zero hassle, and total peace of mind.
+Our mission is to develop high-quality adhesive solutions through advanced research, carefully controlled manufacturing, and consistent quality standards, ensuring dependable performance for every application.
               </p>
 
               {/* Key Metric / Highlights */}
@@ -120,8 +128,8 @@ export default function MissionVisionSection() {
 
             {/* Bottom Status Bar */}
             <div className="mt-8 pt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-zinc-500">
-              <span>Goal Target: Everyday Excellence</span>
-              <span className="text-blue-700 font-bold">100% Verified Quality</span>
+              <span>Engineered for Reliability</span>
+              <span className="text-blue-700 font-bold">Built on Trust</span>
             </div>
           </motion.div>
 
@@ -146,14 +154,14 @@ export default function MissionVisionSection() {
                 </div>
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 tracking-tight">
-                    Pioneering Next-Gen Adhesive Safety
+                    Advancing Reliable Adhesive Solutions
                   </h3>
                 </div>
               </div>
 
               {/* Description */}
               <p className="text-zinc-600 text-sm sm:text-base leading-relaxed font-normal">
-                To set the benchmark as the world’s most trusted adhesive brand by revolutionizing polymer safety, pioneering eco-friendly alternatives, and continuously exceeding performance standards.
+Our vision is to strengthen our position as a trusted adhesive manufacturer by continuously improving our products, embracing innovation, and delivering dependable bonding solutions that customers can rely on across diverse applications.
               </p>
 
               {/* Key Metric / Highlights */}
@@ -176,8 +184,8 @@ export default function MissionVisionSection() {
 
             {/* Bottom Status Bar */}
             <div className="mt-8 pt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-zinc-500">
-              <span>Target Horizon: 2030 & Beyond</span>
-              <span className="text-amber-600 font-bold">Eco-First Commitment</span>
+              <span>Inspired by Innovation</span>
+              <span className="text-amber-600 font-bold">Driven by Quality</span>
             </div>
           </motion.div>
 

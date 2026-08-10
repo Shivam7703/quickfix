@@ -9,23 +9,23 @@ import { about } from "@/assets";
 const processSteps = [
   {
     stepNumber: "01",
-    title: "Surface Prep & Analysis",
-    description: "Great bonds start with clean surfaces. We design our adhesives to work optimally once dust, oil, and moisture are cleared for maximum surface contact.",
+    title: "Quality Raw Materials",
+    description: "Raw materials undergo chemical and physical testing before production to maintain product quality and consistency.",
   },
   {
     stepNumber: "02",
-    title: "Precision Application",
-    description: "Our pinpoint dispensing tech allows for an exact, controlled application. No mess, no runoff—just the perfect amount of high-strength formula exactly where you need it.",
+    title: "Controlled Manufacturing",
+    description: "Advanced production systems and process controls help ensure consistent manufacturing standards across every production batch.",
   },
   {
     stepNumber: "03",
-    title: "Instant Molecular Cure",
-    description: "Formulated with rapid-setting polymers, our glue cross-links instantly under light pressure to create a rock-solid, permanent hold in seconds.",
+    title: "Comprehensive Quality Testing",
+    description: "Products are tested throughout manufacturing and before dispatch to verify quality, reliability, and performance.",
   },
   {
     stepNumber: "04",
-    title: "Instant Molecular Cure",
-    description: "Formulated with rapid-setting polymers, our glue cross-links instantly under light pressure to create a rock-solid, permanent hold in seconds.",
+    title: "Distribution & Customer Support",
+    description: "A strong distribution network and dedicated customer support help deliver QuickFix products efficiently across India.",
   },
 
 ];
@@ -47,7 +47,8 @@ export default function Process() {
                 </span>
               </div>
               <h2 className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight leading-[1.15] max-w-xl">
-                Formulated for unbreakable target <span className="text-yellow-500">bond</span>
+                Manufacturing Built Around
+ <span className="text-yellow-500"> Quality</span>
               </h2>
             </div>
             <motion.div
@@ -68,7 +69,7 @@ export default function Process() {
               <div className="flex w-[70%] absolute bg-white shadow-xl shadow-black/30 rounded-lg items-stretch gap-4 px-4 py-3 bottom-2 -right-3">
                 <span className="w-1 bg-yellow-600 block shrink-0 rounded-full" />
                 <p className="text-zinc-800 text-xs md:text-sm leading-relaxed font-normal">
-                  Our process is engineered to maximize adhesive performance and reliability for every type of repair. By combining advanced chemical engineering with user-friendly application design, we ensure seamless, permanent fixes every single time.
+Every QuickFix product is manufactured through carefully controlled processes supported by research, quality inspection, and technical expertise to deliver consistent adhesive performance.
                 </p>
               </div>
             </motion.div>

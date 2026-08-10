@@ -127,13 +127,22 @@ import upvcValve2 from "@/assets/products/upvcvalve2.webp";
 
 import wemlac1 from "@/assets/products/wemlac.png";
 import wemlac2 from "@/assets/products/wemlac2.webp";
+import ptfetape from "@/assets/products/ptfe tape.jpg";
+import ptfetape2 from "@/assets/products/ptfe tape2.jpg";
+
+import multipurpose from "@/assets/products/multipurpose.png";
+import multipurpose2 from "@/assets/products/multipurpose2.jpg";
+
+import quickcolsh from "@/assets/products/wood sh.jpg";
+import quickcolsh2 from "@/assets/products/wood sh2.jpg";
+
 
 
 
 export {team,sus1,sus2,ceo, noimg,logo, banner1, banner2, banner3, about, about1, about2, choose, process, gal1, gal2, gal3, gal4, astm, isi,
 
     // product
-allPurposeAdhesive1, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper,  pvcSolventCement1, pvcSolventCement2,   pvcSolventCement3,
+allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcolsh, quickcolsh2, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper,  pvcSolventCement1, pvcSolventCement2,   pvcSolventCement3,
   pvcSolventCement4,
   pvcSolventCement5,
 

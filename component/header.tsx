@@ -81,7 +81,7 @@ const navLinks = [
       href: "#",
       subnav: [
         { name: "PTFE Tape", href: "/products/quickfix-ptfe-tape" },
-        { name: "Quickplumb", href: "/products/quickplumb" },
+        { name: "Quickplumb", href: "/products/quickplumb-liquid-pipe-sealant" },
       ],
     },
     {
@@ -100,7 +100,7 @@ const navLinks = [
         { name: "PVFix", href: "/products/pv-fix-clear-solvent-cement" },
         { name: "UPVC", href: "/products/quickfix-upvc-solvent-cement-blue" },
         { name: "UPVC Clear", href: "/products/quickfix-upvc-solvent-cement-clear" },
-        { name: "Multipurpose", href: "/products/multipurpose" },
+        { name: "Multipurpose", href: "/products/quickfix-multipurpose-solvent-cement" },
         { name: "Quickguard", href: "/products/quickguard-pvc-solvent-cement" },
       ],
     },

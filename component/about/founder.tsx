@@ -23,10 +23,11 @@ export default function AboutCeo() {
           {/* CEO Bio / Message */}
           <div className="space-y-4 text-slate-600 text-base md:text-lg leading-relaxed font-normal">
             <p className="text-xl font-medium text-slate-800 italic border-l-4 border-blue-600 pl-4 py-1 bg-slate-50/50 rounded-r-lg">
-              &ldquo;Driving innovation and building technological ecosystems that empower businesses globally.&rdquo;
+              &ldquo;Guided by Innovation and Quality
+&rdquo;
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+At Wembley Laboratories, our leadership is driven by a commitment to innovation, quality, and manufacturing excellence. By investing in advanced research, precision production, and continuous improvement, we continue to strengthen the QuickFix legacy while delivering reliable adhesive solutions trusted by customers across industries.
             </p>
           </div>
 
@@ -39,10 +40,9 @@ export default function AboutCeo() {
                 <LuTrendingUp className="w-6 h-6" />
               </div>
               <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">
-                Our Software
-              </h3>
+Research-Driven Development              </h3>
               <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-                Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo.
+Focused on continuous product improvement through dedicated research and technical expertise.
               </p>
             </div>
 
@@ -52,10 +52,9 @@ export default function AboutCeo() {
                 <LuSend className="w-6 h-6" />
               </div>
               <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">
-                Email Servers
-              </h3>
+Customer-Focused Solutions              </h3>
               <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-                Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo.
+Developing adhesive products that address practical applications across household, commercial, and industrial sectors.
               </p>
             </div>
 

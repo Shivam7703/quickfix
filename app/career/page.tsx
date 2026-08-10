@@ -5,7 +5,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-                  <AllBanner title='Career' para='Our pinpoint dispensing tech allows for an exact, controlled application. No mess, no runoff—just the need it.' slug="career"/>
+                  <AllBanner title='Career' para='Join a team driven by innovation, quality, and purpose. Grow your career while creating adhesive solutions trusted by industries worldwide.' slug="career"/>
                   <CareerSection/>
     </div>
   )

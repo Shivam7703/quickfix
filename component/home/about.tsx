@@ -30,9 +30,9 @@ const itemVariants: Variants = {
 
 export default function AboutSection() {
   const corporateHighlights = [
-    "ISO 9001:2015 Certified Manufacturing Tiers",
-    "Eco-Friendly & Non-Toxic Matrix Formulations",
-    "Eco-Friendly & Non-Toxic Matrix Formulations",
+    "Dedicated Research & Development",
+    "Stringent Quality Control",
+    "Nationwide Distribution Network",
   ];
 
   return (
@@ -120,7 +120,7 @@ export default function AboutSection() {
             <motion.div variants={itemVariants} className="flex items-center gap-3 group cursor-default">
               <span className="w-1.5 h-6 bg-yellow-500 block rounded-full group-hover:scale-y-125 transition-all duration-300 origin-center" />
               <span className="text-xs md:text-sm font-bold tracking-widest text-zinc-700 uppercase">
-                Everyday Fixing Solutions
+Precision Adhesive Solutions
               </span>
             </motion.div>
 
@@ -129,9 +129,9 @@ export default function AboutSection() {
               variants={itemVariants}
               className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight capitalize leading-tight"
             >
-              Lorem Ipsum Dollor Lorem{" "}
+              Reliable Bonding Solutions{" "}
               <span className="relative inline-block text-yellow-500">
-                Since 1970
+              & Industrial Applications
                 {/* Underline Accent */}
 
               </span>
@@ -143,11 +143,8 @@ export default function AboutSection() {
               variants={itemVariants}
               className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal"
             >
-              Wembley Laboratories has remained at the absolute forefront of manufacturing high-grade consumer, institutional, and custom B2B adhesive arrays. From our hallmark flagship formulation,{" "}
-              <strong className="text-zinc-900 font-semibold ">
-                Quickfix
-              </strong>
-              , to our comprehensive custom industrial resins, we formulate products engineered for strength.
+             QuickFix, the flagship brand of Wembley Laboratories, offers a comprehensive range of adhesives developed for repair, maintenance, DIY, plumbing, construction, manufacturing, and industrial applications. Every product is manufactured with carefully selected raw materials and stringent quality control to deliver consistent performance and dependable bonding.
+
             </motion.p>
 
             {/* Feature Check Grid list (Uncommented & Dynamic Ready) */}
@@ -177,7 +174,7 @@ export default function AboutSection() {
 
                 <div className="flex flex-wrap items-center gap-1 mt-3">
                   {/* ASTM Badge Container */}
-                  <div className="group relative p-2 bg-gray-50 hover:bg-white rounded-xl border border-gray-200/80 hover:border-yellow-500/40 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="group relative p-2transition-all duration-300">
                     <Image
                       src={astm}
                       alt="ASTM Certification"
@@ -186,14 +183,14 @@ export default function AboutSection() {
                   </div>
 
                   {/* ISI Badge Container */}
-                  <div className="group relative p-2 bg-gray-50 hover:bg-white rounded-xl border border-gray-200/80 hover:border-yellow-500/40 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="group relative p-2  transition-all duration-300">
                     <Image
                       src={isi}
                       alt="ISI Certification"
                       className="sm:h-23 h-16 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <p className="text-zinc-600 text-sm mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veniam obcaecati. Qui impedit quam reprehenderit.</p>
+                  <p className="text-zinc-600 text-xs mt-3">Every QuickFix product is developed through continuous innovation and carefully tested to ensure dependable quality and performance.</p>
                 </div>
               </motion.div>
             </div>

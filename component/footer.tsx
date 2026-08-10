@@ -42,10 +42,10 @@ export default function Footer() {
             
             <div className="space-y-2">
               <h4 className="text-blue-800 text-sm md:text-base font-bold tracking-tight">
-                Bonding Strength Through Innovation
+Built on Innovation & Experience
               </h4>
               <p className="text-zinc-500 text-xs md:text-sm leading-relaxed max-w-sm">
-                Quickfix is a trusted adhesive brand dedicated to delivering instant, durable, and reliable bonding solutions for everyday repairs and professional applications.
+Discover the research, manufacturing capabilities, quality systems, and decades of adhesive expertise that continue to make QuickFix one of India's trusted adhesive brands.
               </p>
             </div>
           </div>

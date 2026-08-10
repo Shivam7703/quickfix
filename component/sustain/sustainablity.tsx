@@ -58,25 +58,25 @@ export default function Sustain() {
           {/* Right Content */}
           <div className="lg:col-span-6 space-y-6">
             <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-yellow-700 bg-yellow-50 border border-yellow-200 uppercase">
-              Sustainable Tomorrow
+           Responsible Manufacturing
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Pioneering <span className="text-yellow-500">Green Energy</span> & Circular Systems
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+              Building a More Sustainable <span className="text-yellow-500"> Future</span>
             </h2>
             <p className="text-slate-600 leading-relaxed text-base md:text-lg">
-              We are committed to reducing environmental impact through cutting-edge technologies and sustainable operational practices. Our goal is to create long-term ecological balance without compromising performance.
+At Quickfix, sustainability is more than a responsibility it's a part of how we design, manufacture, and deliver our products. By embracing smarter processes, efficient resource management, and continuous innovation, we create high-performance adhesive solutions that support long-term value for our customers, our communities, and the environment. 
             </p>
             <ul className="space-y-3 pt-2 text-slate-700 font-medium text-sm md:text-base">
               <li className="flex items-center gap-3">
                 <FaCheckCircle className="text-yellow-500 w-5 h-5 flex-shrink-0" />
-                <span>100% renewable energy integration</span>
+                <span>Responsible Manufacturing Practices</span>
               </li>
               <li className="flex items-center gap-3">
                 <FaCheckCircle className="text-yellow-500 w-5 h-5 flex-shrink-0" />
-                <span>Zero-waste manufacturing lifecycle</span>
+                <span>Continuous Process Improvement</span>
               </li>
             </ul>
-                       <Buttonmain text="Explore More" href="mailto:info@quickfix.com" variant="primary"/>
+                       <Buttonmain text="Learn More" href="/contact-us" variant="primary"/>
 
           </div>
         </motion.div>
@@ -99,9 +99,9 @@ export default function Sustain() {
             <div className="w-14 h-14 rounded-2xl bg-yellow-100 text-yellow-600 flex items-center justify-center mb-6 group-hover:bg-yellow-400 group-hover:text-slate-950 transition-colors duration-300">
               <LuZap className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-yellow-600 transition-colors">Clean Energy</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-yellow-600 transition-colors"> Efficient Manufacturing</h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-              Transitioning operating frameworks to high-efficiency solar and wind energy grids for continuous clean operation.
+We optimize our production processes to reduce material waste, improve efficiency, and maintain the highest standards of product quality.
             </p>
           </motion.div>
 
@@ -114,9 +114,10 @@ export default function Sustain() {
             <div className="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
               <LuRecycle className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Circular Economy</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Resource Responsibility
+</h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-              Revisiting product life cycles to ensure materials are recycled, reused, and continuously kept out of landfills.
+              We promote responsible use of raw materials and manufacturing resources to support sustainable operations and long-term environmental stewardship.
             </p>
           </motion.div>
 
@@ -129,9 +130,9 @@ export default function Sustain() {
             <div className="w-14 h-14 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center mb-6 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300">
               <LuLeaf className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-red-600 transition-colors">Carbon Reduction</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-red-600 transition-colors"> Innovation & Quality</h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-              Targeted initiatives engineered to measure, manage, and eliminate direct carbon emissions across all sectors.
+             By investing in advanced technologies and continuous product development, we create adhesive solutions that deliver superior performance while supporting responsible growth.
             </p>
           </motion.div>
         </motion.div>
@@ -151,21 +152,23 @@ export default function Sustain() {
               Sustainable Tomorrow
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Driving <span className="text-yellow-500">Positive Change</span> For Future Generations
+              Building a Better Future Through <span className="text-yellow-500">Responsible</span> Innovation
             </h2>
             <p className="text-slate-600 leading-relaxed text-base md:text-lg">
-              Sustainability isn't just an afterthought—it's at the core of everything we build. Through strategic innovation, we ensure our global operations leave a lasting positive footprint on the planet.
+At Quickfix, sustainability is part of our commitment to continuous improvement. By embracing responsible manufacturing, efficient operations, and innovative product development, we strive to create high-performance adhesive solutions that deliver lasting value while supporting a more sustainable future.
             </p>
 
             {/* Quick Stats Highlights */}
-            <div className="grid grid-cols-2 gap-4 pt-2">
-              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <span className="text-3xl font-black text-blue-600">85%</span>
-                <p className="text-xs font-semibold text-slate-500 mt-1">Reduction in Emissions</p>
+            <div className="flex gap-4 pt-2">
+              <div className="p-4 rounded-2xl bg-slate-50 border w-max border-slate-200/80">
+                <span className="text-lg  sm:text-xl font-bold text-blue-600">Quality-Driven</span>
+                <p className="text-sm  font-semibold text-slate-500 mt-1">Manufacturing Excellence
+</p>
               </div>
-              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <span className="text-3xl font-black text-blue-600">100k+</span>
-                <p className="text-xs font-semibold text-slate-500 mt-1">Trees Offset Annually</p>
+              <div className="p-4 rounded-2xl bg-slate-50 border w-max  border-slate-200/80">
+                <span className="text-lg  sm:text-xl font-bold  text-blue-600">Innovation-Focused</span>
+                <p className="text-sm font-semibold text-slate-500 mt-1">Continuous Product Development
+</p>
               </div>
             </div>
 

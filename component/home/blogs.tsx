@@ -46,7 +46,7 @@ export default function BlogSection() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 tracking-tight leading-[1.15] max-w-xl">
-              Ideas & guides from our <span className="text-yellow-500">Fix-it Experts</span>
+              Knowledge & Product <span className="text-yellow-500">Information</span>
             </h2>
           </div>
 
@@ -54,7 +54,8 @@ export default function BlogSection() {
           <div className="lg:col-span-5 space-y-4 text-left lg:pl-6">
             <span className="w-12 h-0.75 bg-amber-500 block rounded-full" />
             <p className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal">
-              Stay updated with clever DIY hacks, quick home repair tutorials, and creative crafting tips using India&apos;s trusted instant adhesive.
+              Stay informed with product information, application guidance, usage recommendations, and updates from the QuickFix range to help you choose the right adhesive solution.
+
             </p>
           </div>
         </div>
