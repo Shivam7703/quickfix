@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { FiCheckCircle, FiAward } from "react-icons/fi";
 import Buttonmain from "../global/button";
-import { about, astm, isi } from "@/assets";
+import { about, astm, img3, img1, isi, img9, img2, img4, processimg } from "@/assets";
 
 // Stagger animation container variants
 const containerVariants: Variants = {
@@ -55,7 +55,7 @@ export default function AboutSection() {
               className="w-full h-full relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100  transition-all duration-500 hover:shadow-yellow-500/15"
             >
               <Image
-                src={about}
+                src={processimg}
                 alt="Wembley's Premium Production Operations"
                 fill
                 className="object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
@@ -84,11 +84,11 @@ export default function AboutSection() {
                   ease: "easeInOut",
                 },
               }}
-              className="absolute -left-2 -bottom-6 sm:-left-6 bg-white p-5 rounded-2xl shadow-2xl flex items-center gap-4 z-20 max-w-96 group-hover:bottom-2 transition-all duration-300"
+              className="absolute -right-2 -bottom-6 sm:-right-6 bg-white p-5 rounded-2xl shadow-2xl flex items-center gap-4 z-20 max-w-96 group-hover:bottom-2 transition-all duration-300"
             >
               <div className="relative">
                 <div className="w-12 h-12 rounded-full bg-yellow-500 text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-yellow-500/30 shrink-0">
-                  50+
+                  70+
                 </div>
 
               </div>
@@ -103,6 +103,7 @@ export default function AboutSection() {
               </div>
             </motion.div>
 
+<Image src={img3} alt="quickfix" className="-top-8 -left-8 border-[2px] border-white  rounded-2xl  absolute w-32 h-32 sm:h-56 sm:w-56"/>
           </div>
 
           {/* ======================================================= */}
@@ -130,7 +131,7 @@ Precision Adhesive Solutions
               className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight capitalize leading-tight"
             >
               Reliable Bonding Solutions{" "}
-              <span className="relative inline-block text-yellow-500">
+              <span className=" text-yellow-500">
               & Industrial Applications
                 {/* Underline Accent */}
 

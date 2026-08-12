@@ -5,8 +5,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiArrowDownRight, FiPlay, FiUsers } from "react-icons/fi";
 // Right side product banner image import karein
-import { about, gal2, gal4 } from "@/assets";
+import { about, gal2, gal4, img4 } from "@/assets";
 import { BsFillPatchCheckFill } from "react-icons/bs";
+import { RiTeamFill } from "react-icons/ri";
 
 const featuresData = [
   {
@@ -123,8 +124,8 @@ QuickFix products are developed to provide dependable bonding solutions across h
               className="w-full h-full relative overflow-hidden "
             >
               <Image
-                src={about}
-                alt="Quickfix Craft and Repair Bonding Showcase"
+                src={img4}
+                alt="Quickfix"
                 fill
                 className="object-cover object-center"
                 sizes="(max-w-1024px) 100vw, 50vw"
@@ -145,10 +146,10 @@ Our team is committed towards continually improving its Quality Management syste
 
               {/* Play Button Icon */}
               <button
-                aria-label="Play Video"
-                className="w-12 h-12 rounded-full bg-white text-red-700 flex items-center justify-center shrink-0 shadow-md hover:scale-105 active:scale-95 transition-transform duration-300 cursor-pointer"
+                className="w-12 h-12 rounded-full bg-white text-red-700 flex items-center justify-center shrink-0 shadow-md hover:scale-105 active:scale-95 transition-transform duration-300"
               >
-                <FiPlay size={20} className="fill-current ml-1" />
+                <RiTeamFill 
+ size={25} className="fill-current" />
               </button>
             </motion.div>
           </div>

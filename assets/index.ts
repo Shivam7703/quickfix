@@ -1,25 +1,41 @@
 import logo from "@/assets/logo.png";
-import banner1 from "@/assets/home/banner1.webp";
-import banner2 from "@/assets/home/banner2.webp";
-import banner3 from "@/assets/home/banner3.webp";
+import banner1 from "@/assets/home/Banner1.webp";
+import banner2 from "@/assets/home/Banner2.webp";
+import banner3 from "@/assets/home/Banner3.webp";
 import about from "@/assets/home/about-us.webp";
-import about1 from "@/assets/home/about1.png";
-import about2 from "@/assets/home/about2.png";
-import process from "@/assets/home/choose.png";
-import choose from "@/assets/home/process.png";
-import gal1 from "@/assets/home/gal1.jpg";
-import gal2 from "@/assets/home/gal2.jpg";
-import gal3 from "@/assets/home/gal3.jpg";
-import gal4 from "@/assets/home/gal4.jpg";
+import about1 from "@/assets/home/about1.webp";
+import img1 from "@/assets/home/img1.webp";
+import img2 from "@/assets/home/img2.webp";
+import img3 from "@/assets/home/img3.webp";
+import img4 from "@/assets/home/img4.png";
+import img5 from "@/assets/home/img5.webp";
+import img6 from "@/assets/home/img6.webp";
+import img7 from "@/assets/home/img7.webp";
+import img8 from "@/assets/home/img8.webp";
+import img9 from "@/assets/home/img9.webp";
+import img10 from "@/assets/home/img10.webp";
+import img11 from "@/assets/home/img11.webp";
+import img12 from "@/assets/home/img12.webp";
+import img13 from "@/assets/home/img13.webp";
+
+
+import processimg from "@/assets/home/choose.png";
+import gal1 from "@/assets/home/gal1.webp";
+import gal2 from "@/assets/home/gal2.webp";
+import gal3 from "@/assets/home/gal3.webp";
+import gal4 from "@/assets/home/gal4.webp";
 import ceo from "@/assets/home/ceo.jpg"
-import sus1 from "@/assets/home/sustain1.jpg"
-import sus2 from "@/assets/home/sustain2.jpg"
-import team from "@/assets/home/team.jpg"
-import astm from "@/assets/home/ASTM.jpg";
-import isi from "@/assets/home/isi.png";
+import sus1 from "@/assets/home/sustain1.webp"
+import sus2 from "@/assets/home/sustain2.webp"
+import team from "@/assets/home/team.webp"
+import astm from "@/assets/home/ASTM.webp";
+import isi from "@/assets/home/isi.webp";
+import blg1 from "@/assets/home/blg1.png";
+import blg2 from "@/assets/home/blg2.png";
+import blg3 from "@/assets/home/blg3.png";
 
 // products
-import noimg from "@/assets/products/noimage.jpg";
+import noimg from "@/assets/products/noimage.webp";
 
 import allPurposeAdhesive1 from "@/assets/products/all purpose adhesive.webp";
 import allPurposeAdhesive2 from "@/assets/products/all purpose adhesive2.webp";
@@ -28,7 +44,7 @@ import cpvc1 from "@/assets/products/cpvc1.webp";
 import cpvc2 from "@/assets/products/cpvc2.webp";
 import cpvc3 from "@/assets/products/cpvc3.webp";
 import cpvc4 from "@/assets/products/cpvc4.webp";
-import cpvc5 from "@/assets/products/cpvc5.png";
+import cpvc5 from "@/assets/products/cpvc5.webp";
 
 import cpvcValve1 from "@/assets/products/cpvcvalve.webp";
 import cpvcValve2 from "@/assets/products/cpvcvalve2.webp";
@@ -69,7 +85,7 @@ import quickcol from "@/assets/products/quickcol.webp";
 
 import quickguard1 from "@/assets/products/quickguard.webp";
 import quickguard2 from "@/assets/products/quickguard2.webp";
-import quickguard3 from "@/assets/products/quickguard3.png";
+import quickguard3 from "@/assets/products/quickguard3.webp";
 import quickguard4 from "@/assets/products/quickguard4.webp";
 
 import quickgum1 from "@/assets/products/quickgum.webp";
@@ -100,7 +116,7 @@ import quicktite1 from "@/assets/products/quicktite.webp";
 import quicktite2 from "@/assets/products/quicktite2.webp";
 import quicktite3 from "@/assets/products/quicktite3.webp";
 
-import sr525 from "@/assets/products/sr525.jpeg";
+import sr525 from "@/assets/products/sr-525.webp";
 
 import sr5351 from "@/assets/products/sr535.webp";
 import sr5352 from "@/assets/products/sr5352.webp";
@@ -125,21 +141,33 @@ import upvcClear3 from "@/assets/products/upvc clear3.webp";
 import upvcValve1 from "@/assets/products/upvcvalve.webp";
 import upvcValve2 from "@/assets/products/upvcvalve2.webp";
 
-import wemlac1 from "@/assets/products/wemlac.png";
+import wemlac1 from "@/assets/products/wemlac.webp";
 import wemlac2 from "@/assets/products/wemlac2.webp";
-import ptfetape from "@/assets/products/ptfe tape.jpg";
-import ptfetape2 from "@/assets/products/ptfe tape2.jpg";
+import ptfetape from "@/assets/products/ptfe tape.webp";
+import ptfetape2 from "@/assets/products/ptfe tape2.webp";
 
-import multipurpose from "@/assets/products/multipurpose.png";
-import multipurpose2 from "@/assets/products/multipurpose2.jpg";
+import multipurpose from "@/assets/products/multipurpose.webp";
+import multipurpose2 from "@/assets/products/multipurpose2.webp";
 
-import quickcolsh from "@/assets/products/wood sh.jpg";
-import quickcolsh2 from "@/assets/products/wood sh2.jpg";
-
-
+import quickcolsh from "@/assets/products/wood sh.webp";
+import quickcolsh2 from "@/assets/products/wood sh2.webp";
 
 
-export {team,sus1,sus2,ceo, noimg,logo, banner1, banner2, banner3, about, about1, about2, choose, process, gal1, gal2, gal3, gal4, astm, isi,
+
+
+export {team,sus1,sus2,ceo, noimg,logo, banner1, banner2, banner3, about, about1, img1,
+  img2, blg1,blg2,blg3,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+  img13, processimg, gal1, gal2, gal3, gal4, astm, isi,
 
     // product
 allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcolsh, quickcolsh2, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper,  pvcSolventCement1, pvcSolventCement2,   pvcSolventCement3,

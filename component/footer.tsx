@@ -51,33 +51,33 @@ Discover the research, manufacturing capabilities, quality systems, and decades 
           </div>
 
           {/* COLUMN 2: COMPANY INTERNAL LINKS */}
-          <div className="lg:col-span-2 text-left space-y-4">
-            <h3 className="text-blue-700 text-base md:text-lg font-bold tracking-tight">
-              Company
-            </h3>
-            <ul className="space-y-2.5 text-xs md:text-sm font-medium text-zinc-700">
-              <li><Link href="/about" className="hover:text-blue-600 transition-colors">About Us</Link></li>
-              <li><Link href="/story" className="hover:text-blue-600 transition-colors">Career</Link></li>
-             
-              <li><Link href="/sustainability" className="hover:text-blue-600 transition-colors">sustainability</Link></li>
-              <li><Link href="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-blue-600 transition-colors">T&C</Link></li>
-            </ul>
-          </div>
+         {/* COLUMN 2: COMPANY INTERNAL LINKS */}
+<div className="lg:col-span-2 text-left space-y-4">
+  <h3 className="text-blue-700 text-base md:text-lg font-bold tracking-tight">
+    Company
+  </h3>
+  <ul className="space-y-2.5 text-xs md:text-sm font-medium text-zinc-700">
+    <li><Link href="/about-us" className="hover:text-blue-600 transition-colors">About Us</Link></li>
+    <li><Link href="/career" className="hover:text-blue-600 transition-colors">Career</Link></li>
+    <li><Link href="/sustainability" className="hover:text-blue-600 transition-colors">Sustainability</Link></li>
+    <li><Link href="/blogs" className="hover:text-blue-600 transition-colors">Blogs</Link></li>
+    {/* <li><Link href="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link></li> */}
+    {/* <li><Link href="/terms" className="hover:text-blue-600 transition-colors">T&C</Link></li> */}
+  </ul>
+</div>
 
-          {/* COLUMN 3: PRODUCTS CATEGORY 1 LINKS */}
-         <div className="lg:col-span-2 text-left space-y-4">
+{/* COLUMN 3: PRODUCTS CATEGORY 1 LINKS */}
+<div className="lg:col-span-2 text-left space-y-4">
   <h3 className="text-blue-700 text-base md:text-lg font-bold tracking-tight">
     Products
   </h3>
-
   <ul className="space-y-2.5 text-xs md:text-sm font-medium text-zinc-700">
-    <li><Link href="/products/quickfix-all-purpose-adhesive" className="hover:text-blue-600 transition-colors">Quickfix All Purpose Adhesive</Link></li>
-    <li><Link href="/products/super-glue-cyanoacrylate-adhesive" className="hover:text-blue-600 transition-colors">Super Glue</Link></li>
+    <li><Link href="/products/quickfix-all-purpose-adhesive" className="hover:text-blue-600 transition-colors">Quickfix All Purpose</Link></li>
+    <li><Link href="/products/super-glue-cyanoacrylate-adhesive" className="hover:text-blue-600 transition-colors">Superglue</Link></li>
     <li><Link href="/products/durobond-cyanoacrylate-adhesive" className="hover:text-blue-600 transition-colors">Durobond</Link></li>
-    <li><Link href="/products/super-glue-hv-700-rapid-hv-glue" className="hover:text-blue-600 transition-colors">Super Glue HV</Link></li>
+    <li><Link href="/products/super-glue-hv-700-rapid-hv-glue" className="hover:text-blue-600 transition-colors">Superglue HV</Link></li>
     <li><Link href="/products/quickgum-gluepen-coloured-synthetic-gum" className="hover:text-blue-600 transition-colors">Quickgum & Gluepen</Link></li>
-    <li><Link href="/products/quickkraft-white-glue" className="hover:text-blue-600 transition-colors">Quickkraft White Glue</Link></li>
+    <li><Link href="/products/quickkraft-white-glue" className="hover:text-blue-600 transition-colors">Quickkraft</Link></li>
     <li><Link href="/products/durofix-rubber-base-adhesive" className="hover:text-blue-600 transition-colors">Durofix</Link></li>
     <li><Link href="/products/durofix-535-rubber-base-adhesive" className="hover:text-blue-600 transition-colors">SR-535</Link></li>
     <li><Link href="/products/sr-525" className="hover:text-blue-600 transition-colors">SR-525</Link></li>
@@ -85,19 +85,18 @@ Discover the research, manufacturing capabilities, quality systems, and decades 
   </ul>
 </div>
 
-          {/* COLUMN 4: PRODUCTS CATEGORY 2 LINKS */}
-        <div className="lg:col-span-2 text-left space-y-4">
+{/* COLUMN 4: PRODUCTS CATEGORY 2 LINKS */}
+<div className="lg:col-span-2 text-left space-y-4">
   <h3 className="text-blue-700 text-base md:text-lg font-bold tracking-tight">
     More Products
   </h3>
-
   <ul className="space-y-2.5 text-xs md:text-sm font-medium text-zinc-700">
     <li><Link href="/products/quickseal-epoxy-putty" className="hover:text-blue-600 transition-colors">Quickseal</Link></li>
     <li><Link href="/products/quickseal-rapid" className="hover:text-blue-600 transition-colors">Quickseal Rapid</Link></li>
     <li><Link href="/products/quickseal-sanitary-epoxy-putty-white" className="hover:text-blue-600 transition-colors">Quickseal Sanitary</Link></li>
     <li><Link href="/products/quicktite-versatile-epoxy-adhesive" className="hover:text-blue-600 transition-colors">Quicktite</Link></li>
     <li><Link href="/products/quickfix-ptfe-tape" className="hover:text-blue-600 transition-colors">PTFE Tape</Link></li>
-    <li><Link href="/products/quickplumb" className="hover:text-blue-600 transition-colors">Quickplumb</Link></li>
+    <li><Link href="/products/quickplumb-liquid-pipe-sealant" className="hover:text-blue-600 transition-colors">Quickplumb</Link></li>
     <li><Link href="/products/quickfix-cpvc-solvent-cement" className="hover:text-blue-600 transition-colors">CPVC Solvent Cement</Link></li>
     <li><Link href="/products/quickfix-pvc-solvent-cement" className="hover:text-blue-600 transition-colors">PVC Solvent Cement</Link></li>
     <li><Link href="/products/quickfix-upvc-solvent-cement-blue" className="hover:text-blue-600 transition-colors">UPVC Solvent Cement</Link></li>

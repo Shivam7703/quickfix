@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { FiArrowRight, FiStar, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiArrowRight, FiStar } from "react-icons/fi";
 
 // Swiper Imports
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -49,6 +48,11 @@ export const CATEGORIES = [
   "Tile Cleaner",
 ] as const;
 
+// Interface for Props
+interface ProductSectionProps {
+  isHome?: boolean;
+}
+
 // =======================================================
 // 1. SEPARATE PRODUCT CARD FUNCTION COMPONENT
 // =======================================================
@@ -62,11 +66,11 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
   const rating = 5.0;
 
   return (
-    <div className="w-full flex flex-col text-left group bg-white rounded-2xl p-3 border border-zinc-300 hover:shadow-xl transition-all duration-300 select-none h-full my-2">
+    <div className="w-full  text-left group bg-white rounded-2xl p-3 border border-zinc-300 hover:shadow-xl transition-all duration-300 select-none my-2">
       {/* Card Image Container */}
       <Link
         href={`/products/${productSlug}`}
-        className="w-full aspect-square bg-radial from-white via-white  to-blue-100  rounded-xl p-4 flex items-center justify-center relative overflow-hidden mb-4 "
+        className="w-full aspect-square bg-radial from-white via-white to-blue-100 rounded-xl p-4 flex items-center justify-center relative overflow-hidden mb-4"
       >
         <Image
           src={product.imgs[0]}
@@ -80,7 +84,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
       </Link>
 
       {/* Product Information Details */}
-      <div className="space-y-1 px-1 flex-1 flex flex-col justify-between">
+      <div className="space-y-1 px-1 ">
         <div>
           <span className="text-[10px] md:text-xs uppercase tracking-wider font-semibold text-blue-600">
             {product.category}
@@ -94,7 +98,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
         </div>
 
         {/* Action Trigger Footer Segment */}
-        <div className="flex items-center flex-wrap-reverse justify-between gap-2 pt-3 border-t border-zinc-100/80 mt-2">
+        <div className="flex items-center flex-wrap-reverse justify-between gap-2  border-t border-zinc-100/80 mt-3">
           {/* Learn More Link */}
           <Link
             href={`/products/${productSlug}`}
@@ -125,9 +129,9 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
 }
 
 // =======================================================
-// 2. MAIN PRODUCT SECTION WITH SWIPER
+// 2. MAIN PRODUCT SECTION
 // =======================================================
-export default function ProductSection() {
+export default function ProductSection({ isHome = true }: ProductSectionProps) {
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const uniqueId = "product-section-slider";
 
@@ -137,37 +141,36 @@ export default function ProductSection() {
       ? Productdata
       : Productdata.filter((item) => item.category === activeCategory);
 
-const swiperOptions = {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
-  loop: true,
-  navigation: {
-    nextEl: `.${uniqueId}-next`,
-    prevEl: `.${uniqueId}-prev`,
-  },
-  breakpoints: {
-    468: {
-      slidesPerView: 2,
+  const swiperOptions = {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
-    824: {
-      slidesPerView: 3,
+    loop: true,
+    navigation: {
+      nextEl: `.${uniqueId}-next`,
+      prevEl: `.${uniqueId}-prev`,
     },
-    1080: {
-      slidesPerView: 4,
+    breakpoints: {
+      468: {
+        slidesPerView: 2,
+      },
+      824: {
+        slidesPerView: 3,
+      },
+      1080: {
+        slidesPerView: 4,
+      },
     },
-  },
-  modules: [Autoplay, Navigation],
-};
+    modules: [Autoplay, Navigation],
+  };
 
   return (
     <section className="w-full md:p-16 lg:px-20 lg:pb-24 py-7 bg-white text-center overflow-hidden">
       <div className="max-w-7xl relative mx-auto px-6">
-
         {/* TOP BRAND HEADER TITLE */}
         <div className="flex flex-col items-center space-y-4 mb-8 sm:mb-10">
           <div className="bg-blue-50/70 border border-blue-100 px-6 py-1 rounded-full">
@@ -176,7 +179,8 @@ const swiperOptions = {
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight max-w-2xl leading-tight">
-            Instant Bonding Solutions For <span className="text-yellow-500">Every Repair Need</span>
+            Instant Bonding Solutions For{" "}
+            <span className="text-yellow-500">Every Repair Need</span>
           </h2>
         </div>
 
@@ -197,56 +201,69 @@ const swiperOptions = {
           ))}
         </div>
 
-        {/* PRODUCTS SWIPER CONTAINER */}
-        <div className=" max-sm:px-8">
+        {/* CONDITIONALLY RENDER SLIDER OR GRID */}
+        {isHome ? (
+          /* SLIDER VIEW FOR HOME */
+          <>
+            <div className="max-sm:px-8">
+              {/* DESKTOP LEFT ARROW */}
+              <button
+                className={`${uniqueId}-prev hidden md:flex absolute -left-5 lg:-left-9 top-2/3 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-yellow-500 text-white shadow-lg hover:bg-blue-600 items-center justify-center transition-all duration-300 cursor-pointer`}
+                aria-label="Previous slide"
+              >
+                <FaArrowLeftLong size={22} />
+              </button>
 
-          {/* DESKTOP LEFT ARROW (Card Section Ke Left Floating Side) */}
-          <button
-            className={`${uniqueId}-prev hidden md:flex absolute -left-5 lg:-left-9 top-2/3 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-yellow-500 text-white shadow-lg hover:bg-blue-600 items-center justify-center transition-all duration-300 cursor-pointer`}
-            aria-label="Previous slide"
-          >
-            <FaArrowLeftLong 
-             size={22} />
-          </button>
+              {/* SWIPER CAROUSEL */}
+              <Swiper
+                key={activeCategory} // Reset Swiper state when category changes
+                {...swiperOptions}
+                className="w-full py-2"
+              >
+                {filteredProducts.map((product, index) => (
+                  <SwiperSlide key={product.id || index} className="py-1">
+                    <ProductCard product={product} priority={index < 4} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
 
-          {/* SWIPER CAROUSEL */}
-          <Swiper
-            key={activeCategory} // Reset Swiper state when category changes
-            {...swiperOptions}
-            className="w-full py-2"
-          >
+              {/* DESKTOP RIGHT ARROW */}
+              <button
+                className={`${uniqueId}-next hidden md:flex absolute -right-5 lg:-right-9 top-2/3 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-yellow-500 shadow-lg hover:bg-blue-600 text-white items-center justify-center transition-all duration-300 cursor-pointer`}
+                aria-label="Next slide"
+              >
+                <FaArrowRightLong size={22} />
+              </button>
+            </div>
+
+            {/* MOBILE NAVIGATION CONTROLS */}
+            <div className="flex md:hidden items-center justify-center gap-4 mt-6">
+              <button
+                className={`${uniqueId}-prev w-11 h-11 rounded-full bg-yellow-500 text-white flex items-center justify-center transition-all duration-200 cursor-pointer hover:bg-blue-500`}
+                aria-label="Previous slide mobile"
+              >
+                <FaArrowLeftLong size={22} />
+              </button>
+              <button
+                className={`${uniqueId}-next w-11 h-11 rounded-full bg-yellow-500 text-white flex items-center justify-center transition-all duration-200 cursor-pointer hover:bg-blue-500`}
+                aria-label="Next slide mobile"
+              >
+                <FaArrowRightLong size={22} />
+              </button>
+            </div>
+          </>
+        ) : (
+          /* GRID VIEW FOR PRODUCTS PAGE */
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-6 sm:gap-10">
             {filteredProducts.map((product, index) => (
-              <SwiperSlide key={index} className=" py-1">
-                <ProductCard product={product} priority={index < 4} />
-              </SwiperSlide>
+              <ProductCard
+                key={product.id || index}
+                product={product}
+                priority={index < 8}
+              />
             ))}
-          </Swiper>
-
-          {/* DESKTOP RIGHT ARROW (Card Section Ke Right Floating Side) */}
-          <button
-            className={`${uniqueId}-next hidden md:flex absolute -right-5 lg:-right-9 top-2/3 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-yellow-500 shadow-lg hover:bg-blue-600 text-white  items-center justify-center transition-all duration-300 cursor-pointer`}
-            aria-label="Next slide"
-          >
-            <FaArrowRightLong  size={22} />
-          </button>
-        </div>
-
-        {/* MOBILE NAVIGATION CONTROLS (Neeche Center Me) */}
-        <div className="flex md:hidden items-center justify-center gap-4 mt-6">
-          <button
-            className={`${uniqueId}-prev w-11 h-11 rounded-full bg-yellow-500 text-white flex items-center justify-center transition-all duration-200 cursor-pointer  hover:bg-blue-500`}
-            aria-label="Previous slide mobile"
-          >
-            <FaArrowLeftLong  size={22} />
-          </button>
-          <button
-            className={`${uniqueId}-next w-11 h-11 rounded-full bg-yellow-500 text-white flex items-center justify-center transition-all duration-200 cursor-pointer  hover:bg-blue-500`}
-            aria-label="Next slide mobile"
-          >
-            <FaArrowRightLong  size={22} />
-          </button>
-        </div>
-
+          </div>
+        )}
       </div>
     </section>
   );

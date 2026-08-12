@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { about } from "@/assets";
+import { about, sus2 } from "@/assets";
 
 
 const processSteps = [
@@ -59,16 +59,16 @@ export default function Process() {
               className="w-full aspect-4/3 relative  shadow-md border rounded-2xl  border-gray-100"
             >
               <Image
-                src={about}
+                src={sus2}
                 alt="Quickfix"
                 fill
                 className="object-cover rounded-2xl  object-center"
                 sizes="(max-w-1024px) 100vw, 45vw"
               />
               {/* Prototype Signature Blue Border Accent Callout text box */}
-              <div className="flex w-[70%] absolute bg-white shadow-xl shadow-black/30 rounded-lg items-stretch gap-4 px-4 py-3 bottom-2 -right-3">
+              <div className="flex w-[50%] absolute bg-white shadow-xl shadow-black/30 rounded-lg items-stretch gap-4 px-4 py-3 top-2 right-2">
                 <span className="w-1 bg-yellow-600 block shrink-0 rounded-full" />
-                <p className="text-zinc-800 text-xs md:text-sm leading-relaxed font-normal">
+                <p className="text-zinc-800 text-xs leading-[1.25] font-normal">
 Every QuickFix product is manufactured through carefully controlled processes supported by research, quality inspection, and technical expertise to deliver consistent adhesive performance.
                 </p>
               </div>

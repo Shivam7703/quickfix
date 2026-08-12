@@ -57,25 +57,7 @@ Customer-Focused Solutions              </h3>
 Developing adhesive products that address practical applications across household, commercial, and industrial sectors.
               </p>
             </div>
-
           </div>
-
-          {/* CEO Social Links & Contact */}
-          <div className="pt-4 flex items-center gap-4">
-            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Connect:</span>
-            <div className="flex gap-2">
-              <a href="#" className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-colors duration-200" aria-label="LinkedIn">
-                <LuLinkedin className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-400 hover:text-white transition-colors duration-200" aria-label="Twitter">
-                <LuFacebook className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-slate-800 hover:text-white transition-colors duration-200" aria-label="Email">
-                <LuMail className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-
         </div>
 
         {/* Right Image Column with Name Card (5 Columns wide on desktop) */}
@@ -83,10 +65,10 @@ Developing adhesive products that address practical applications across househol
           <div className="relative mx-auto max-w-md lg:max-w-none">
 
             {/* Background Decorative Element */}
-            <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur-lg opacity-20 transform -rotate-1"></div>
+            <div className="absolute -inset-2 bg-linear-to-r from-blue-600 to-indigo-600 rounded-3xl blur-lg opacity-20 transform -rotate-1"></div>
 
             {/* Main Image Container */}
-            <div className="relative h-[450px] sm:h-[520px] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 shadow-xl">
+            <div className="relative h-112.5 sm:h-140 rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 shadow-xl">
               <Image
                 src={ceo}
                 alt="Alexander Wright - CEO"

@@ -17,7 +17,7 @@ export default function Home() {
      <Boxes/>
      <AboutSection/>
      {/* <ServicesSection/> */}
-     <ProductSection/>
+     <ProductSection isHome={true}/>
      <WhyChooseSection/>
      <Process/>
      <FaqSection/>

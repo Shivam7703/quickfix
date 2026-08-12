@@ -7,26 +7,10 @@ import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 
 // User explicit asset path directive matching instructions
-import { about } from "@/assets";
+import { blg1 } from "@/assets";
+import { blogData } from "@/data/blogdata";
+import { createSlug } from "@/app/products/[slug]/page";
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "5 Smart Household Fixes You Can Do in Under 60 Seconds",
-    href: "/blog/household-fixes",
-  },
-  {
-    id: 2,
-    title: "5 Smart Household Fixes You Can Do in Under 60 Seconds",
-    href: "/blog/quick-repairs",
-  },
-  {
-    id: 3,
-    title: "5 Smart Household Fixes You Can Do in Under 60 Seconds",
-    href: "/blog/diy-hacks",
-  },
-
-];
 
 export default function BlogSection() {
   return (
@@ -65,19 +49,15 @@ export default function BlogSection() {
         {/* ======================================================= */}
         {/* Mobile par side-scroll slider layout aur desktop par standard columns breakdown */}
         <div className="flex lg:grid lg:grid-cols-3 gap-6 overflow-x-auto pb-6 lg:pb-0 no-scrollbar snap-x snap-mandatory px-6 lg:mx-0 lg:px-0">
-          {blogPosts.map((post, index) => (
-            <motion.div
+          {blogData.map((post:any) => (
+            <div
               key={post.id}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="min-w-[280px] sm:min-w-[320px] lg:min-w-0 w-full flex flex-col snap-start group text-left"
             >
               {/* 1. Rounded Image Card Container Frame */}
               <div className="w-full aspect-[1.53] relative rounded-xl overflow-hidden mb-4 select-none shadow-xs border border-gray-100">
                 <Image
-                  src={about}
+                  src={post.img || blg1}
                   alt={post.title}
                   fill
                   className="object-cover object-center transform group-hover:scale-103 transition-transform duration-500"
@@ -85,28 +65,25 @@ export default function BlogSection() {
                 />
 
                 {/* Absolute Top-Left Floating Badge Stamp */}
-                <div className="absolute top-3 left-3 bg-blue-700/90 text-white font-bold text-[10px] md:text-xs px-2.5 py-1 rounded-sm flex items-center justify-center gap-1 shadow-sm backdrop-blur-xs select-none">
-                  <span>★</span>
-                  <span>Blog</span>
-                </div>
               </div>
 
               {/* 2. Textual Metadata Segment Layout */}
               <div className="space-y-3 grow flex flex-col justify-between items-start px-0.5">
-                <h3 className="text-sm md:text-base font-black text-zinc-900 group-hover:text-blue-700 transition-colors tracking-tight leading-snug line-clamp-2">
+          <Link                   href={`/blogs/${createSlug(post.title)}`}
+>     <h3 className="text-sm md:text-base font-black text-zinc-900 group-hover:text-blue-700 transition-colors tracking-tight leading-snug line-clamp-2">
                   {post.title}
-                </h3>
+                </h3></Link> 
 
                 {/* Read More Custom Trigger Button block */}
                 <Link
-                  href={post.href}
+                  href={`/blogs/${createSlug(post.title)}`}
                   className="bg-blue-700 hover:bg-red-500 text-white text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-xs inline-flex items-center gap-1.5 transition-colors group/btn uppercase tracking-wider"
                 >
                   <span>Read More</span>
                   <FiArrowRight size={12} className="group-hover/btn:translate-x-1 transition-transform" />
                 </Link>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 

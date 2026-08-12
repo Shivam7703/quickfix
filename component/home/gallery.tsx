@@ -1,11 +1,8 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { FiLink } from "react-icons/fi";
-import { about, banner1, banner2, banner3 } from "@/assets";
+import {  img2, img3, img5, img6 } from "@/assets";
 
 // Images imports: Apne real paths ke sath replace karein
 
@@ -44,7 +41,7 @@ export default function GallerySection() {
             className="md:h-96 h-64 relative rounded-xl md:w-[60%] w-full overflow-hidden shadow-xs border border-gray-100 group"
           >
             <Image
-              src={banner1}
+              src={img2}
               alt="Wembley Labs R&D Formulation Process"
               fill
               className="object-cover object-center transform group-hover:scale-103 transition-transform duration-500"
@@ -61,7 +58,7 @@ export default function GallerySection() {
             className="md:h-96 h-64 relative rounded-xl md:w-[38%] w-full overflow-hidden shadow-xs border border-gray-100 group"
           >
             <Image
-              src={banner2}
+              src={img3}
               alt="Wembley Industrial Manufacturing Plant"
               fill
               className="object-cover object-center"
@@ -78,7 +75,7 @@ export default function GallerySection() {
             className="md:h-96 h-64 relative rounded-xl md:w-[38%] w-full overflow-hidden shadow-xs border border-gray-100 group"
           >
             <Image
-              src={banner3}
+              src={img5}
               alt="Wembley Industrial Manufacturing Plant"
               fill
               className="object-cover object-center"
@@ -95,7 +92,7 @@ export default function GallerySection() {
             className="md:h-96 h-64 relative rounded-xl md:w-[60%] w-full overflow-hidden shadow-xs border border-gray-100 group"
           >
             <Image
-              src={about}
+              src={img6}
               alt="Wembley Labs R&D Formulation Process"
               fill
               className="object-cover object-center transform group-hover:scale-103 transition-transform duration-500"

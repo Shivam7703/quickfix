@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiArrowDownRight, FiUsers } from "react-icons/fi";
 // Right side product banner image import karein
-import { about, choose } from "@/assets";
+import { about, img4, img9 } from "@/assets";
 import Buttonmain from "../global/button";
 
 
@@ -73,7 +73,7 @@ export default function Aboutchoose() {
               className="w-full h-full relative rounded-tr-[80px] rounded-bl-[80px] rounded-tl-2xl rounded-br-2xl overflow-hidden "
             >
               <Image
-                src={choose}
+                src={img9}
                 alt="Quickfix Craft and Repair Bonding Showcase"
                 fill
                 className="object-cover object-center"
