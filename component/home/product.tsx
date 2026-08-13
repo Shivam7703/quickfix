@@ -185,7 +185,7 @@ export default function ProductSection({ isHome = true }: ProductSectionProps) {
         </div>
 
         {/* CATEGORY TABS SYSTEM */}
-        <div className="flex items-center gap-2.5 overflow-x-auto pb-4 mb-6 sm:mb-8 w-full [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        <div className="flex items-center gap-2.5 overflow-x-auto pb-4 mb-6 sm:mb-8 w-full ">
           {CATEGORIES.map((cat) => (
             <button
               key={cat}
