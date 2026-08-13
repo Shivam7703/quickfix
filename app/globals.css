@@ -134,3 +134,13 @@ li{
     font-size: 1.75rem;
   }
 }
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 3px
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+

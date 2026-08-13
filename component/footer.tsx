@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiPhone, FiMail } from "react-icons/fi";
-import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 // Brand logo asset import (Apna real path use karein)
 import logo from "@/assets/logo.png"; 
@@ -114,26 +114,31 @@ Discover the research, manufacturing capabilities, quality systems, and decades 
               {/* Telephone Matrix Callout */}
               <div className="flex items-center gap-3 text-zinc-800 font-medium text-xs md:text-sm">
                 <FiPhone size={18} className="text-blue-700 shrink-0" />
-                <span className="whitespace-nowrap">1800-XXX-XXXX</span>
+                <span className="whitespace-nowrap"><a href="tel:+919805403302"></a>+91-9805403302</span>
               </div>
 
               {/* Email Communications Node */}
               <div className="flex items-center gap-3 text-zinc-800 font-medium text-xs md:text-sm break-all">
                 <FiMail size={18} className="text-blue-700 shrink-0" />
-                <span>Officialquickfix@gmail.com</span>
+                <span> <a href="info@wembleysquickfix.com">
+  info@wembleysquickfix.com</a>
+</span>
               </div>
             </div>
 
             {/* Social Communications Links Icon Badges */}
             <div className="flex items-center gap-2.5 pt-2">
-              <a href="#" aria-label="Instagram" className="w-7 h-7 bg-gradient-to-tr from-amber-500 via-red-500 to-purple-600 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
+              <a href="https://www.instagram.com/wembleyadhesives?utm_medium=copy_link"aria-label="Instagram" className="w-7 h-7 bg-gradient-to-tr from-amber-500 via-red-500 to-purple-600 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
                 <FaInstagram />
               </a>
-              <a href="#" aria-label="Facebook" className="w-7 h-7 bg-blue-600 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
+              <a href="https://www.facebook.com/wembleyadhesives" aria-label="Facebook" className="w-7 h-7 bg-blue-600 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
                 <FaFacebookF />
               </a>
-              <a href="#" aria-label="Twitter" className="w-7 h-7 bg-sky-500 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
+              <a href="https://x.com/wembleyadhesive?s=09" aria-label="Twitter" className="w-7 h-7 bg-sky-500 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
                 <FaTwitter />
+              </a>
+               <a href="https://www.linkedin.com/company/wembley-s-quickfix" aria-label="Twitter" className="w-7 h-7 bg-blue-600 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
+                <FaLinkedin />
               </a>
             </div>
           </div>

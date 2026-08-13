@@ -7,7 +7,8 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-
 import Image from "next/image";
 import { 
   FiPhone, FiMail, FiFacebook, FiInstagram, FiTwitter, 
-  FiChevronRight, FiChevronDown, FiMenu, FiX 
+  FiChevronRight, FiChevronDown, FiMenu, FiX, 
+  FiLinkedin
 } from "react-icons/fi";
 import { logo } from "@/assets";
 import Buttonmain from "./global/button";
@@ -189,19 +190,20 @@ const [isHidden, setIsHidden] = useState(false);
       {/* Top Bar - Contact info (Desktop Only) */}
       <div className="bg-gray-50 py-2 text-xs md:text-sm border-b hidden md:block">
         <div className="max-w-7xl mx-auto px-6 flex justify-end items-center gap-6 text-zinc-800 font-light">
-          <a href="tel:1800-XXX-XXXX" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
-            <FiPhone className="text-blue-600" /> 1800-XXX-XXXX
+          <a href="tel:+919805403302" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
+            <FiPhone className="text-blue-600" /> +91-9805403302
           </a>
           <span className="text-gray-300">|</span>
-          <a href="mailto:care@quickfix.com" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
-            <FiMail className="text-blue-600" /> care@quickfix.com
+          <a href="mailto:info@wembleysquickfix.com" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
+            <FiMail className="text-blue-600" /> info@wembleysquickfix.com
           </a>
           <span className="text-gray-300">|</span>
           <div className="flex items-center gap-3">
             <span className="text-gray-500">Follow</span>
-            <a href="#" className="hover:text-blue-600 transition-colors"><FiFacebook /></a>
-            <a href="#" className="hover:text-blue-600 transition-colors"><FiInstagram /></a>
-            <a href="#" className="hover:text-blue-600 transition-colors"><FiTwitter /></a>
+            <a href="https://www.facebook.com/wembleyadhesives" className="hover:text-blue-600 transition-colors"><FiFacebook /></a>
+            <a href="https://www.instagram.com/wembleyadhesives?utm_medium=copy_link" className="hover:text-blue-600 transition-colors"><FiInstagram /></a>
+            <a href="https://x.com/wembleyadhesive?s=09" className="hover:text-blue-600 transition-colors"><FiTwitter /></a>
+            <a href="https://www.linkedin.com/company/wembley-s-quickfix" className="hover:text-blue-600 transition-colors"><FiLinkedin /></a>
           </div>
         </div>
       </div>
@@ -237,7 +239,7 @@ const [isHidden, setIsHidden] = useState(false);
 
           {/* Action Call Button */}
           <div>
-            <Buttonmain text="Become a Vendor" href="mailto:info@quickfix.com" variant="primary"/>
+            <Buttonmain text="Download Brochure" href="mailto:info@quickfix.com" variant="primary"/>
           </div>
         </nav>
       </div>

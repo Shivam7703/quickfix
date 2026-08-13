@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
-import { about1 } from '@/assets'; // Ensure about1 is exported from your assets
+import { img11 } from '@/assets';
 
 export default function ContactSection() {
   return (
@@ -11,7 +11,7 @@ export default function ContactSection() {
         {/* Left Column: Image Container */}
         <div className="relative w-full h-100 md:h-125 rounded-3xl overflow-hidden shadow-md border border-zinc-100">
           <Image
-            src={about1}
+            src={img11}
             alt="About us and contact"
             fill
             className="object-cover object-center"

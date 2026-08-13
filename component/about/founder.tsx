@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { LuTrendingUp, LuSend, LuLinkedin, LuTwitter, LuMail, LuFacebook } from 'react-icons/lu';
+import { LuTrendingUp, LuSend } from 'react-icons/lu';
 import { ceo } from '@/assets';
 import { FaCircleCheck } from 'react-icons/fa6';
 

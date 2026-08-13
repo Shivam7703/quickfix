@@ -61,7 +61,7 @@ export default function ProductTabs({ data }: ProductTabsProps) {
   }, [benefits]);
 
   return (
-    <section className=" max-w-6xl mx-auto my-6 ">
+    <section className=" max-w-6xl mx-auto p-3 ">
       {/* Tabs Navigation Header */}
       <div className="border-b border-zinc-300 relative">
         <nav

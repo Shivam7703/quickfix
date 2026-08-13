@@ -40,17 +40,17 @@ export default function Boxes() {
       {data.map((item) => (
         <div
           key={item.id}
-          className={`flex w-full shrink-0 items-start gap-4 p-6 text-white sm:w-1/2 md:w-1/3 md:border-r md:border-white/20 lg:p-9 ${item.bgColor}`}
+          className={`flex w-full shrink-0 items-center gap-4 p-4 sm:p-6 text-white sm:w-1/2 md:w-1/3 md:border-r md:border-white/20 lg:p-9 ${item.bgColor}`}
         >
           {/* Icon Badge */}
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/40 text-2xl aspect-square md:h-14 md:w-14 md:text-3xl">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/40 text-2xl aspect-square md:h-18 md:w-18 md:text-4xl">
             {item.icon}
           </div>
 
           {/* Text Content */}
           <div className="space-y-2">
-            <h3 className="text-base font-bold sm:text-lg">{item.heading}</h3>
-            <p className="text-xs text-white/90 sm:text-sm">{item.para}</p>
+            <h3 className="text-sm font-bold sm:text-base  lg:text-lg">{item.heading}</h3>
+            <p className="text-[10px] text-white/90 sm:text-sm">{item.para}</p>
           </div>
         </div>
       ))}

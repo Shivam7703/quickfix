@@ -32,7 +32,7 @@ const processSteps = [
 
 export default function Process() {
   return (
-    <div className="w-full py-7 md:p-16 lg:px-24 bg-white ">
+    <div className="w-full py-7 md:p-16 lg:px-24 bg-white max-sm:overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
 
         <div className="grid grid-cols-1 relative lg:grid-cols-12 gap-12 lg:gap-16 items-start">

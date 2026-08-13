@@ -14,19 +14,19 @@ export default function ProductGallery({ data }: any) {
  
 
   return (
-    <main className="min-h-screen bg-white text-zinc-900 py-16 px-4 md:px-10">
+    <main className=" bg-white text-zinc-900 sm:p-10 p-4 md:p-14">
       <div className="max-w-8xl mx-auto flex  flex-wrap justify-between gap-y-7">
 
         {/* --- Left Column: Image Gallery --- */}
         <div className="space-y-6 md:w-[40%] w-full">
           {/* Main Product Image Container */}
-          <div className="bg-radial to-zinc-200 via-zinc-50 from-white p-6 rounded-3xl shadow-inner border border-zinc-200 aspect-square flex items-center justify-center">
+          <div className="bg-radial to-zinc-200 group via-zinc-50 from-white p-6 rounded-3xl shadow-inner border border-zinc-200 aspect-square flex items-center overflow-hidden justify-center">
             <Image
               src={mainImageSrc}
               alt="Quick Kraft Glue Adhesive"
               width={500}
               height={500}
-              className="object-contain mix-blend-multiply" // Ensures white background blends with product
+              className="object-contain mix-blend-multiply group-hover:scale-110 duration-300" // Ensures white background blends with product
               priority
             />
           </div>

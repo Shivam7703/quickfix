@@ -2,7 +2,6 @@ import Aboutchoose from '@/component/about/choose'
 import FeatureCards from '@/component/about/feature'
 import AboutCeo from '@/component/about/founder'
 import ServiceHighlights from '@/component/about/highlight'
-import AboutProducts from '@/component/about/products'
 import Story from '@/component/about/story'
 import MissionVisionSection from '@/component/about/vision'
 import AllBanner from '@/component/global/banner'
@@ -20,7 +19,6 @@ function page() {
       <AboutCeo/>
       <FeatureCards/>
       <Aboutchoose/>
-      {/* <AboutProducts/> */}
       <ServiceHighlights/>
     </div>
   )

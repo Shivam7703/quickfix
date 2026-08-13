@@ -1,7 +1,7 @@
 import logo from "@/assets/logo.png";
-import banner1 from "@/assets/home/banner1.webp";
-import banner2 from "@/assets/home/banner2.webp";
-import banner3 from "@/assets/home/banner3.webp";
+import banner1 from "@/assets/home/banner1.png";
+import banner2 from "@/assets/home/banner2.png";
+import banner3 from "@/assets/home/banner3.png";
 import about from "@/assets/home/about-us.webp";
 import about1 from "@/assets/home/about1.webp";
 import img1 from "@/assets/home/img1.webp";
@@ -234,14 +234,11 @@ allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcols
   upvc1,
   upvc2,
   upvc3,
-
   upvcClear1,
   upvcClear2,
   upvcClear3,
-
   upvcValve1,
   upvcValve2,
-
   wemlac1,
   wemlac2,
 };
