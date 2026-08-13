@@ -68,7 +68,7 @@ export default function Process() {
               {/* Prototype Signature Blue Border Accent Callout text box */}
               <div className="flex w-[50%] absolute bg-white shadow-xl shadow-black/30 rounded-lg items-stretch gap-4 px-4 py-3 top-2 right-2">
                 <span className="w-1 bg-yellow-600 block shrink-0 rounded-full" />
-                <p className="text-zinc-800 text-xs leading-[1.25] font-normal">
+                <p className="text-zinc-800 text-xs leading-tight font-normal">
 Every QuickFix product is manufactured through carefully controlled processes supported by research, quality inspection, and technical expertise to deliver consistent adhesive performance.
                 </p>
               </div>

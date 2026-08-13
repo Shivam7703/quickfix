@@ -114,7 +114,7 @@ Discover the research, manufacturing capabilities, quality systems, and decades 
               {/* Telephone Matrix Callout */}
               <div className="flex items-center gap-3 text-zinc-800 font-medium text-xs md:text-sm">
                 <FiPhone size={18} className="text-blue-700 shrink-0" />
-                <span className="whitespace-nowrap"><a href="tel:+919805403302"></a>+91-9805403302</span>
+                <span className="whitespace-nowrap"><a href="tel:+919805403302">+91-9805403302</a></span>
               </div>
 
               {/* Email Communications Node */}
@@ -128,7 +128,7 @@ Discover the research, manufacturing capabilities, quality systems, and decades 
 
             {/* Social Communications Links Icon Badges */}
             <div className="flex items-center gap-2.5 pt-2">
-              <a href="https://www.instagram.com/wembleyadhesives?utm_medium=copy_link"aria-label="Instagram" className="w-7 h-7 bg-gradient-to-tr from-amber-500 via-red-500 to-purple-600 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
+              <a href="https://www.instagram.com/wembleyadhesives?utm_medium=copy_link"aria-label="Instagram" className="w-7 h-7 bg-linear-to-tr from-amber-500 via-red-500 to-purple-600 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
                 <FaInstagram />
               </a>
               <a href="https://www.facebook.com/wembleyadhesives" aria-label="Facebook" className="w-7 h-7 bg-blue-600 text-white rounded-md flex items-center justify-center text-sm shadow-xs hover:scale-105 transition-transform">
