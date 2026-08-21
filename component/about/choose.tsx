@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiArrowDownRight, FiUsers } from "react-icons/fi";
 // Right side product banner image import karein
-import { about, img4, img9 } from "@/assets";
+import { img9 } from "@/assets";
 import Buttonmain from "../global/button";
 
 

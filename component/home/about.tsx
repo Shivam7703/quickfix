@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { FiCheckCircle, FiAward } from "react-icons/fi";
 import Buttonmain from "../global/button";
-import { about, astm, img3, img1, isi, img9, img2, img4, processimg } from "@/assets";
+import { astm, img3,  isi,  processimg } from "@/assets";
 
 // Stagger animation container variants
 const containerVariants: Variants = {

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiArrowDownRight, FiPlay, FiUsers } from "react-icons/fi";
 // Right side product banner image import karein
-import { about, gal2, gal4, img4 } from "@/assets";
+import { about, gal2, gal4, img10, img4 } from "@/assets";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import { RiTeamFill } from "react-icons/ri";
 
@@ -124,7 +124,7 @@ export default function WhyChooseSection() {
               className="w-full h-full relative overflow-hidden "
             >
               <Image
-                src={img4}
+                src={img10}
                 alt="Quickfix"
                 fill
                 className="object-cover object-center"

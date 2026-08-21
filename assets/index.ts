@@ -7,7 +7,7 @@ import about1 from "@/assets/home/about1.webp";
 import img1 from "@/assets/home/img1.webp";
 import img2 from "@/assets/home/img2.webp";
 import img3 from "@/assets/home/img3.webp";
-import img4 from "@/assets/home/img10.webp";
+import img4 from "@/assets/home/img4.png";
 import img5 from "@/assets/home/img5.webp";
 import img6 from "@/assets/home/img6.webp";
 import img7 from "@/assets/home/img7.webp";
