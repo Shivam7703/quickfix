@@ -15,7 +15,7 @@ const data: CardItem[] = [
     id: 1,
     icon: <FaIndustry />,
     heading: 'Trusted Manufacturing Excellence',
-    para: 'With over 70 years of manufacturing experience, Wembley Laboratories delivers high-performance adhesive solutions trusted for their consistent quality, reliability, and superior bonding performance.',
+    para: 'With over 70 years of manufacturing experience, Wembley Laboratories Ltd. delivers high-performance adhesive solutions trusted for their consistent quality, reliability, and superior bonding performance.',
     bgColor: 'bg-blue-600',
   },
   {
@@ -29,7 +29,7 @@ const data: CardItem[] = [
     id: 3,
     icon: <FaBoxes />,
     heading: 'Wide Range of Adhesive Solutions',
-    para: 'From all-purpose adhesives and instant glues to epoxy systems, solvent cements, sealants, tapes, and specialty products, QuickFix offers solutions for domestic, commercial, and industrial bonding applications.',
+    para: 'From all-purpose adhesives and instant glues to epoxy systems, solvent cements, sealants, tapes, and specialty products, Wembley Laboratories Ltd. Ltd. offers solutions for domestic, commercial, and industrial bonding applications.',
     bgColor: 'bg-blue-600',
   },
 ];

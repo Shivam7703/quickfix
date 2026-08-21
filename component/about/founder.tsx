@@ -24,10 +24,10 @@ export default function AboutCeo() {
           <div className="space-y-4 text-slate-600 text-base md:text-lg leading-relaxed font-normal">
             <p className="text-xl font-medium text-slate-800 italic border-l-4 border-blue-600 pl-4 py-1 bg-slate-50/50 rounded-r-lg">
               &ldquo;Guided by Innovation and Quality
-&rdquo;
+              &rdquo;
             </p>
             <p>
-At Wembley Laboratories, our leadership is driven by a commitment to innovation, quality, and manufacturing excellence. By investing in advanced research, precision production, and continuous improvement, we continue to strengthen the QuickFix legacy while delivering reliable adhesive solutions trusted by customers across industries.
+              At Wembley Laboratories Ltd., our leadership is driven by a commitment to innovation, quality, and manufacturing excellence. By investing in advanced research, precision production, and continuous improvement, we continue to strengthen the Quickfix legacy while delivering reliable adhesive solutions trusted by customers across industries.
             </p>
           </div>
 
@@ -40,9 +40,9 @@ At Wembley Laboratories, our leadership is driven by a commitment to innovation,
                 <LuTrendingUp className="w-6 h-6" />
               </div>
               <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">
-Research-Driven Development              </h3>
+                Research-Driven Development              </h3>
               <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-Focused on continuous product improvement through dedicated research and technical expertise.
+                Focused on continuous product improvement through dedicated research and technical expertise.
               </p>
             </div>
 
@@ -52,9 +52,9 @@ Focused on continuous product improvement through dedicated research and technic
                 <LuSend className="w-6 h-6" />
               </div>
               <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">
-Customer-Focused Solutions              </h3>
+                Customer-Focused Solutions              </h3>
               <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-Developing adhesive products that address practical applications across household, commercial, and industrial sectors.
+                Developing adhesive products that address practical applications across household, commercial, and industrial sectors.
               </p>
             </div>
           </div>

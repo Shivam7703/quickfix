@@ -36,7 +36,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="relative w-full py-6 md:p-16 lg:p-24 bg-white overflow-hidden">
+    <section className="relative w-full pt-8  py-6 md:p-16 lg:p-24 bg-white overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
@@ -44,7 +44,7 @@ export default function AboutSection() {
           {/* ======================================================= */}
           {/* LEFT SIDE: PREMIUM IMAGE WITH FLOATING CARD ACCENTS    */}
           {/* ======================================================= */}
-          <div className="lg:col-span-6 relative w-full group aspect-square max-h-[520px]">
+          <div className="lg:col-span-6 relative w-full group  aspect-square max-h-130">
 
             {/* Main Picture Wrapper with Hover Glow & Zoom */}
             <motion.div
@@ -98,12 +98,12 @@ export default function AboutSection() {
                   Years of Legacy
                 </h4>
                 <p className="text-sm text-zinc-700 leading-snug line-clamp-2">
-                  Pioneering high-grade solutions & formulations since 1970.
+                  Pioneering high-grade solutions & formulations since 1952.
                 </p>
               </div>
             </motion.div>
 
-<Image src={img3} alt="quickfix" className="-top-8 -left-8 border-[2px] border-white  rounded-2xl  absolute w-32 h-32 sm:h-56 sm:w-56"/>
+            <Image src={img3} alt="quickfix" className="sm:-top-8 sm:-left-8 border-2 max-sm:hidden   border-white  rounded-2xl   sm:absolute w-32 h-32 sm:h-56 sm:w-56" />
           </div>
 
           {/* ======================================================= */}
@@ -121,7 +121,7 @@ export default function AboutSection() {
             <motion.div variants={itemVariants} className="flex items-center gap-3 group cursor-default">
               <span className="w-1.5 h-6 bg-yellow-500 block rounded-full group-hover:scale-y-125 transition-all duration-300 origin-center" />
               <span className="text-xs md:text-sm font-bold tracking-widest text-zinc-700 uppercase">
-Precision Adhesive Solutions
+                Precision Adhesive Solutions
               </span>
             </motion.div>
 
@@ -132,7 +132,7 @@ Precision Adhesive Solutions
             >
               Reliable Bonding Solutions{" "}
               <span className=" text-yellow-500">
-              & Industrial Applications
+                & Industrial Applications
                 {/* Underline Accent */}
 
               </span>
@@ -144,7 +144,7 @@ Precision Adhesive Solutions
               variants={itemVariants}
               className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal"
             >
-             QuickFix, the flagship brand of Wembley Laboratories, offers a comprehensive range of adhesives developed for repair, maintenance, DIY, plumbing, construction, manufacturing, and industrial applications. Every product is manufactured with carefully selected raw materials and stringent quality control to deliver consistent performance and dependable bonding.
+              Quickfix, the flagship brand of Wembley Laboratories Ltd., offers a comprehensive range of adhesives developed for repair, maintenance, DIY, plumbing, construction, manufacturing, and industrial applications. Every product is manufactured with carefully selected raw materials and stringent quality control to deliver consistent performance and dependable bonding.
 
             </motion.p>
 
@@ -164,8 +164,8 @@ Precision Adhesive Solutions
                   </div>
                 ))}
                 <div className="mt-3">
-                              <Buttonmain href="/about-us" text="Our Heritage Journey" variant="primary" />
-</div>
+                  <Buttonmain href="/about-us" text="Our Heritage Journey" variant="primary" />
+                </div>
               </motion.div>
               {/* Certifications Block */}
               <motion.div variants={itemVariants} className=" border-gray-100">
@@ -191,7 +191,7 @@ Precision Adhesive Solutions
                       className="sm:h-23 h-16 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <p className="text-zinc-600 text-xs mt-3">Every QuickFix product is developed through continuous innovation and carefully tested to ensure dependable quality and performance.</p>
+                  <p className="text-zinc-600 text-xs mt-3">Every Quickfix product is developed through continuous innovation and carefully tested to ensure dependable quality and performance.</p>
                 </div>
               </motion.div>
             </div>

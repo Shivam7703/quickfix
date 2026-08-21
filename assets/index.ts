@@ -7,7 +7,7 @@ import about1 from "@/assets/home/about1.webp";
 import img1 from "@/assets/home/img1.webp";
 import img2 from "@/assets/home/img2.webp";
 import img3 from "@/assets/home/img3.webp";
-import img4 from "@/assets/home/img4.png";
+import img4 from "@/assets/home/img10.webp";
 import img5 from "@/assets/home/img5.webp";
 import img6 from "@/assets/home/img6.webp";
 import img7 from "@/assets/home/img7.webp";
@@ -19,7 +19,7 @@ import img12 from "@/assets/home/img12.webp";
 import img13 from "@/assets/home/img13.webp";
 
 
-import processimg from "@/assets/home/choose.png";
+import processimg from "@/assets/home/img9.webp";
 import gal1 from "@/assets/home/gal1.webp";
 import gal2 from "@/assets/home/gal2.webp";
 import gal3 from "@/assets/home/gal3.webp";

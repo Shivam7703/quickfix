@@ -5,11 +5,11 @@ import React from 'react';
 const data = [
   {
     heading: "Adhesive Solutions You Can Trust",
-    para: "QuickFix offers a diverse portfolio of adhesive products designed for household repairs, woodworking, plumbing, footwear, construction, automotive, and industrial applications, providing dependable performance across multiple materials.",
+    para: "Quickfix offers a diverse portfolio of adhesive products designed for household repairs, woodworking, plumbing, footwear, construction, automotive, and industrial applications, providing dependable performance across multiple materials.",
   },
   {
     heading: "Quality That Delivers Confidence",
-    para: "Every QuickFix product is developed through stringent quality control processes and continuous product improvement to ensure reliable performance and customer satisfaction.",
+    para: "Every Quickfix product is developed through stringent quality control processes and continuous product improvement to ensure reliable performance and customer satisfaction.",
   },
 ];
 

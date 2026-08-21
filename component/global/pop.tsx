@@ -5,7 +5,7 @@ import Image from "next/image";
 import { logo } from '@/assets';
 
 const WHATSAPP_NUMBER = '+918527499493';
-const WHATSAPP_MESSAGE = "Hi QuickFix! I'd like to know more about becoming a vendor or product enquiry.";
+const WHATSAPP_MESSAGE = "Hi Quickfix! I'd like to know more about becoming a vendor or product enquiry.";
 
 export default function Popups() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -73,7 +73,7 @@ export default function Popups() {
             {/* Header */}
             <div className="bg-zinc-100 text-zinc-900 p-6 flex justify-between items-center border-b-4 border-red-600">
               <div className="flex items-center gap-3">
-                <Image src={logo} alt="QuickFix Logo" className="w-24 sm:w-28 h-auto object-contain" />
+                <Image src={logo} alt="Quickfix Logo" className="w-24 sm:w-28 h-auto object-contain" />
                 <div>
                   <h2 className="text-lg sm:text-xl font-bold tracking-tight ">Vendor & Business Enquiry</h2>
                   <p className="text-xs text-slate-700">Partner with India's trusted adhesive brand</p>

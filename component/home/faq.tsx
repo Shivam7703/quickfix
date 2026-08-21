@@ -11,27 +11,27 @@ import {
 const faqData = [
   {
     id: 1,
-    question: "What materials can QuickFix adhesives bond?",
+    question: "What materials can Quickfix adhesives bond?",
     answer:
-      "Different QuickFix products are designed to bond materials such as wood, glass, ceramics, leather, rubber, paper, fabrics, metals, and many plastics. Always select the adhesive recommended for your specific application.",
+      "Different Quickfix products are designed to bond materials such as wood, glass, ceramics, leather, rubber, paper, fabrics, metals, and many plastics. Always select the adhesive recommended for your specific application.",
   },
   {
     id: 2,
-    question: "Are QuickFix products suitable for industrial applications?",
+    question: "Are Quickfix products suitable for industrial applications?",
     answer:
-      "Yes. QuickFix manufactures products for household, DIY, commercial, plumbing, construction, woodworking, automotive, and industrial applications.",
+      "Yes. Quickfix manufactures products for household, DIY, commercial, plumbing, construction, woodworking, automotive, and industrial applications.",
   },
   {
     id: 3,
-    question: "How should QuickFix adhesives be stored?",
+    question: "How should Quickfix adhesives be stored?",
     answer:
       "Storage instructions vary by product, but most should be stored in unopened containers in a cool, dry location away from excessive heat or freezing conditions.",
   },
   {
     id: 4,
-    question: "Does Wembley Laboratories have its own R&D and quality control?",
+    question: "Does Wembley Laboratories Ltd. have its own R&D and quality control?",
     answer:
-      "Yes. Wembley Laboratories operates a dedicated R&D laboratory and follows stringent quality control procedures throughout manufacturing and packaging.",
+      "Yes. Wembley Laboratories Ltd. operates a dedicated R&D laboratory and follows stringent quality control procedures throughout manufacturing and packaging.",
   },
 ];
 
@@ -52,10 +52,12 @@ export default function FaqSection() {
 
   return (
     <section className="relative w-full py-16 md:py-24 bg-zinc-50 text-zinc-900 overflow-hidden select-none">
-      
+
       {/* ======================================================= */}
       {/* ABSOLUTE BACKGROUND FLOATING ICONS (PREMIUM LOOK)       */}
       {/* ======================================================= */}
+
+
       <motion.div
         animate={{ y: [0, -12, 0], rotate: [0, 8, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -64,16 +66,16 @@ export default function FaqSection() {
         <FiHelpCircle size={180} />
       </motion.div>
 
-      
+
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          
+
           {/* ======================================================= */}
           {/* LEFT SIDE: HEADINGS & 3 SOLID METRIC PROGRESS BARS     */}
           {/* ======================================================= */}
           <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-10">
-            
+
             {/* Header Tag Badge */}
             <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200/80 px-3.5 py-1.5 rounded-full">
               <FiHelpCircle className="text-amber-500" size={16} />
@@ -90,14 +92,14 @@ export default function FaqSection() {
 
             {/* Subtext */}
             <p className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal max-w-md">
-            Have questions about our adhesive solutions, product applications, or manufacturing standards? Explore the answers to some of the most common queries and discover why professionals and consumers trust Wembley Laboratories for reliable bonding solutions.
+              Have questions about our adhesive solutions, product applications, or manufacturing standards? Explore the answers to some of the most common queries and discover why professionals and consumers trust Wembley Laboratories Ltd. for reliable bonding solutions.
             </p>
 
             {/* ======================================================= */}
             {/* 3 SOLID METRIC PROGRESS BARS CARD (NO GRADIENTS)        */}
             {/* ======================================================= */}
             <div className=" max-w-md">
-              
+
               <hr className="border-zinc-100 my-2" />
 
             </div>
@@ -125,11 +127,10 @@ export default function FaqSection() {
               return (
                 <div
                   key={item.id}
-                  className={`w-full rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${
-                    isOpen
-                      ? "border-blue-600 shadow-md shadow-blue-500/5 ring-1 ring-blue-600/10"
-                      : "border-zinc-200/90 hover:border-zinc-300 hover:shadow-xs"
-                  }`}
+                  className={`w-full rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen
+                    ? "border-blue-600 shadow-md shadow-blue-500/5 ring-1 ring-blue-600/10"
+                    : "border-zinc-200/90 hover:border-zinc-300 hover:shadow-xs"
+                    }`}
                 >
                   <button
                     type="button"
@@ -138,9 +139,8 @@ export default function FaqSection() {
                   >
                     <div className="flex items-center gap-3.5">
                       <span
-                        className={`w-1.5 h-6 rounded-full transition-colors duration-300 ${
-                          isOpen ? "bg-amber-500" : "bg-zinc-200 group-hover:bg-blue-500"
-                        }`}
+                        className={`w-1.5 h-6 rounded-full transition-colors duration-300 ${isOpen ? "bg-amber-500" : "bg-zinc-200 group-hover:bg-blue-500"
+                          }`}
                       />
                       <h3 className="text-base sm:text-lg font-bold text-zinc-900 group-hover:text-blue-700 transition-colors tracking-tight">
                         {item.question}
@@ -148,11 +148,10 @@ export default function FaqSection() {
                     </div>
 
                     <div
-                      className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${
-                        isOpen
-                          ? "bg-amber-500 text-white rotate-180"
-                          : "bg-zinc-100 text-zinc-500 group-hover:bg-blue-50 group-hover:text-blue-600"
-                      }`}
+                      className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen
+                        ? "bg-amber-500 text-white rotate-180"
+                        : "bg-zinc-100 text-zinc-500 group-hover:bg-blue-50 group-hover:text-blue-600"
+                        }`}
                     >
                       <FiChevronDown size={20} />
                     </div>

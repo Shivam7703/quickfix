@@ -25,7 +25,7 @@ export default function Aboutchoose() {
             <div className="flex items-center gap-3">
               <span className="w-1 h-6 bg-yellow-500 block rounded-full" />
               <span className="text-xs md:text-sm font-bold tracking-widest text-zinc-700 uppercase">
-*Why Choose QuickFix?
+                *Why Choose Quickfix?
               </span>
             </div>
 
@@ -38,7 +38,7 @@ export default function Aboutchoose() {
               className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight"
             >
               Trusted Bonding
- <span className="text-yellow-500"> Solutions</span>.
+              <span className="text-yellow-500"> Solutions</span>.
             </motion.h3>
 
             {/* Subtle Gradient Tag */}
@@ -49,9 +49,9 @@ export default function Aboutchoose() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal"
             >
-              For over seven decades, QuickFix has earned the trust of households, professionals, and industries by delivering adhesive solutions that combine proven performance, consistent quality, and reliable results. Every product reflects Wembley Laboratories' commitment to innovation, precision manufacturing, and customer satisfaction.
-<br /><br />
-             Backed by advanced research, modern manufacturing facilities, and rigorous quality testing, our adhesive solutions are engineered to perform across a wide range of applications. From everyday repairs to industrial requirements, QuickFix continues to deliver dependable bonding solutions that customers trust every day.
+              For over seven decades, Quickfix has earned the trust of households, professionals, and industries by delivering adhesive solutions that combine proven performance, consistent quality, and reliable results. Every product reflects Wembley Laboratories Ltd.' commitment to innovation, precision manufacturing, and customer satisfaction.
+              <br /><br />
+              Backed by advanced research, modern manufacturing facilities, and rigorous quality testing, our adhesive solutions are engineered to perform across a wide range of applications. From everyday repairs to industrial requirements, Quickfix continues to deliver dependable bonding solutions that customers trust every day.
 
             </motion.p>
 

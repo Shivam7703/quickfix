@@ -159,9 +159,9 @@ export const blogData = [
   </section>
 
   <section class="blog-section">
-    <h2>Why Professionals Choose QuickFix Cyanoacrylate Adhesives</h2>
+    <h2>Why Professionals Choose Quickfix Cyanoacrylate Adhesives</h2>
     <p>When precision, speed, and reliability matter, professionals need an adhesive they can trust.</p>
-    <p>QuickFix Cyanoacrylate Adhesives are engineered to deliver:</p>
+    <p>Quickfix Cyanoacrylate Adhesives are engineered to deliver:</p>
     <ul>
       <li>Fast curing performance</li>
       <li>Strong and consistent bonding</li>
@@ -169,14 +169,14 @@ export const blogData = [
       <li>Clean application with minimal waste</li>
       <li>Reliable performance across a wide variety of materials</li>
     </ul>
-    <p>Whether you're handling everyday household repairs, DIY projects, or professional applications, QuickFix provides dependable bonding solutions designed to save time while delivering lasting results.</p>
+    <p>Whether you're handling everyday household repairs, DIY projects, or professional applications, Quickfix provides dependable bonding solutions designed to save time while delivering lasting results.</p>
   </section>
 
   <section class="blog-section">
     <h2>Final Thoughts</h2>
     <p>Cyanoacrylate adhesive has become an essential solution for anyone who values fast, reliable, and durable repairs. Its ability to create strong bonds within seconds makes it a practical choice for homeowners, hobbyists, technicians, and manufacturers alike.</p>
     <p>By understanding how it works, where it performs best, and how to apply it correctly, you can achieve cleaner repairs, stronger bonds, and more efficient results every time.</p>
-    <p>If you're looking for a dependable adhesive that combines speed, precision, and long-lasting performance, QuickFix Cyanoacrylate Adhesives are designed to help you tackle every repair with confidence.</p>
+    <p>If you're looking for a dependable adhesive that combines speed, precision, and long-lasting performance, Quickfix Cyanoacrylate Adhesives are designed to help you tackle every repair with confidence.</p>
   </section>
 </article>`
   },
@@ -294,9 +294,9 @@ export const blogData = [
   </section>
 
   <section class="blog-section">
-    <h2>Why Choose QuickFix Cyanoacrylate Adhesives?</h2>
-    <p>At QuickFix, we understand that reliability doesn't end with strong bonding—it also depends on product quality and consistency over time.</p>
-    <p>QuickFix Cyanoacrylate Adhesives are engineered for:</p>
+    <h2>Why Choose Quickfix Cyanoacrylate Adhesives?</h2>
+    <p>At Quickfix, we understand that reliability doesn't end with strong bonding—it also depends on product quality and consistency over time.</p>
+    <p>Quickfix Cyanoacrylate Adhesives are engineered for:</p>
     <ul>
       <li>Fast and dependable curing</li>
       <li>High-strength, long-lasting bonds</li>
@@ -304,14 +304,14 @@ export const blogData = [
       <li>Reliable performance across a wide range of materials</li>
       <li>Consistent results for DIY, household, and professional use</li>
     </ul>
-    <p>When stored correctly, QuickFix adhesives are ready to deliver the speed and strength you need whenever a repair or project calls for it.</p>
+    <p>When stored correctly, Quickfix adhesives are ready to deliver the speed and strength you need whenever a repair or project calls for it.</p>
   </section>
 
   <section class="blog-section">
     <h2>Final Thoughts</h2>
     <p>Proper storage is one of the simplest ways to extend the life of your super glue and maintain its performance. By protecting it from moisture, heat, and unnecessary air exposure, you can keep the adhesive in excellent condition and reduce product waste.</p>
     <p>Whether you're fixing household items, working on creative projects, or handling professional repairs, taking a few extra moments to store your adhesive correctly will ensure it's always ready when you need it.</p>
-    <p>With QuickFix Cyanoacrylate Adhesives and the right storage practices, you can enjoy dependable bonding performance, longer product life, and greater confidence in every repair.</p>
+    <p>With Quickfix Cyanoacrylate Adhesives and the right storage practices, you can enjoy dependable bonding performance, longer product life, and greater confidence in every repair.</p>
   </section>
 </article>`
   },
@@ -418,8 +418,8 @@ export const blogData = [
   </section>
 
   <section class="blog-section">
-    <h2>Why Professionals Choose QuickFix</h2>
-    <p>At QuickFix, we believe every repair deserves lasting strength and dependable performance.</p>
+    <h2>Why Professionals Choose Quickfix</h2>
+    <p>At Quickfix, we believe every repair deserves lasting strength and dependable performance.</p>
     <p>Our cyanoacrylate adhesives are engineered to deliver:</p>
     <ul>
       <li>Instant, high-strength bonding</li>
@@ -428,7 +428,7 @@ export const blogData = [
       <li>Reliable performance across a wide range of materials</li>
       <li>Consistent quality for DIY, household, commercial, and industrial use</li>
     </ul>
-    <p>Whether you're restoring a cherished household item, completing a creative project, or handling demanding professional work, QuickFix helps you achieve repairs that are built to last.</p>
+    <p>Whether you're restoring a cherished household item, completing a creative project, or handling demanding professional work, Quickfix helps you achieve repairs that are built to last.</p>
   </section>
 
   <section class="blog-section">
@@ -436,7 +436,7 @@ export const blogData = [
     <p>Choosing an adhesive is about more than comparing price tags. It's about investing in reliability, durability, and peace of mind.</p>
     <p>A quality adhesive reduces repeat repairs, protects your valuable belongings, and helps you complete every project with confidence. While a cheaper option may seem attractive at first, the long-term costs of failed repairs often outweigh the initial savings.</p>
     <p>The next time you're planning a repair, think beyond the price. Choose an adhesive that delivers strength, precision, and performance from the very first bond.</p>
-    <p>With QuickFix, every repair is an opportunity to create results that last.</p>
+    <p>With Quickfix, every repair is an opportunity to create results that last.</p>
   </section>
 </article>`
   }

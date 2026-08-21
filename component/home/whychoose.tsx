@@ -13,35 +13,35 @@ const featuresData = [
   {
     id: 1,
     title: "Fast Bonding Performance",
-    description: "Selected QuickFix adhesive formulations provide rapid bonding, helping improve efficiency across repair and production applications",
+    description: "Selected Quickfix adhesive formulations provide rapid bonding, helping improve efficiency across repair and production applications",
   },
   {
     id: 2,
     title: "Bonds Multiple Materials",
-    description: "Depending on the product, QuickFix adhesives bond materials including wood, metal, ceramics, glass, leather, rubber, paper, fabrics, and many plastics.",
+    description: "Depending on the product, Quickfix adhesives bond materials including wood, metal, ceramics, glass, leather, rubber, paper, fabrics, and many plastics.",
   },
   {
     id: 3,
     title: "Easy Product Application",
-    description: "Many QuickFix products feature convenient packaging and application systems designed for accurate and controlled use.",
+    description: "Many Quickfix products feature convenient packaging and application systems designed for accurate and controlled use.",
   },
   {
     id: 4,
     title: "Durable Bond Strength",
-    description: "QuickFix formulations are developed to provide strong, long-lasting bonds with resistance to moisture, heat, or demanding working conditions depending on the product category.",
+    description: "Quickfix formulations are developed to provide strong, long-lasting bonds with resistance to moisture, heat, or demanding working conditions depending on the product category.",
   },
 ];
 
 export default function WhyChooseSection() {
   return (
     <section className="w-full py-7 md:p-16 lg:px-24 bg-zinc-700 overflow-hidden relative">
-       <Image
-                src={gal4}
-                alt="Quickfix Craft and Repair Bonding Showcase"
-                fill
-                className="absolute w-full h-full -top-2 left-0 z-3 opacity-30 object-cover object-center"
-                priority
-              />
+      <Image
+        src={gal4}
+        alt="Quickfix Craft and Repair Bonding Showcase"
+        fill
+        className="absolute w-full h-full -top-2 left-0 z-3 opacity-30 object-cover object-center"
+        priority
+      />
       <div className="absolute bg-white h-full z-7 w-full lg:w-[60%] left-0 top-0 lg:top-[3%]"></div>
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -78,7 +78,7 @@ export default function WhyChooseSection() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal"
             >
-QuickFix products are developed to provide dependable bonding solutions across homes, workshops, construction, plumbing, manufacturing, and industrial environments. The product range is designed to suit different materials and application requirements.
+              Quickfix products are developed to provide dependable bonding solutions across homes, workshops, construction, plumbing, manufacturing, and industrial environments. The product range is designed to suit different materials and application requirements.
             </motion.p>
 
             {/* Feature 2x2 Grid Systems */}
@@ -93,13 +93,13 @@ QuickFix products are developed to provide dependable bonding solutions across h
                   className="group"
                 >
                   {/* Top-Left Corner Absolute Icon Button */}
-                  
+
 
                   {/* Card Main Description Texts */}
                   <div className="space-y-2">
                     <h3 className="text-sm sm:text-base font-bold flex text-blue-900 tracking-tight">
-                   <span>                    <BsFillPatchCheckFill className="group-hover:text-red-500 mr-2 text-yellow-500 text-xl"/>
-</span>   {feature.title}
+                      <span>                    <BsFillPatchCheckFill className="group-hover:text-red-500 mr-2 text-yellow-500 text-xl" />
+                      </span>   {feature.title}
                     </h3>
                     <p className="text-zinc-600 text-xs md:text-sm leading-relaxed font-normal">
                       {feature.description}
@@ -132,7 +132,7 @@ QuickFix products are developed to provide dependable bonding solutions across h
                 priority
               />
             </motion.div>
-<motion.div
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -141,15 +141,15 @@ QuickFix products are developed to provide dependable bonding solutions across h
             >
               <div className="border-r border-red-500/60 pr-4">
                 <h4 className="text-xs md:text-sm font-bold leading-tight tracking-wide">
-Our team is committed towards continually improving its Quality Management system </h4>
+                  Our team is committed towards continually improving its Quality Management system </h4>
               </div>
 
               {/* Play Button Icon */}
               <button
                 className="w-12 h-12 rounded-full bg-white text-red-700 flex items-center justify-center shrink-0 shadow-md hover:scale-105 active:scale-95 transition-transform duration-300"
               >
-                <RiTeamFill 
- size={25} className="fill-current" />
+                <RiTeamFill
+                  size={25} className="fill-current" />
               </button>
             </motion.div>
           </div>

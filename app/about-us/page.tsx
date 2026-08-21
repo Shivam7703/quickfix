@@ -12,14 +12,14 @@ import React from 'react'
 function page() {
   return (
     <div>
-      <AllBanner title='about us' para="QuickFix is Wembley Laboratories' trusted adhesive brand, offering dependable bonding solutions for everyday repairs, professional work, and industrial applications." slug="about-us"/>
-      <AboutSection/>
-      <MissionVisionSection/>
-      <Story/>
-      <AboutCeo/>
-      <FeatureCards/>
-      <Aboutchoose/>
-      <ServiceHighlights/>
+      <AllBanner title='about us' para="QuickFix is Wembley Laboratories Ltd.' trusted adhesive brand, offering dependable bonding solutions for everyday repairs, professional work, and industrial applications." slug="about-us" />
+      <AboutSection />
+      <MissionVisionSection />
+      <Story />
+      <AboutCeo />
+      <FeatureCards />
+      <Aboutchoose />
+      <ServiceHighlights />
     </div>
   )
 }
