@@ -4,15 +4,33 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiPhone, FiMail } from "react-icons/fi";
-import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 // Brand logo asset import (Apna real path use karein)
 import logo from "@/assets/logo.png"; 
 
 export default function Footer() {
+  const WHATSAPP_NUMBER = '+918527499493';
+const WHATSAPP_MESSAGE = "Hi Quickfix! I'd like to know more about becoming a vendor or product enquiry.";
+
+
+  const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+
   return (
     <footer className="w-full bg-white text-zinc-600 font-sans border-t border-gray-400">
-      
+
+      {/* whatsapp */}
+        <a
+        href={whatsappHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp"
+        className="fixed bottom-6 right-2 sm:w-12 sm:h-12 w-10 h-10 rounded-full bg-[#25D366] hover:bg-[#1ebd5a] text-white flex items-center justify-center shadow-lg hover:shadow-[0_8px_24px_rgba(37,211,102,0.4)] transition-all z-60"
+      >
+        <FaWhatsapp size={24} />
+      </a>
+
+
       {/* ======================================================= */}
       {/* TOP STRIP: TRUSTED ADHESIVE BRAND BANNER                 */}
       {/* ======================================================= */}

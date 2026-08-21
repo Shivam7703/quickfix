@@ -4,8 +4,6 @@ import { FaWhatsapp, FaTimes } from 'react-icons/fa';
 import Image from "next/image";
 import { logo } from '@/assets';
 
-const WHATSAPP_NUMBER = '+918527499493';
-const WHATSAPP_MESSAGE = "Hi Quickfix! I'd like to know more about becoming a vendor or product enquiry.";
 
 export default function Popups() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -37,20 +35,11 @@ export default function Popups() {
     }, 2200);
   };
 
-  const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   return (
     <div className="relative">
       {/* Floating WhatsApp Button */}
-      <a
-        href={whatsappHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat with us on WhatsApp"
-        className="fixed bottom-6 right-2 sm:w-12 sm:h-12 w-10 h-10 rounded-full bg-[#25D366] hover:bg-[#1ebd5a] text-white flex items-center justify-center shadow-lg hover:shadow-[0_8px_24px_rgba(37,211,102,0.4)] transition-all z-[60]"
-      >
-        <FaWhatsapp size={24} />
-      </a>
+    
 
       {/* Side Trigger Tab */}
       <button
