@@ -29,7 +29,7 @@ const data: CardItem[] = [
     id: 3,
     icon: <FaBoxes />,
     heading: 'Wide Range of Adhesive Solutions',
-    para: 'From all-purpose adhesives and instant glues to epoxy systems, solvent cements, sealants, tapes, and specialty products, Wembley Laboratories Ltd. Ltd. offers solutions for domestic, commercial, and industrial bonding applications.',
+    para: 'From all-purpose adhesives and instant glues to epoxy systems, solvent cements, sealants, tapes, and specialty products, Wembley Laboratories Ltd. offers solutions for domestic, commercial, and industrial bonding applications.',
     bgColor: 'bg-blue-600',
   },
 ];

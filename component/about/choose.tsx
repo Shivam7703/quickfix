@@ -25,7 +25,7 @@ export default function Aboutchoose() {
             <div className="flex items-center gap-3">
               <span className="w-1 h-6 bg-yellow-500 block rounded-full" />
               <span className="text-xs md:text-sm font-bold tracking-widest text-zinc-700 uppercase">
-                *Why Choose Quickfix?
+                Why Choose Quickfix?
               </span>
             </div>
 
@@ -55,7 +55,7 @@ export default function Aboutchoose() {
 
             </motion.p>
 
-            <Buttonmain href="/about-us" text="Our Heritage Journey" variant="secondary" />
+            <Buttonmain href="/contact-us" text="Know More" variant="secondary" />
 
           </div>
 

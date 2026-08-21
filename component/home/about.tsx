@@ -164,7 +164,7 @@ export default function AboutSection() {
                   </div>
                 ))}
                 <div className="mt-3">
-                  <Buttonmain href="/about-us" text="Our Heritage Journey" variant="primary" />
+                  <Buttonmain href="/about-us" text="Explore More" variant="primary" />
                 </div>
               </motion.div>
               {/* Certifications Block */}
