@@ -39,13 +39,13 @@ export default function Sustain() {
           <div className="lg:col-span-6 w-full">
             <motion.div 
               whileHover={{ scale: 1.01 }}
-              className="relative h-[320px] sm:h-[420px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl shadow-yellow-500/10 border border-slate-100"
+              className="relative h-[320px] sm:h-[420px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl shadow-yellow-500/10 border p-4 border-slate-100"
             >
               <Image 
                 src={cpvc4} 
                 alt="Eco-friendly innovation" 
                 fill 
-                className="object-cover transition-transform duration-700 hover:scale-105"
+                className="object-contain transition-transform duration-700 hover:scale-105"
                 priority
               />
               {/* Corner Badge */}
@@ -180,13 +180,13 @@ At Quickfix, sustainability is part of our commitment to continuous improvement.
           <div className="lg:col-span-6 w-full order-1 lg:order-2">
             <motion.div 
               whileHover={{ scale: 1.01 }}
-              className="relative h-[320px] sm:h-[420px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl shadow-red-500/10 border border-slate-100"
+              className="relative h-[320px] sm:h-[420px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl shadow-red-500/10 border p-4 border-slate-100"
             >
               <Image 
                 src={durobond} 
                 alt="Sustainable Future" 
                 fill 
-                className="object-cover transition-transform duration-700 hover:scale-105"
+                className="object-contain transition-transform duration-700 hover:scale-105"
               />
               {/* Corner Badge */}
               <div className="absolute top-4 right-4 bg-green-600/90 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-md flex items-center gap-1.5">

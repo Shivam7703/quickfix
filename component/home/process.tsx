@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { about, ptfetape, pvshield2, sus2 } from "@/assets";
+import { about, ptfetape, pvshield2, quickguard2, quickseal2, sus2 } from "@/assets";
 
 
 const processSteps = [
@@ -59,10 +59,10 @@ export default function Process() {
               className="w-full aspect-4/3 relative  shadow-md border rounded-2xl  border-gray-100"
             >
               <Image
-                src={pvshield2}
+                src={quickseal2}
                 alt="Quickfix"
                 fill
-                className="object-cover rounded-2xl  object-center"
+                className="object-contain  object-center"
                 sizes="(max-w-1024px) 100vw, 45vw"
               />
               {/* Prototype Signature Blue Border Accent Callout text box */}
