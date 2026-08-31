@@ -37,7 +37,7 @@ interface ProductTabsProps {
 const TABS = [
   { id: "description", label: "Packaging Details", icon: FiPackage },
   { id: "additional", label: "Usage & Benefits", icon: FiList },
-  { id: "prices", label: "Price List", icon: FiTag },
+  // { id: "prices", label: "Price List", icon: FiTag },
 ] as const;
 
 type TabId = (typeof TABS)[number]["id"];
@@ -163,7 +163,7 @@ export default function ProductTabs({ data }: ProductTabsProps) {
         )}
 
         {/* 3. Prices Tab */}
-        {activeTab === "prices" && (
+        {/* {activeTab === "prices" && (
           <div className="space-y-4 animate-fadeIn">
             <div className="flex items-center justify-between">
               <h3 className="font-bold text-blue-600 text-base md:text-lg flex items-center gap-2">
@@ -179,7 +179,7 @@ export default function ProductTabs({ data }: ProductTabsProps) {
               </div>
             )}
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );

@@ -159,7 +159,7 @@ const navLinks = [
 },
   { name: "Career", href: "/career" },
   { name: "Sustainability", href: "/sustainability" },
-  { name: "Blogs", href: "/blogs" },
+  // { name: "Blogs", href: "/blogs" },
   { name: "Contact Us", href: "/contact-us" },
 ];
 

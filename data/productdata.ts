@@ -56,7 +56,17 @@ import {
   ptfetape,
   ptfetape2,
   quickcolsh,
-  quickcolsh2
+  quickcolsh2,
+  cpvc6,
+  cpvc7,
+  cpvc8,
+  pvcSolventCement6,
+  pvcSolventCement7,
+  pvcSolventCement8,
+  sr5354,
+  upvc4,
+  upvc5,
+  upvc6
 } from "@/assets";
 
 export const Productdata = [
@@ -509,7 +519,7 @@ export const Productdata = [
     title: "durofix 535 rubber base adhesive",
     category: "Rubber Based Adhesive",
     description: "Durofix is a high strength, medium viscous, synthetic rubber based adhesive which has multiple uses in Industries & DIY projects. This superior, yet cost effective product is widely used in many applications such as vinyl flooring, HVAC Ducting, Water Pipelines, Foam and Furniture, Footwear, etc. This quick-setting adhesive is easy to apply and offers all that you need. It is free from Benzene hence safe to use.",
-    imgs: [sr5351, sr5352, sr5353],
+    imgs: [sr5354, sr5351, sr5352, sr5353],
     sizes: {
       heading: [
         "Size",
@@ -863,7 +873,7 @@ export const Productdata = [
   title: "quickfix cpvc solvent cement",
   category: "Solvent Cements",
   description: "Quickfix CPVC Solvent Cement is medium bodied, fast setting Yellow Solvent Cement for use on all schedules and classes of CPVC pipes and fittings up to 6” diameter with interference fit. MEETS ASTM F-493.",
-  imgs: [cpvc1,cpvc2,cpvc3,cpvc4,cpvc5],
+  imgs: [cpvc6, cpvc7, cpvc8, cpvc1,cpvc2,cpvc3,cpvc4,cpvc5],
   sizes: {
     heading: [
       "Size",
@@ -997,7 +1007,7 @@ export const Productdata = [
   title: "quickfix pvc solvent cement",
   category: "Solvent Cements",
   description: "Quickfix PVC is a regular bodied, fast setting Clear Solvent Cement for use on all schedules and classes of PVC pipes and fittings up to 12” diameter with interference fit for non pressure pipes. Meets ASTM D2564.",
-  imgs: [pvcSolventCement1, pvcSolventCement2,pvcSolventCement3,pvcSolventCement4,pvcSolventCement5],
+  imgs: [pvcSolventCement6,pvcSolventCement7,pvcSolventCement8,pvcSolventCement1, pvcSolventCement2,pvcSolventCement3,pvcSolventCement4,pvcSolventCement5],
   sizes: {
     heading: [
       "Size",
@@ -1122,7 +1132,7 @@ export const Productdata = [
   title: "quickfix upvc solvent cement - blue",
   category: "Solvent Cements",
   description: "Quickfix UPVC is a medium bodied, medium set, Blue Solvent Cement for all classes and schedules with interference fit schedule 40 through 6” diameter and schedule 80 through 4” diameter. Meets ASTM D2564.",
-  imgs: [upvc1, upvc2, upvc3],
+  imgs: [upvc4,upvc5,upvc6,upvc1, upvc2, upvc3],
   sizes: {
     heading: [
       "Size",

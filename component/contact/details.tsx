@@ -72,8 +72,7 @@ info@wembleysquickfix.com">
               <div>
                 <h3 className="font-bold text-zinc-900 text-base">Our Location</h3>
                 <p className="text-zinc-500 text-sm mt-1 leading-relaxed">
-                  Wembley House, 527, Pace City II, Sector 37, Gurgaon – 122001 (INDIA)
-                </p>
+511 Tower I DLF Corporate Greens, Sector 74A, Gurgaon, Haryana 122004                </p>
               </div>
             </div>
 

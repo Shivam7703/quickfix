@@ -22,7 +22,8 @@ export default function Home() {
      <Process/>
      <FaqSection/>
           <GallerySection/>
-     <BlogSection/>
+    {/* <BlogSection/> */}
     </main>
   );
 }
+   

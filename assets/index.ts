@@ -45,6 +45,9 @@ import cpvc2 from "@/assets/products/cpvc2.webp";
 import cpvc3 from "@/assets/products/cpvc3.webp";
 import cpvc4 from "@/assets/products/cpvc4.webp";
 import cpvc5 from "@/assets/products/cpvc5.webp";
+import cpvc6 from "@/assets/products/cpvc6.webp";
+import cpvc7 from "@/assets/products/cpvc7.webp";
+import cpvc8 from "@/assets/products/cpvc8.webp";
 
 import cpvcValve1 from "@/assets/products/cpvcvalve.webp";
 import cpvcValve2 from "@/assets/products/cpvcvalve2.webp";
@@ -71,6 +74,9 @@ import pvcSolventCement2 from "@/assets/products/pvc solvent cement2.webp";
 import pvcSolventCement3 from "@/assets/products/pvc solvent cement3.webp";
 import pvcSolventCement4 from "@/assets/products/pvc solvent cement4.webp";
 import pvcSolventCement5 from "@/assets/products/pvc solvent cement5.webp";
+import pvcSolventCement6 from "@/assets/products/pvc solvent cement8.webp";
+import pvcSolventCement7 from "@/assets/products/pvc solvent cement7.webp";
+import pvcSolventCement8 from "@/assets/products/pvc solvent cement6.webp";
 
 import pvfix1 from "@/assets/products/pvfix.webp";
 import pvfix2 from "@/assets/products/pvfix1.webp";
@@ -121,6 +127,7 @@ import sr525 from "@/assets/products/sr-525.webp";
 import sr5351 from "@/assets/products/sr535.webp";
 import sr5352 from "@/assets/products/sr5352.webp";
 import sr5353 from "@/assets/products/sr5353.webp";
+import sr5354 from "@/assets/products/sr5354.webp";
 
 import superGlue from "@/assets/products/super glue.webp";
 
@@ -133,6 +140,9 @@ import tileCure from "@/assets/products/tile cure.webp";
 import upvc1 from "@/assets/products/upvc.webp";
 import upvc2 from "@/assets/products/upvc2.webp";
 import upvc3 from "@/assets/products/upvc3.webp";
+import upvc4 from "@/assets/products/upvc4.webp";
+import upvc5 from "@/assets/products/upvc5.webp";
+import upvc6 from "@/assets/products/upvc6.webp";
 
 import upvcClear1 from "@/assets/products/upvc clear.webp";
 import upvcClear2 from "@/assets/products/upvc clear2.webp";
@@ -170,9 +180,9 @@ export {team,sus1,sus2,ceo, noimg,logo, banner1, banner2, banner3, about, about1
   img13, processimg, gal1, gal2, gal3, gal4, astm, isi,
 
     // product
-allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcolsh, quickcolsh2, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper,  pvcSolventCement1, pvcSolventCement2,   pvcSolventCement3,
+allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcolsh, quickcolsh2, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvc6, cpvc7, cpvc8, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper,  pvcSolventCement1, pvcSolventCement2,   pvcSolventCement3,
   pvcSolventCement4,
-  pvcSolventCement5,
+  pvcSolventCement5,pvcSolventCement6,pvcSolventCement7,pvcSolventCement8,
 
   pvfix1,
   pvfix2,
@@ -221,7 +231,7 @@ allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcols
 
   sr5351,
   sr5352,
-  sr5353,
+  sr5353,sr5354,
 
   superGlue,
 
@@ -233,7 +243,7 @@ allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcols
 
   upvc1,
   upvc2,
-  upvc3,
+  upvc3,upvc4,upvc5,upvc6,
   upvcClear1,
   upvcClear2,
   upvcClear3,

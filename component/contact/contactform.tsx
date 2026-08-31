@@ -85,11 +85,10 @@ export default function ContactForm() {
             </form>
           </div>
         </div>
-
         {/* Right Side: Google Map Iframe */}
-        <div className="w-full h-[400px] lg:h-auto min-h-[480px] rounded-3xl overflow-hidden shadow-sm border border-zinc-100">
+        <div className="w-full h-100 lg:h-auto min-h-120 rounded-3xl overflow-hidden shadow-sm border border-zinc-100">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.412027028801!2d76.9957818!3d28.4369934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d17ec35acb1ff%3A0x1305ca793225b728!2s527%2C%20Pace%20City%20II%2C%20Sector%2037%2C%20Gurugram%2C%20Haryana%20122004!5e0!3m2!1sen!2sin!4v1784703999725!5m2!1sen!2sin" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56149.904997829006!2d76.92686735820313!3d28.408118700000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d17a58f116d1d%3A0x35e8d7cbbe4f9642!2sWembley%20Laboratories%20Ltd!5e0!3m2!1sen!2sin!4v1788158612419!5m2!1sen!2sin" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
