@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 
 // User explicit asset path directive matching instructions
@@ -52,7 +50,7 @@ export default function BlogSection() {
           {blogData.map((post:any) => (
             <div
               key={post.id}
-              className="min-w-[280px] sm:min-w-[320px] lg:min-w-0 w-full flex flex-col snap-start group text-left"
+              className="min-w-70 sm:min-w-[320px] lg:min-w-0 w-full flex flex-col snap-start group text-left"
             >
               {/* 1. Rounded Image Card Container Frame */}
               <div className="w-full aspect-[1.53] relative rounded-xl overflow-hidden mb-4 select-none shadow-xs border border-gray-100">
