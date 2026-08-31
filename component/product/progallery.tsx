@@ -104,7 +104,8 @@ export default function ProductGallery({ data }: any) {
         </div>
 
 
-            <div className="flex flex-wrap md:gap-8 gap-3">                       <Buttonmain text="Download TDS" href="/contact-us" variant="primary"/>
+            <div className="flex flex-wrap md:gap-8 gap-3 mt-2 mb-6">   
+                                  <Buttonmain text="Download TDS" href="/contact-us" variant="primary"/>
                        <Buttonmain text="Download MSDS" href="/contact-us" variant="secondary"/>
 </div>
           </div>        }
