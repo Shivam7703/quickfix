@@ -78,7 +78,7 @@ Discover the research, manufacturing capabilities, quality systems, and decades 
     <li><Link href="/about-us" className="hover:text-blue-600 transition-colors">About Us</Link></li>
     <li><Link href="/career" className="hover:text-blue-600 transition-colors">Career</Link></li>
     <li><Link href="/sustainability" className="hover:text-blue-600 transition-colors">Sustainability</Link></li>
-    <li><Link href="/blogs" className="hover:text-blue-600 transition-colors">Blogs</Link></li>
+    {/* <li><Link href="/blogs" className="hover:text-blue-600 transition-colors">Blogs</Link></li> */}
     {/* <li><Link href="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link></li> */}
     {/* <li><Link href="/terms" className="hover:text-blue-600 transition-colors">T&C</Link></li> */}
   </ul>

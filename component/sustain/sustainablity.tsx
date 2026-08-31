@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import { LuLeaf, LuRecycle, LuZap, LuArrowRight } from 'react-icons/lu';
-import { sus1, sus2 } from "@/assets";
+import { cpvc4, durobond, sus1, sus2 } from "@/assets";
 import { FaCheckCircle } from 'react-icons/fa';
 import Buttonmain from '../global/button';
 
@@ -42,7 +42,7 @@ export default function Sustain() {
               className="relative h-[320px] sm:h-[420px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl shadow-yellow-500/10 border border-slate-100"
             >
               <Image 
-                src={sus1} 
+                src={cpvc4} 
                 alt="Eco-friendly innovation" 
                 fill 
                 className="object-cover transition-transform duration-700 hover:scale-105"
@@ -183,7 +183,7 @@ At Quickfix, sustainability is part of our commitment to continuous improvement.
               className="relative h-[320px] sm:h-[420px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl shadow-red-500/10 border border-slate-100"
             >
               <Image 
-                src={sus2} 
+                src={durobond} 
                 alt="Sustainable Future" 
                 fill 
                 className="object-cover transition-transform duration-700 hover:scale-105"
