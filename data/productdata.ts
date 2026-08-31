@@ -519,7 +519,7 @@ export const Productdata = [
     title: "durofix 535 rubber base adhesive",
     category: "Rubber Based Adhesive",
     description: "Durofix is a high strength, medium viscous, synthetic rubber based adhesive which has multiple uses in Industries & DIY projects. This superior, yet cost effective product is widely used in many applications such as vinyl flooring, HVAC Ducting, Water Pipelines, Foam and Furniture, Footwear, etc. This quick-setting adhesive is easy to apply and offers all that you need. It is free from Benzene hence safe to use.",
-    imgs: [sr5354, sr5351, sr5352, sr5353],
+    imgs: [sr5354],
     sizes: {
       heading: [
         "Size",

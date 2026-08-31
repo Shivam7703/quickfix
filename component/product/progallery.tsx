@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import { FaStar,  FaExclamationTriangle, FaHandPointRight } from "react-icons/fa";
+import Buttonmain from "../global/button";
 
 
 export default function ProductGallery({ data }: any) {
@@ -74,7 +75,7 @@ export default function ProductGallery({ data }: any) {
               <FaStar />
               <FaStar className="text-yellow-300" />
             </div>
-            <span>{data?.id + 316} Reviews</span>
+            <span>{data?.id + 306} Reviews</span>
           </div>
 
 
@@ -103,41 +104,9 @@ export default function ProductGallery({ data }: any) {
         </div>
 
 
-            {/* <div className="overflow-x-auto">
-              <table className="min-w-full border-collapse">
-                <thead>
-                  <tr className="bg-yellow-400 text-blue-900">
-                    {data?.sizes.heading.map((head:any, index:number) => (
-                      <th
-                        key={index}
-                        className="border border-yellow-500 px-5 py-4 text-left text-sm font-bold uppercase tracking-wide"
-                      >
-                        {head}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-
-                <tbody>
-                  {data?.sizes.rows.map((row:any, rowIndex:number) => (
-                    <tr
-                      key={rowIndex}
-                      className={`transition hover:bg-blue-50 ${rowIndex % 2 === 0 ? "bg-white" : "bg-blue-50/40"
-                        }`}
-                    >
-                      {row.map((cell:string, cellIndex:number) => (
-                        <td
-                          key={cellIndex}
-                          className="border border-blue-100 px-5 py-4 text-sm text-gray-700"
-                        >
-                          {cell}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div> */}
+            <div className="flex flex-wrap md:gap-8 gap-3">                       <Buttonmain text="Download TDS" href="/contact-us" variant="primary"/>
+                       <Buttonmain text="Download MSDS" href="/contact-us" variant="secondary"/>
+</div>
           </div>        }
 
 
