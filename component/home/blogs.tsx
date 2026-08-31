@@ -55,7 +55,7 @@ export default function BlogSection() {
               {/* 1. Rounded Image Card Container Frame */}
               <div className="w-full aspect-[1.53] relative rounded-xl overflow-hidden mb-4 select-none shadow-xs border border-gray-100">
                 <Image
-                  src={post.img || blg1}
+                  src={post.img ||     blg1}
                   alt={post.title}
                   fill
                   className="object-cover object-center transform group-hover:scale-103 transition-transform duration-500"
