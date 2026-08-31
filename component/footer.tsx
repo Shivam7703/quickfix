@@ -94,7 +94,7 @@ Discover the research, manufacturing capabilities, quality systems, and decades 
     <li><Link href="/products/super-glue-cyanoacrylate-adhesive" className="hover:text-blue-600 transition-colors">Superglue</Link></li>
     <li><Link href="/products/durobond-cyanoacrylate-adhesive" className="hover:text-blue-600 transition-colors">Durobond</Link></li>
     <li><Link href="/products/super-glue-hv-700-rapid-hv-glue" className="hover:text-blue-600 transition-colors">Superglue HV</Link></li>
-    <li><Link href="/products/quickgum-gluepen-coloured-synthetic-gum" className="hover:text-blue-600 transition-colors">Quickgum & Gluepen</Link></li>
+    <li><Link href="/products/quickgum-glupen-coloured-synthetic-gum" className="hover:text-blue-600 transition-colors">Quickgum & Gluepen</Link></li>
     <li><Link href="/products/quickkraft-white-glue" className="hover:text-blue-600 transition-colors">Quickkraft</Link></li>
     <li><Link href="/products/durofix-rubber-base-adhesive" className="hover:text-blue-600 transition-colors">Durofix</Link></li>
     <li><Link href="/products/durofix-535-rubber-base-adhesive" className="hover:text-blue-600 transition-colors">SR-535</Link></li>

@@ -41,7 +41,7 @@ const navLinks = [
       name: "Fragrant Gum",
       href: "#",
       subnav: [
-        { name: "Quickgum & Gluepen", href: "/products/quickgum-gluepen-coloured-synthetic-gum" },
+        { name: "Quickgum & Gluepen", href: "/products/quickgum-glupen-coloured-synthetic-gum" },
       ],
     },
     {
