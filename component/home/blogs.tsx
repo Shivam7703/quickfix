@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
-
 // User explicit asset path directive matching instructions
 import { blg1 } from "@/assets";
 import { blogData } from "@/data/blogdata";

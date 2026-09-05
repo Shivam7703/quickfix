@@ -1,6 +1,6 @@
 import {
   allPurposeAdhesive1, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper, pvcSolventCement1, pvcSolventCement2, pvcSolventCement3, pvcSolventCement4, pvcSolventCement5, pvfix1, pvfix2, pvfix3, pvfix4, pvfix5, pvshield, quickcol, quickguard1, quickguard2, quickguard3, quickguard4, quickgum1, quickgum2, quickgum3, quickgum4, quickgum5, quickgum6,
-  quickgum7,
+  quickgum7,quickplumb,
   quickgum8,
   quickgum9,
   quickgum10,
@@ -66,7 +66,8 @@ import {
   sr5354,
   upvc4,
   upvc5,
-  upvc6
+  upvc6,
+  sp500
 } from "@/assets";
 
 export const Productdata = [
@@ -76,6 +77,8 @@ export const Productdata = [
     title: "Quickfix All Purpose Adhesive",
     category: "All Purpose Adhesive",
     description: "Quickfix is India's first indigenous all-purpose adhesive. It is a quick drying, clear and transparent adhesive which exhibits excellent bonding properties. Owing to its capacity to bond most substrates, it finds applications across various industries, as well as DIY and Household use.",
+    tds:"https://wembleysquickfix.com/file/Quickfix - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/Quickfix - All Purpose Adhesive - MSDS.pdf",
 "imgs": [
       allPurposeAdhesive1, allPurposeAdhesive2
     ],
@@ -146,6 +149,8 @@ export const Productdata = [
     "title": "super glue cyanoacrylate adhesive",
     "category": "Cyanoacrylate",
     "description": "Quickfix SuperGlue is a low viscosity, general purpose, ethyl cyanoacrylate adhesive, which is suitable for bonding a wide range of materials, instantly! On applying SuperGlue between two surfaces, a rapid polymerization occurs on its exposure to atmospheric moisture, delivering a supreme bond.",
+     tds:"https://wembleysquickfix.com/file/SuperGlue - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/SuperGlue - MSDS.pdf",
     "imgs": [
       superGlue
     ],
@@ -210,6 +215,8 @@ export const Productdata = [
     title: "durobond cyanoacrylate adhesive",
     category: "Cyanoacrylate",
     description: "DuroBond is a low viscosity, fast curing, ethyl cyanoacrylate adhesive, making it suitable for bonding applications where very fast curing time is required. It finds wide acceptance in the flex and footwear industry.",
+     tds:"https://wembleysquickfix.com/file/Durobond - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/", 
     imgs: [durobond],
     sizes: {
       heading: [
@@ -271,7 +278,9 @@ export const Productdata = [
     title: "Super Glue HV 700 – Rapid HV Glue",
     category: "Cyanoacrylate",
     description: "HV-700 is a high viscosity, ethyl cyanoacrylate adhesive, which is suitable for bonding a wide range of materials, easy to use and bonds within minutes. This new age glue is excellent for applications that require quick bonding solutions to deliver strong and long-lasting bonds. Its non-drip formula allows vertical applications, neat applications and negligible wastage.",
-    imgs: [superGlueHV1, superGlueHV2, superGlueHV3],
+     tds:"https://wembleysquickfix.com/file/Superglue HV - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/SuperGlue HV - MSDS.pdf", 
+     imgs: [superGlueHV1, superGlueHV2, superGlueHV3],
     sizes: {
       heading: [
         "Size",
@@ -330,7 +339,9 @@ export const Productdata = [
     title: "quickgum & glupen coloured synthetic gum",
     category: "Fragrant Gum",
     description: "GLUPEN is a non-toxic, coloured synthetic gum. It is available in 5 different colours and fragrances. It's easy to use squeezy tubes, non-toxic nature and attractive packaging makes it popular amongst kids. It delivers excellent paper to paper bonding.",
-    imgs: [gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, quickgum1, quickgum2, quickgum3, quickgum4, quickgum5, quickgum6,
+     tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/QuickGum & GluPen - MSDS.pdf", 
+    imgs:[gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, quickgum1, quickgum2, quickgum3, quickgum4, quickgum5, quickgum6,
       quickgum7,
       quickgum8,
       quickgum9,
@@ -403,7 +414,9 @@ export const Productdata = [
     title: "quickkraft white glue",
     category: "White Adhesive",
     description: "QUICKKRAFT White Glue is suitable for polystyrene, wood and other materials. Its superior quality, attractive packaging and ease of application makes it an ideal adhesive for children, offices and households.",
-    imgs: [quickraft1, quickraft2, quickraft3, quickraft4, quickraft5],
+     tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/QuickKraft White Glue - MSDS.pdf", 
+    imgs:[quickraft1, quickraft2, quickraft3, quickraft4, quickraft5],
     sizes: {
       heading: [
         "Size",
@@ -464,7 +477,8 @@ export const Productdata = [
     title: "durofix rubber base adhesive",
     category: "Rubber Based Adhesive",
     description: "Durofix is a synthetic rubber based adhesive that has the ability to bond various similar and dissimilar surfaces. This quick-setting adhesive delivers high strength bonds. Durofix finds diverse application in home and office.",
-    imgs: [durofix1, durofix2],
+     tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [durofix1, durofix2],
     sizes: {
       heading: [
         "Size",
@@ -514,71 +528,106 @@ export const Productdata = [
       ]
     }
   },
-  {
-    id: 8,
-    title: "durofix 535 rubber base adhesive",
-    category: "Rubber Based Adhesive",
-    description: "Durofix is a high strength, medium viscous, synthetic rubber based adhesive which has multiple uses in Industries & DIY projects. This superior, yet cost effective product is widely used in many applications such as vinyl flooring, HVAC Ducting, Water Pipelines, Foam and Furniture, Footwear, etc. This quick-setting adhesive is easy to apply and offers all that you need. It is free from Benzene hence safe to use.",
-    imgs: [sr5354],
-    sizes: {
-      heading: [
-        "Size",
-        "Description",
-        "Box Qty",
-        "Shipper Qty",
-        "Dimensions (in Inches)",
-        "Gross Wt (in Kgs)"
-      ],
-      rows: [
-        ["200 ml", "DUROFIX SR535 RUB BASE TIN", "15", "60", "19x15.5x6.2", "14.00"],
-        ["500 ml", "DUROFIX SR535 RUB BASE TIN", "N/A", "24", "14x11x9", "12.30"],
-        ["1 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "12", "17x13.2x6", "13.00"],
-        ["5 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "4", "15.5x15.5x10", "21.50"],
-        ["25 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "1", "18  x 11", "25.00"]
-      ]
-    },
-    usage: [
-      "Durofix is a multi-purpose adhesive and can be used on most materials such as leather, plastics, vinyl, rubber etc.",
-      "Well suited for use in vinyl flooring segment, AC Ducting & Insulation, Furniture & Upholstery, Rexine, Foam to wood or Metal, HVAC Ducting, Bus body making, etc."
+ {
+  id: 8,
+  title: "DUROFIX 535 - RUBBER BASE ADHESIVE",
+  category: "Rubber Based Adhesive",
+  description: "Durofix is a high strength, medium viscous, synthetic rubber based adhesive which has multiple uses in Industries & DIY projects. This superior, yet cost effective product is widely used in many applications such as vinyl flooring, HVAC Ducting, Water Pipelines, Foam and Furniture, Footwear, etc. This quick-setting adhesive is easy to apply and offers all that you need. It is free from Benzene hence safe to use.",
+   tds:"https://wembleysquickfix.com/file/Durofix 535 - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [sr5354],
+  sizes: {
+    heading: [
+      "Size",
+      "Description",
+      "Box Qty",
+      "Shipper Qty",
+      "Dimensions (in Inches)",
+      "Gross Wt (in Kgs)"
     ],
-    benefits: [
-      "Easy spread ability and high coverage.",
-      "Exhibits high strength on curing.",
-      "Benzene free formulation.",
-      "Efficient heat resistance.",
-      "Economical in the long run.",
-      "Bonds are not rigid and have long durability.",
-      "Long Shelf life - 12 months from the date of manufacturing."
-    ],
-    precaution: [
-      "Product should be stored in unopened containers in a cool and dry location.",
-      "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
-      "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
-    ],
-    price: {
-      heading: [
-        "SKU",
-        "Basic Rate",
-        "With GST",
-        "MRP",
-        "Inner Carton",
-        "Master Carton"
-      ],
-      rows: [
-        ["200 ml", "58.00", "68.44", "150.00", "15", "60"],
-        ["500 ml", "110.00", "129.80", "300.00", "N/A", "24"],
-        ["1 Ltr.", "200.00", "236.00", "550.00", "N/A", "12"],
-        ["5 Ltr.", "950.00", "1,121.00", "2,400", "N/A", "4"],
-        ["25 Ltr.", "4,250.00", "5,015.00", "10,000.00", "N/A", "N/A"]
-      ]
-    }
+    rows: [
+      ["200 ml", "DUROFIX SR535 RUB BASE TIN", "15", "60", "19x15.5x6.2", "14.00"],
+      ["500 ml", "DUROFIX SR535 RUB BASE TIN", "N/A", "24", "14x11x9", "12.30"],
+      ["1 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "12", "17x13.2x6", "13.00"],
+      ["5 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "4", "15.5x15.5x10", "21.50"],
+      ["25 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "1", "18  x 11", "25.00"]
+    ]
   },
+  usage: [
+    "Durofix is a multi-purpose adhesive and can be used on most materials such as leather, plastics, vinyl, rubber etc.",
+    "Durofix is well suited for use in vinyl flowing segment, AC Ducting & Insulation, Furniture & Upholstery, Rexine, Foam to wood or Metal, HVAC Ducting, Bus body making, etc."
+  ],
+  benefits: [
+    "Easy spread ability and high coverage",
+    "Exhibits high strength on curing.",
+    "Benzene free formulation.",
+    "Efficient heat resistance.",
+    "Economical in the long run.",
+    "Bonds are not rigid and have long durability.",
+    "Long Shelf life - 12 months from the date of manufacturing."
+  ],
+  precaution: [
+    "Product should be stored in unopened containers in a cool and dry location.",
+    "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
+    "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
+  ],
+  price: {
+    heading: [
+      "SKU",
+      "Basic Rate",
+      "With GST",
+      "MRP",
+      "Inner Carton",
+      "Master Carton"
+    ],
+    rows: [
+      ["200 ml", "58.00", "68.44", "150.00", "15", "60"],
+      ["500 ml", "110.00", "129.80", "300.00", "N/A", "24"],
+      ["1 Ltr.", "200.00", "236.00", "550.00", "N/A", "12"],
+      ["5 Ltr.", "950.00", "1,121.00", "2,400", "N/A", "4"],
+      ["25 Ltr.", "4,250.00", "5,015.00", "10,000.00", "N/A", "N/A"]
+    ]
+  }
+},
+  {
+  id: 29,
+  title: "durofix 525 rubber base adhesive",
+  category: "Rubber Based Adhesive",
+  description: "Durofix is a high strength, medium viscous, synthetic rubber based adhesive which has multiple uses in Industries & DIY projects. This superior, yet cost effective product is widely used in many applications such as vinyl flooring, HVAC Ducting, Water Pipelines, Foam and Furniture, Footwear, etc. This quick-setting adhesive is easy to apply and offers all that you need. It is free from Benzene hence safe to use.",
+   tds:"https://wembleysquickfix.com/file/Durofix 525- TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [sr525],
+  sizes: {
+    heading: [
+    ],
+    rows: []
+  },
+  usage: [
+    "Durofix is a multi-purpose adhesive and can be used on most materials such as leather, plastics, vinyl, rubber etc.",
+    "Durofix is well suited for use in vinyl flowing segment, AC Ducting & Insulation, Furniture & Upholstery, Rexine, Foam to wood or Metal, HVAC Ducting, Bus body making, etc."
+  ],
+  benefits: [
+    "Easy spread ability and high coverage",
+    "Exhibits high strength on curing.",
+    "Benzene free formulation.",
+    "Efficient heat resistance.",
+    "Economical in the long run.",
+    "Bonds are not rigid and have long durability.",
+    "Long Shelf life - 12 months from the date of manufacturing."
+  ],
+  precaution: [],
+  price: {
+    heading: [
+    ],
+    rows: []
+  }
+},
   {
     id: 9,
     title: "quickseal epoxy putty",
     category: "Epoxy Putty",
     description: "QuickSEAL is a multi purpose, two component epoxy putty with 4 main applications – Sealing,  joining, fixing and building.Owing to its versatility and ease of application, it commonly finds application across multiple industry segments such as plumbing, auto mechanics, etc.as well as various DIY and Household applications. ",
-  imgs: [quickseal1, quickseal2, epoxyAdhesives],
+   tds:"https://wembleysquickfix.com/file/QuickSeal - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/Quickseal - MSDS.pdf",                  
+    imgs: [quickseal1, quickseal2, epoxyAdhesives],
     sizes: {
       heading: [
         "Size",
@@ -641,7 +690,8 @@ export const Productdata = [
   title: "quickseal sanitary epoxy putty - white",
   category: "Epoxy Putty",
   description: "QuickSEAL Sanitary is a specially formulated hand kneadable two-part epoxy compound that's perfect for gaps and leakages. It blends into a soft mixture with modelling clay like consistency for ease of application, and sets at room temperature.",
-  imgs: [quicksealSanitary, epoxyAdhesives],
+   tds:"https://wembleysquickfix.com/file/QuickSeal White - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [quicksealSanitary],
   sizes: {
     heading: [
       "Size",
@@ -692,9 +742,11 @@ export const Productdata = [
   },
   {
   id: 11,
-  title: "quicktite versatile epoxy adhesive",
-  category: "Epoxy",
+  title: "Quicktite - Standard Epoxy Adhesive",
+  category: "Epoxy", 
   description: "QuickTITE is a high strength waterproof epoxy adhesive that is known for bonding goods for good!, QuickTite offers strong and durable bonding which are resistant to water, heat, corrosion and most chemicals. This versatile adhesive bonds anything to anything and is suited for all types of applications across the industrial and DIY sectors and is ideal for all surfaces such as stone, metal, ceramic glass, wood, rubber, etc.",
+  tds:"https://wembleysquickfix.com/file/Quicktite - Standard Epoxy Adhesive - TDS.pdf",
+  msds:"https://wembleysquickfix.com/file/QuickTite - MSDS - Hardener.pdf",                   
   imgs: [quicktite1, quicktite2,quicktite3],
   sizes: {
     heading: [
@@ -759,7 +811,8 @@ export const Productdata = [
   title: "quickfix PTFE tape",
   category: "Thread Sealant",
   description: "Quickfix PTFE Tape is a premium quality thread seal tape perfect for joining threaded pipes. It is self-lubricating, non-hardening, non-toxic and non-flammable tape. Made from 100% PTFE (Polytetrafluoroethylene), it offers excellent chemical resistance and high temperature tolerance while filling irregular voids between threads to make joints easy to assemble and disassemble.",
-  imgs: [ptfetape, ptfetape2],
+   tds:"https://wembleysquickfix.com/file/P.T.F.E. Tape - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/P.T.F.E. Tape - MSDS.pdf",                     imgs: [ptfetape, ptfetape2],
   sizes: {
     heading: [
       "Size",
@@ -817,7 +870,8 @@ export const Productdata = [
   title: "pv shield-electrical pvc tape",
   category: "PVC Electrical Tape",
   description: "PV Shield is an electrical PVC tape that is fire retardant (self-extinguishing) and provides a durable, weatherproof and waterproof insulation. PV Shield has high tack ensuring long lasting and complete insulation on wiring under different usage and environment conditions.",
-  imgs: [pvshield, pvshield2],
+   tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [pvshield, pvshield2],
   sizes: {
     heading: [
       "Size",
@@ -870,10 +924,11 @@ export const Productdata = [
 
 {
   id: 13,
-  title: "quickfix cpvc solvent cement",
+  title: "Quickfix CPVC Solvent Cement",
   category: "Solvent Cements",
-  description: "Quickfix CPVC Solvent Cement is medium bodied, fast setting Yellow Solvent Cement for use on all schedules and classes of CPVC pipes and fittings up to 6” diameter with interference fit. MEETS ASTM F-493.",
-  imgs: [cpvc6, cpvc7, cpvc8, cpvc1,cpvc2,cpvc3,cpvc4,cpvc5],
+  description: "Quickfix CPVC Solvent Cement is medium bodied, fast setting Yellow Solvent Cement for use on all schedules and classes of CPVC pipes and fittings up to 6” diameter with interference fit. MEETS ASTM F-493. Available in collapsible aluminium tubes, Tin & Coex jars.",
+   tds:"https://wembleysquickfix.com/file/CPVC - TDS - Medium.pdf",
+    msds:"https://wembleysquickfix.com/file/CPVC-MSDS.pdf",                     imgs: [cpvc6, cpvc7, cpvc8, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5],
   sizes: {
     heading: [
       "Size",
@@ -907,16 +962,16 @@ export const Productdata = [
     "High solid content – leak proof joints.",
     "Excellent gap filling ability.",
     "Pipes can be put to use fast.",
-    "Available in easy to use, aluminium tubes & tin containers with dauber inside.",
+    "Available in easy to use, aluminium tubes & tin and CO-EX containers with dauber inside.",
     "LOW – V.O.C. Solvent Cement meets California South Coast Air Quality Management District (SCAQMD) 1168/316A or BAAQMD Method 40 and various environmental requirements.",
     "Meets performance requirements of ASTM F-493.",
     "Long Shelf life - 24 months from the date of manufacturing."
   ],
   precaution: [
-      "Product should be stored in unopened containers in a cool and dry location.",
-      "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
-      "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
-    ],
+    "Product should be stored in unopened containers in a cool and dry location.",
+    "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
+    "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
+  ],
   price: {
     heading: [
       "SKU",
@@ -945,7 +1000,8 @@ export const Productdata = [
   title: "pv fix-clear solvent cement",
   category: "Solvent Cements",
   description: "PVFix is a medium bodied, High strength, Medium set, Clear solvent cement designed for all classes and schedules of UPVC/PVC pipes and fittings with interference fit schedule 40 through 6 inch (160 mm) diameter and Schedule 80 through 4 inch(110 mm) diameter, & PVC Pipes and Fittings up to 12” Diameter for non-pressure pipe. Meets ASTM D2564.",
-  imgs: [pvfix1, pvfix2, pvfix3, pvfix4, pvfix5],
+   tds:"https://wembleysquickfix.com/file/PVFix - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [pvfix1, pvfix2, pvfix3, pvfix4, pvfix5],
   sizes: {
     heading: [
       "Size",
@@ -979,7 +1035,7 @@ export const Productdata = [
     "Very high solid content – ensuring leak proof joints.",
     "Available in easy to use, collapsible aluminium tubes & tin containers with dauber inside.",
     "Meets performance requirements of ASTM D2564.",
-    "Long Shelf life - 24 months from the date of manufacturing."
+    "Long Shelf life - 24 months from the date of manufacturing.","ISI 14182 approved"
   ],
   precaution: [
       "Product should be stored in unopened containers in a cool and dry location.",
@@ -1004,10 +1060,11 @@ export const Productdata = [
 
 {
   id: 15,
-  title: "quickfix pvc solvent cement",
+  title: "Quickfix PVC Solvent Cement",
   category: "Solvent Cements",
-  description: "Quickfix PVC is a regular bodied, fast setting Clear Solvent Cement for use on all schedules and classes of PVC pipes and fittings up to 12” diameter with interference fit for non pressure pipes. Meets ASTM D2564.",
-  imgs: [pvcSolventCement6,pvcSolventCement7,pvcSolventCement8,pvcSolventCement1, pvcSolventCement2,pvcSolventCement3,pvcSolventCement4,pvcSolventCement5],
+  description: "Quickfix PVC is a regular bodied, fast setting Clear Solvent Cement for use on all schedules and classes of PVC pipes and fittings up to 12” diameter with interference fit for non-pressure pipes. Meets ASTM D2564. ISI 14182 certified. Available in collapsible aluminium tubes, Tin & CO-EX jars.",
+   tds:"https://wembleysquickfix.com/file/PVC - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/PVC - MSDS.pdf",                     imgs: [pvcSolventCement6, pvcSolventCement7, pvcSolventCement8, pvcSolventCement1, pvcSolventCement2, pvcSolventCement3, pvcSolventCement4, pvcSolventCement5],
   sizes: {
     heading: [
       "Size",
@@ -1038,15 +1095,16 @@ export const Productdata = [
     "High Strength formula.",
     "Fast Setting Formula - Pipes can be put to use fast.",
     "High solid contents – ensuring leak proof joints.",
-    "Available in easy to use, collapsible aluminium tubes & tin containers with dauber inside.",
+    "Available in easy to use, collapsible aluminium tubes & tin and CO-EX containers with dauber inside.",
+    "ISI 14182 certified.",
     "Meets performance requirements of ASTM D2564.",
-    "Long Shelf life - 24 months from date of manufacturing."
+    "Long Shelf life - 24 months from date of manufacture."
   ],
   precaution: [
-      "Product should be stored in unopened containers in a cool and dry location.",
-      "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
-      "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
-    ],
+    "Product should be stored in unopened containers in a cool and dry location.",
+    "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
+    "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
+  ],
   price: {
     heading: [
       "SKU",
@@ -1074,7 +1132,8 @@ export const Productdata = [
   title: "quickguard – pvc solvent cement",
   category: "Solvent Cements",
   description: "QuickGUARD is a regular bodied, fast setting Clear Solvent Cement for use on all schedules and classes of PVC pipes and fittings up to 12” diameter with interference fit for non-pressure pipes. Meets ASTM D2564.",
-  imgs: [quickguard1, quickguard2, quickguard3, quickguard4],
+   tds:"https://wembleysquickfix.com/file/QuickGuard - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [quickguard1, quickguard2, quickguard3, quickguard4],
   sizes: {
     heading: [
       "Size",
@@ -1129,10 +1188,11 @@ export const Productdata = [
 
 {
   id: 17,
-  title: "quickfix upvc solvent cement - blue",
+  title: "Quickfix UPVC Solvent Cement - Blue",
   category: "Solvent Cements",
-  description: "Quickfix UPVC is a medium bodied, medium set, Blue Solvent Cement for all classes and schedules with interference fit schedule 40 through 6” diameter and schedule 80 through 4” diameter. Meets ASTM D2564.",
-  imgs: [upvc4,upvc5,upvc6,upvc1, upvc2, upvc3],
+  description: "Quickfix UPVC is a medium bodied, medium set, Blue Solvent Cement for all classes and schedules with interference fit schedule 40 through 6” diameter and schedule 80 through 4” diameter. Meets ASTM D2564. ISI 14182 certified. Available in collapsible aluminium tubes, Tin & Coex jars.",
+   tds:"https://wembleysquickfix.com/file/UPVC - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/UPVC - MSDS.pdf",                     imgs: [upvc4, upvc5, upvc6, upvc1, upvc2, upvc3],
   sizes: {
     heading: [
       "Size",
@@ -1150,8 +1210,8 @@ export const Productdata = [
     ]
   },
   usage: [
-    "High Strength formula for joining and plugging rigid UPVC pipes in Agriculture, Sewage, Household and Industrial plumbing.",
-    "Recommended for potable water, non pressure pipe, SWR/Rigid Pipes and DWV."
+    "Premium Quality, High Strength Solvent Cement formulated for use in irrigation, industrial & household piping, electrical conduit, pool & spa, plumbing and non-pressure applications.",
+    "ASTM D2564."
   ],
   benefits: [
     "Suitable for use in all climatic conditions.",
@@ -1162,15 +1222,16 @@ export const Productdata = [
     "High solid content – ensuring leak proof joints.",
     "Excellent gap filling ability.",
     "Pipes can be put to use fast.",
-    "Available in easy to use, collapsible aluminium tubes & tin containers with dauber inside.",
+    "Available in easy to use, collapsible aluminium tubes & tin and CO-EX containers with dauber inside.",
+    "ISI 14182 certified.",
     "Meets performance requirements of ASTM D2564.",
     "Long Shelf life - 24 months from the date of manufacturing."
   ],
   precaution: [
-      "Product should be stored in unopened containers in a cool and dry location.",
-      "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
-      "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
-    ],
+    "Product should be stored in unopened containers in a cool and dry location.",
+    "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
+    "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
+  ],
   price: {
     heading: [
       "SKU",
@@ -1191,10 +1252,11 @@ export const Productdata = [
 
 {
   id: 18,
-  title: "quickfix upvc solvent cement - clear",
+  title: "Quickfix UPVC Solvent Cement - Clear",
   category: "Solvent Cements",
-  description: "Quickfix UPVC is a medium bodied, medium set, Clear Solvent Cement for all classes and schedules with interference fit schedule 40 through 6” diameter and schedule 80 through 4” diameter. Meets ASTM D2564.",
-  imgs: [upvcClear1, upvcClear2, upvcClear3],
+  description: "Quickfix UPVC is a medium bodied, medium set, Clear Solvent Cement for all classes and schedules with interference fit schedule 40 through 6” diameter and schedule 80 through 4” diameter. Meets ASTM D2564. ISI 14182 certified. Available in collapsible aluminium tubes, Tin & CO-EX jars.",
+   tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [upvcClear1, upvcClear2, upvcClear3],
   sizes: {
     heading: [
       "Size",
@@ -1211,27 +1273,28 @@ export const Productdata = [
     ]
   },
   usage: [
-    "High Strength formula for joining and plugging rigid UPVC pipes in Agriculture, Sewage, Household and Industrial plumbing.",
-    "Recommended for potable water, non-pressure pipe, SWR/Rigid Pipes and DWV."
+    "Premium Quality, High Strength Solvent Cement formulated for use in irrigation, industrial & household piping, electrical conduit, pool & spa, plumbing and non-pressure applications.",
+    "ASTM D2564."
   ],
   benefits: [
     "Suitable for use in all climatic conditions.",
-    "Medium Bodied Clear Solvent cement.",
+    "Medium Bodied Blue Solvent cement.",
     "Non Dripping - no loss in application.",
     "High Strength Formula.",
     "Medium Set – allowing sufficient working time.",
     "High solid content – ensuring leak proof joints.",
     "Excellent gap filling ability.",
     "Pipes can be put to use fast.",
-    "Available in tin containers with dauber inside.",
+    "Available in tin & CO-EX containers with dauber inside.",
     "Meets performance requirements of ASTM D2564.",
+    "ISI 14182 certified.",
     "Long Shelf life - 24 months from the date of manufacturing."
   ],
   precaution: [
-      "Product should be stored in unopened containers in a cool and dry location.",
-      "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
-      "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
-    ],
+    "Product should be stored in unopened containers in a cool and dry location.",
+    "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
+    "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
+  ],
   price: {
     heading: [
       "SKU",
@@ -1254,7 +1317,8 @@ export const Productdata = [
   title: "Quickfix CPVC Ball Valve – Non Threaded",
   category: "Ball Valve",
   description: "Quickfix UPVC Ball Valves find application in hot & cold plumbing systems in residential and commercial projects. These valves are also widely used in chemical processing plants, water treatment plants, industrial piping systems, water heating systems, etc for flow control as they have high temperature resistance, durability, non-corrosive nature and offer long term reliability in demanding environments.",
-  imgs: [cpvcValve1, cpvcValve2],
+   tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [cpvcValve1, cpvcValve2],
   sizes: {
     heading: [
       "Size",
@@ -1316,7 +1380,8 @@ export const Productdata = [
   title: "quickfix UPVC ball valve non threaded",
   category: "Ball Valve",
   description: "Quickfix UPVC Ball Valves are lightweight, corrosion resistant valves used to regulate flow in plumbing and irrigation systems. Made from unplasticized polyvinyl chloride, they offer excellent chemical resistance and durability for both residential and industrial applications.",
-  imgs: [upvcValve2, upvcValve1],
+   tds:"https://wembleysquickfix.com/file/UPVC Ball Valve - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [upvcValve2, upvcValve1],
   sizes: {
     heading: [
       "Size",
@@ -1381,10 +1446,11 @@ export const Productdata = [
 
 {
   id: 21,
-  title: "drainqure instant drain cleaner",
+  title: "Drainqure Instant Drain Cleaner",
   category: "Drain Cleaner",
   description: "DrainQure is a powerful chemical formulation designed to clear clogged drains by dissolving grease, hair, food particles, and organic matter. It provides fast-acting relief for blocked kitchen sinks, bathroom drains and pipelines, restoring free flow effectively.",
-  imgs: [drainQure],
+   tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [drainQure],
   sizes: {
     heading: [
       "Size",
@@ -1395,14 +1461,13 @@ export const Productdata = [
       "Gross Wt (in Kgs)"
     ],
     rows: [
-      ["50 g", "DRAINQURE INSTANT DRAIN CLEANER (J)", "40", "360", "16.7 X 16.8 X 9.6", "20.60"]
+      ["40 g", "DRAINQURE INSTANT DRAIN CLEANER (J)", "40", "360", "16.7 X 16.8 X 9.6", "17"]
     ]
   },
   usage: [
-    "DrainQure is ideal for de-clogging of kitchen sinks and bathroom drains. It clears hair, soap scum, organic build up, grease, oil, food waste, etc.",
-    "Widely used in shower and bathtub drains to prevent slow drainage and clogging.",
-    "Breaks down soft organic waste in toilet pipelines and prevents backups.",
-    "Finds regular use in hotels, commercial kitchens, institutions and public restrooms for regular drain upkeep & hygiene, and to ensure smooth functioning of drainage systems."
+    "DrainQure is ideal for de-clogging of kitchen sinks and bathroom drains. It clears hair, soap scum, organic build up, grease, oil, food waste, etc. It is also widely used in shower and bathtub drains to prevent slow drainage and clogging.",
+    "DrainQure also breaks down soft organic waste in toilet pipelines and prevents backups.",
+    "It finds regular use in hotels, commercial kitchens, institutions and public restrooms for regular drain upkeep & hygiene, and to ensure smooth functioning of drainage systems."
   ],
   benefits: [
     "Fast-acting formula offers quick relief.",
@@ -1414,10 +1479,10 @@ export const Productdata = [
     "Regular use prevents future blockages."
   ],
   precaution: [
-      "Product should be stored in unopened containers in a cool and dry location.",
-      "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
-      "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
-    ],
+    "Product should be stored in unopened containers in a cool and dry location.",
+    "Ideal conditions for storage: cool, dry place at temperature 20-25°C.",
+    "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
+  ],
   price: {
     heading: [
       "SKU",
@@ -1427,7 +1492,9 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: ["50g(Jar)", "11.50", "13.57", "30.00", "40", "360"]
+    rows: [
+      ["50g(Jar)", "11.50", "13.57", "30.00", "40", "360"]
+    ]
   }
 },
 
@@ -1436,7 +1503,8 @@ export const Productdata = [
   title: "quickcol wsh - synthetic resin adhesive",
   category: "Wood Adhesive",
   description: "QuickCol WSH is a single component PVA Emulsion Adhesive used for wood working and general bonding applications. QuickCol WSH strongly binds wood, plywood, laminates, veneers, MDF and all types of boards and cork. The bonds are strong and resistant to heat & water.",
-  imgs: [quickcolsh, quickcolsh2],
+   tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [quickcolsh, quickcolsh2],
   sizes: {
     heading: [
       "Size",
@@ -1505,7 +1573,8 @@ export const Productdata = [
   title: "quickcol wdb - synthetic adhesive binder",
   category: "Binder",
   description: "QuickCol WDB is a premium quality adhesive for binding lime distemper on walls. It prevents peeling of lime and cracking. It is easy to use and requires no heating.",
-  imgs: [quickcol],
+   tds:"https://wembleysquickfix.com/file/QuickCol WDB - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/QuickCol WDB - MSDS.pdf",                     imgs: [quickcol],
   sizes: {
     heading: [
       "Size",
@@ -1565,6 +1634,8 @@ export const Productdata = [
   title: "wemlac high gloss nc reducer",
   category: "NC Thinner",
   description: "WemLAC High Gloss NC Thinner is a fast-drying solvent blend specially formulated for Nitrocellulose (NC) paints and lacquers. It enhances flow, improves gloss, and ensures a smooth, streak-free finish.",
+   tds:"https://wembleysquickfix.com/file/WemLAC - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/WemLAC - MSDS.pdf",     
   imgs: [wemlac1, wemlac2],
   sizes: {
     heading: [
@@ -1629,7 +1700,8 @@ export const Productdata = [
   title: "wemlac paint stripper",
   category: "Paint Stripper",
   description: "WemLAC Paint Stripper is a powerful chemical formulation designed to remove old paint, varnish, or coatings from surfaces like wood, metal, and masonry. It penetrates and softens multiple layers for easy scraping or washing, making surface restoration quick and efficient.",
-  imgs: [paintStripper],
+   tds:"https://wembleysquickfix.com/file/Paint Stripper - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/Paint Stripper - MSDS.pdf",                     imgs: [paintStripper],
   sizes: {
     heading: [
       "Size",
@@ -1687,7 +1759,8 @@ export const Productdata = [
   title: "wemlac – tilequre - the tile cleaning expert",
   category: "Tile Cleaner",
   description: "WemLAC TileQure is a specialized tile cleaning solution designed to effectively remove tough stains, grime, and deposits from tiled surfaces, restoring their original gloss and cleanliness.",
-  imgs: [tileCure],
+   tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [tileCure],
   sizes: {
     heading: [
       "Size",
@@ -1729,7 +1802,8 @@ export const Productdata = [
   title: "quickfix multipurpose solvent cement",
   category: "Solvent Cement",
   description: "Quickfix Multipurpose is a medium bodied, fast set orange Solvent Cement for use on all schedules and classes of CPVC, PVC, UPVC and ABS pipes and fitting up to 6” diameter. Meets ASTM D2564, D2235 & F 493.",
-  imgs: [multipurpose, multipurpose2],
+   tds:"https://wembleysquickfix.com/file/Multipurpose - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [multipurpose, multipurpose2],
   sizes: {
     heading: [
       "Product Code",
@@ -1771,7 +1845,8 @@ export const Productdata = [
   title: "quickplumb – liquid pipe sealant",
   category: "Thread Sealant",
   description: "QuickPLUMB is a white liquid sealant used for joining threaded GI Pipes. It's flexibility and non-drying properties make the threaded joints easy to assemble and disassemble.",
-  imgs: [noimg,noimg,noimg],
+   tds:"https://wembleysquickfix.com/file/",
+    msds:"https://wembleysquickfix.com/file/",                     imgs: [quickplumb],
   sizes: {
     heading: [
       "Product Code",
@@ -1806,5 +1881,36 @@ export const Productdata = [
   ],
   precaution: [],
   price: []
+},
+{
+  id: 30,
+  title: "Durotack Sp500 Sprayable Adhesive",
+  category: "Rubber Based Adhesive",
+  description: "DuroTACK SP 500 is a high strength, low viscous, light-yellow coloured, fast drying sprayable adhesive synthetic rubber adhesive. It is specially designed for foam to foam bonding. It can be used for bonding variety of substrates like Foam, Painted metal, MS, FRP, PVC Foam, Rexine, Fabric & non woven carpet. For large area coverage , high strength, faster bonding. It provides excellent film forming ability on various foams; high tack and immediate bonding increase the productivity in the manufacturing. It is free from Benzene hence safe to use.",
+  tds:"https://wembleysquickfix.com/file/DuroTACK - SP500 - TDS.pdf",
+    msds:"https://wembleysquickfix.com/file/DuroTACK SP500 - MSDS.pdf",
+  imgs: [sp500],
+  sizes: {
+    heading: [ ],
+    rows: []
+  },
+  usage: [
+    "DuroTACK SP500 is ideal for foam to foam bonding in the manufacturing of sofa, chair, and mattress.",
+    "It can be used for automobile (rood lining, door trim, non-woven carpet application), upholstery fixing and seat making."
+  ],
+  benefits: [
+    "Sprayable and high coverage",
+    "Exhibits high strength on curing.",
+    "Benzene free formulation.",
+    "Efficient heat resistance.",
+    "Economical in the long run.",
+    "Bonds are not rigid and have long durability.",
+    "Long Shelf life - 12 months from the date of manufacturing."
+  ],
+  precaution: [],
+  price: {
+    heading: [],
+    rows: []
+  }
 }
 ]

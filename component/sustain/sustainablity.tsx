@@ -3,8 +3,8 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-import { LuLeaf, LuRecycle, LuZap, LuArrowRight } from 'react-icons/lu';
-import { cpvc4, durobond, sus1, sus2 } from "@/assets";
+import { LuLeaf, LuRecycle, LuZap } from 'react-icons/lu';
+import { cpvc4, durobond } from "@/assets";
 import { FaCheckCircle } from 'react-icons/fa';
 import Buttonmain from '../global/button';
 

@@ -62,7 +62,7 @@ export default function Process() {
                 src={quickseal2}
                 alt="Quickfix"
                 fill
-                className="object-contain  object-center"
+                className="object-contain object-center"
                 sizes="(max-w-1024px) 100vw, 45vw"
               />
               {/* Prototype Signature Blue Border Accent Callout text box */}

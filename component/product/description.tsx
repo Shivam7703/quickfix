@@ -4,12 +4,8 @@ import React, { useState, useMemo } from "react";
 import {
   FiPackage,
   FiList,
-  FiTag,
   FiCheckCircle,
-  FiAlertTriangle,
-  FiInfo,
   FiCheck,
-  FiDollarSign,
 } from "react-icons/fi";
 import { TbFlask } from "react-icons/tb";
 

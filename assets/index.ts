@@ -4,28 +4,18 @@ import banner2 from "@/assets/home/banner2.png";
 import banner3 from "@/assets/home/banner3.png";
 import about from "@/assets/home/about-us.webp";
 import about1 from "@/assets/home/about1.webp";
-import img1 from "@/assets/home/img1.webp";
 import img2 from "@/assets/home/img2.webp";
-import img3 from "@/assets/home/img3.webp";
 import img4 from "@/assets/home/img4.png";
+
 import img5 from "@/assets/home/img5.webp";
-import img6 from "@/assets/home/img6.webp";
 import img7 from "@/assets/home/img7.webp";
 import img8 from "@/assets/home/img8.webp";
 import img9 from "@/assets/home/img9.webp";
 import img10 from "@/assets/home/img10.webp";
 import img11 from "@/assets/home/img11.webp";
-import img12 from "@/assets/home/img12.webp";
-import img13 from "@/assets/home/img13.webp";
-
 
 import processimg from "@/assets/home/img9.webp";
-import gal1 from "@/assets/home/gal1.webp";
-import gal2 from "@/assets/home/gal2.webp";
-import gal3 from "@/assets/home/gal3.webp";
-import gal4 from "@/assets/home/gal4.webp";
 import ceo from "@/assets/home/ceo.jpg"
-import sus1 from "@/assets/home/sustain1.webp"
 import sus2 from "@/assets/home/sustain2.webp"
 import team from "@/assets/home/team.webp"
 import astm from "@/assets/home/ASTM.webp";
@@ -118,6 +108,8 @@ import quicksealSanitary from "@/assets/products/quickseal sanitary.webp";
 import quickseal1 from "@/assets/products/quickseal.webp";
 import quickseal2 from "@/assets/products/quickseal2.webp";
 
+import sp500 from "@/assets/products/sp-500.png";
+
 import quicktite1 from "@/assets/products/quicktite.webp";
 import quicktite2 from "@/assets/products/quicktite2.webp";
 import quicktite3 from "@/assets/products/quicktite3.webp";
@@ -162,43 +154,37 @@ import multipurpose2 from "@/assets/products/multipurpose2.webp";
 import quickcolsh from "@/assets/products/wood sh.webp";
 import quickcolsh2 from "@/assets/products/wood sh2.webp";
 
+import quickplumb from "@/assets/products/quickplumb.png";
 
 
 
-export {team,sus1,sus2,ceo, noimg,logo, banner1, banner2, banner3, about, about1, img1,
+export {team,sus2,ceo, noimg,logo, banner1, banner2, banner3, about, about1, 
   img2, blg1,blg2,blg3,
-  img3,
   img4,
   img5,
-  img6,
   img7,
   img8,
   img9,
   img10,
   img11,
-  img12,
-  img13, processimg, gal1, gal2, gal3, gal4, astm, isi,
+ processimg, astm, isi,
 
     // product
-allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcolsh, quickcolsh2, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvc6, cpvc7, cpvc8, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper,  pvcSolventCement1, pvcSolventCement2,   pvcSolventCement3,
+quickplumb, allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcolsh, quickcolsh2, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvc6, cpvc7, cpvc8, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper,  pvcSolventCement1, pvcSolventCement2,   pvcSolventCement3,
   pvcSolventCement4,
-  pvcSolventCement5,pvcSolventCement6,pvcSolventCement7,pvcSolventCement8,
-
+  pvcSolventCement5,pvcSolventCement6,pvcSolventCement7,pvcSolventCement8, sp500,
   pvfix1,
   pvfix2,
   pvfix3,
   pvfix4,
   pvfix5,
-
-  pvshield,pvshield2,
-
+  pvshield,
+  pvshield2,
   quickcol,
-
   quickguard1,
   quickguard2,
   quickguard3,
   quickguard4,
-
   quickgum1,
   quickgum2,
   quickgum3,
@@ -212,35 +198,26 @@ allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcols
   quickgum11,
   quickgum12,
   quickgum13,
-
   quickraft1,
   quickraft2,
   quickraft3,
   quickraft4,
   quickraft5,
-
   quickseal1,
   quickseal2,
   quicksealSanitary,
-
   quicktite1,
   quicktite2,
   quicktite3,
-
   sr525,
-
   sr5351,
   sr5352,
   sr5353,sr5354,
-
   superGlue,
-
   superGlueHV1,
   superGlueHV2,
   superGlueHV3,
-
   tileCure,
-
   upvc1,
   upvc2,
   upvc3,upvc4,upvc5,upvc6,

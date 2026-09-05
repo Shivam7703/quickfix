@@ -1,9 +1,6 @@
 import React from 'react'
 import ProductGallery from './progallery'
 import ProductTabs from './description'
-import Productside from './side'
-import ServiceHighlights from '../about/highlight'
-import ProductSection from '../home/product'
 
 export default function Productdetail({pro}:any) {
   return (

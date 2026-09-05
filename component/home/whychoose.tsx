@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiArrowDownRight, FiPlay, FiUsers } from "react-icons/fi";
 // Right side product banner image import karein
-import { about, gal2, gal4, img10, img4 } from "@/assets";
+import {  img9, img10 } from "@/assets";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import { RiTeamFill } from "react-icons/ri";
 
@@ -36,7 +36,7 @@ export default function WhyChooseSection() {
   return (
     <section className="w-full py-7 md:p-16 lg:px-24 bg-zinc-700 overflow-hidden relative">
       <Image
-        src={gal4}
+        src={img9}
         alt="Quickfix Craft and Repair Bonding Showcase"
         fill
         className="absolute w-full h-full -top-2 left-0 z-3 opacity-30 object-cover object-center"

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {  img12, img3, img5, img6 } from "@/assets";
+import {  img2, img11, img5, img10 } from "@/assets";
 
 // Images imports: Apne real paths ke sath replace karein
 
@@ -41,7 +41,7 @@ export default function GallerySection() {
             className="md:h-96 h-64 relative rounded-xl md:w-[60%] w-full overflow-hidden shadow-xs border border-gray-100 group"
           >
             <Image
-              src={img12}
+              src={img2}
               alt="Wembley Labs R&D Formulation Process"
               fill
               className="object-cover object-center transform group-hover:scale-103 transition-transform duration-500"
@@ -58,7 +58,7 @@ export default function GallerySection() {
             className="md:h-96 h-64 relative rounded-xl md:w-[38%] w-full overflow-hidden shadow-xs border border-gray-100 group"
           >
             <Image
-              src={img3}
+              src={img11}
               alt="Wembley Industrial Manufacturing Plant"
               fill
               className="object-cover object-center"
@@ -92,7 +92,7 @@ export default function GallerySection() {
             className="md:h-96 h-64 relative rounded-xl md:w-[60%] w-full overflow-hidden shadow-xs border border-gray-100 group"
           >
             <Image
-              src={img6}
+              src={img10}
               alt="Wembley Labs R&D Formulation Process"
               fill
               className="object-cover object-center transform group-hover:scale-103 transition-transform duration-500"

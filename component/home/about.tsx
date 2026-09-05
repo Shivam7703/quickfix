@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { FiCheckCircle, FiAward } from "react-icons/fi";
 import Buttonmain from "../global/button";
-import { astm, img3,  isi,  processimg } from "@/assets";
+import { astm, img8,  isi,  processimg } from "@/assets";
 
 // Stagger animation container variants
 const containerVariants: Variants = {
@@ -103,7 +103,7 @@ export default function AboutSection() {
               </div>
             </motion.div>
 
-            <Image src={img3} alt="quickfix" className="sm:-top-8 sm:-left-8 border-2 max-sm:hidden   border-white  rounded-2xl   sm:absolute w-32 h-32 sm:h-56 sm:w-56" />
+            <Image src={img8} alt="quickfix" className="sm:-top-8 sm:-left-8 border-2 max-sm:hidden   border-white  rounded-2xl   sm:absolute w-32 h-32 sm:h-56 sm:w-56" />
           </div>
 
           {/* ======================================================= */}
