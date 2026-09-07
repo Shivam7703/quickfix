@@ -37,7 +37,7 @@ function Buttonmain({
 
   if (isExternal) {
     return (
-      <a href={href} className={wrapperClass}>
+      <a href={href} className={wrapperClass} target="_blank">
         <Button text11={text} />
       </a>
     );

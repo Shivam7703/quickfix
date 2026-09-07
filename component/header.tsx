@@ -8,7 +8,8 @@ import Image from "next/image";
 import { 
   FiPhone, FiMail, FiFacebook, FiInstagram, FiTwitter, 
   FiChevronRight, FiChevronDown, FiMenu, FiX, 
-  FiLinkedin
+  FiLinkedin,
+  FiChevronLeft
 } from "react-icons/fi";
 import { logo } from "@/assets";
 import Buttonmain from "./global/button";
@@ -411,11 +412,18 @@ function InnerMobileAccordion({ sub, onClose }: { sub: any; onClose: () => void 
 /* ======================================================= */
 /* DESKTOP NAV COMPONENT (Hover Right Dropdown Logic)      */
 /* ======================================================= */
-function DesktopNavItem({ item, active }: { item: any; active: boolean }) {
+export function DesktopNavItem({ item, active }: { item: any; active: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Check if primary subnav needs a 2-column split (> 12 items)
+  const isLargeSubnav = item.subnav && item.subnav.length > 12;
+
   return (
-    <div className="relative py-2" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
+    <div 
+      className="relative py-2" 
+      onMouseEnter={() => setIsOpen(true)} 
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <Link 
         href={item.href} 
         className={`flex items-center gap-1 text-[15px] font-medium tracking-wide transition-colors ${
@@ -423,7 +431,9 @@ function DesktopNavItem({ item, active }: { item: any; active: boolean }) {
         }`}
       >
         {item.name}
-        {item.subnav && <FiChevronDown className={`text-xs transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />}
+        {item.subnav && (
+          <FiChevronDown className={`text-xs transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
+        )}
       </Link>
 
       {active && (
@@ -436,25 +446,56 @@ function DesktopNavItem({ item, active }: { item: any; active: boolean }) {
       <AnimatePresence>
         {isOpen && item.subnav && (
           <motion.div 
-            initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }}
-            className="absolute top-full left-0 bg-white shadow-2xl border border-gray-100 rounded-lg py-2 w-52 z-60 mt-1"
+            initial={{ opacity: 0, y: 12 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            exit={{ opacity: 0, y: 8 }}
+            className={`absolute top-full left-0 bg-white shadow-2xl border border-gray-100 rounded-lg py-2 z-60 mt-1 ${
+              isLargeSubnav ? "w-[416px] grid grid-cols-2 gap-x-1" : "w-52"
+            }`}
           >
-            {item.subnav.map((sub: any) => (
-              <div key={sub.name} className="relative group px-4 py-2.5 hover:bg-gray-50 flex items-center justify-between text-sm font-medium text-gray-700 hover:text-blue-600 cursor-pointer">
-                <span>{sub.name}</span>
-                {sub.subnav && <FiChevronRight className="text-xs text-gray-400" />}
-                
-                {sub.subnav && (
-                  <div className="absolute left-[98%] top-0 bg-white shadow-2xl border border-gray-100 rounded-lg py-2 w-48 hidden group-hover:block">
-                    {sub.subnav.map((child: any) => (
-                      <Link key={child.name} href={child.href} className="block px-4 py-2.5 text-sm text-zinc-800 hover:text-blue-600 hover:bg-gray-50">
-                        {child.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+            {item.subnav.map((sub: any, index: number) => {
+              // Determine column position for nested dropdown direction
+              // When in 2-column mode: even indices are left column, odd indices are right column
+              const isLeftColumn = isLargeSubnav ? index % 2 === 0 : false;
+
+              return (
+                <div 
+                  key={sub.name} 
+                  className="relative group px-4 py-2.5 hover:bg-blue-600 flex items-center justify-between text-sm font-medium text-gray-700 hover:text-white cursor-pointer rounded-lg"
+                >
+                  {/* Swap icon & label position for left-opening nested dropdowns */}
+                  {isLeftColumn && sub.subnav ? (
+                    <>
+                      <span>{sub.name}</span>
+                                            {/* <FiChevronLeft className="text-xs text-gray-400" /> */}
+                    </>
+                  ) : (
+                    <>
+                      <span>{sub.name}</span>
+                      {/* {sub.subnav && <FiChevronRight className="text-xs text-gray-400" />} */}
+                    </>
+                  )}
+                  
+                  {sub.subnav && (
+                    <div 
+                      className={`absolute top-0 bg-white shadow-xl shadow-black/30 border border-gray-500 rounded-lg py-2 w-48 hidden group-hover:block ${
+                        isLeftColumn ? "right-[98%]" : "left-[98%]"
+                      }`}
+                    >
+                      {sub.subnav.map((child: any) => (
+                        <Link 
+                          key={child.name} 
+                          href={child.href} 
+                          className="block px-4 py-2.5 text-sm text-zinc-800 hover:text-blue-600 hover:bg-gray-50"
+                        >
+                          {child.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </motion.div>
         )}
       </AnimatePresence>
