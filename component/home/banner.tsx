@@ -13,11 +13,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import Buttonmain from "../global/button";
-import { banner1, banner2, banner3 } from "@/assets";
+import { banner1, banner2, banner3, banner4 } from "@/assets";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 const slideimg = [
-  banner1, banner2, banner3
+  banner1, banner2, banner3, banner4
 ];
 
 export default function HomeBanner() {

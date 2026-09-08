@@ -2,6 +2,8 @@ import logo from "@/assets/logo.png";
 import banner1 from "@/assets/home/banner1.png";
 import banner2 from "@/assets/home/banner2.png";
 import banner3 from "@/assets/home/banner3.png";
+import banner4 from "@/assets/home/banner4.png";
+
 import about from "@/assets/home/about-us.webp";
 import about1 from "@/assets/home/about1.webp";
 import img2 from "@/assets/home/img2.webp";
@@ -158,7 +160,7 @@ import quickplumb from "@/assets/products/quickplumb.png";
 
 
 
-export {team,sus2,ceo, noimg,logo, banner1, banner2, banner3, about, about1, 
+export {team,sus2,ceo, noimg,logo, banner1, banner2, banner3,banner4, about, about1, 
   img2, blg1,blg2,blg3,
   img4,
   img5,
