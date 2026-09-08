@@ -57,8 +57,8 @@ const navLinks = [
       href: "#",
       subnav: [
         { name: "Durofix", href: "/products/durofix-rubber-base-adhesive" },
-        { name: "SR-535", href: "/products/durofix-535-rubber-base-adhesive" },
         { name: "SR-525", href: "/products/durofix-525-rubber-base-adhesive" },
+        { name: "SR-535", href: "/products/durofix-535-rubber-base-adhesive" },
         { name: "SP-500 Sprayable", href: "/products/durotack-sp500-sprayable-adhesive" },
       ],
     },

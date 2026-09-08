@@ -14,11 +14,12 @@ function Buttonmain({
   text,
   variant = "primary",
 }: ButtonProps) {
-  const isExternal =
-    href.startsWith("tel:") ||
-    href.startsWith("https:") ||
-    href.startsWith("mailto:") ||
-    href.startsWith("www.");
+ const isExternal =
+  href.startsWith("tel:") ||
+  href.startsWith("mailto:") ||
+  href.startsWith("http:") ||   
+  href.startsWith("https:") ||  
+  href.startsWith("www.");  
 
   // Mobile check styling class logic
   const wrapperClass = ` w-max
@@ -37,7 +38,7 @@ function Buttonmain({
 
   if (isExternal) {
     return (
-      <a href={href} className={wrapperClass} target="_blank">
+      <a href={href} className={wrapperClass} target="_blank" rel="noopener noreferrer">
         <Button text11={text} />
       </a>
     );
