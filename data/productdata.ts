@@ -527,6 +527,52 @@ export const Productdata = [
       ]
     }
   },
+   {
+  id: 29,
+  title: "durofix 525 rubber base adhesive",
+  category: "Rubber Based Adhesive",
+  description: "Durofix is a high strength, medium viscous, synthetic rubber based adhesive which has multiple uses in Industries & DIY projects. This superior, yet cost effective product is widely used in many applications such as vinyl flooring, HVAC Ducting, Water Pipelines, Foam and Furniture, Footwear, etc. This quick-setting adhesive is easy to apply and offers all that you need. It is free from Benzene hence safe to use.",
+   tds:"https://wembleysquickfix.com/file/Durofix 525- TDS.pdf",
+    msds:"#",                     imgs: [sr525],
+
+  "sizes": {
+    "heading": [
+      "Size",
+      "Description",
+      "Box Qty",
+      "Shipper Qty",
+      "Dimensions (in Inches)",
+      "Gross Wt (in Kgs)"
+    ],
+    "rows": [
+      ["200 ml", "DUROFIX SR535 RUB BASE TIN", "15", "60", "19 x 15.5 x 6.2", "14.00"],
+      ["500 ml", "DUROFIX SR535 RUB BASE TIN", "N/A", "24", "14 x 11 x 9", "12.30"],
+      ["1 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "12", "17 x 13.2 x 6", "13.00"],
+      ["2 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "6", "", ""],
+      ["5 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "4", "15.5 x 15.5 x 10", "21.50"],
+      ["25 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "1", "11 x 11 x 18", "25.50"]
+    ]
+},
+  usage: [
+    "Durofix is a multi-purpose adhesive and can be used on most materials such as leather, plastics, vinyl, rubber etc.",
+    "Durofix is well suited for use in vinyl flowing segment, AC Ducting & Insulation, Furniture & Upholstery, Rexine, Foam to wood or Metal, HVAC Ducting, Bus body making, etc."
+  ],
+  benefits: [
+    "Easy spread ability and high coverage",
+    "Exhibits high strength on curing.",
+    "Benzene free formulation.",
+    "Efficient heat resistance.",
+    "Economical in the long run.",
+    "Bonds are not rigid and have long durability.",
+    "Long Shelf life - 12 months from the date of manufacturing."
+  ],
+  precaution: [],
+  price: {
+    heading: [
+    ],
+    rows: []
+  }
+},
  {
   id: 8,
   title: "DUROFIX 535 - RUBBER BASE ADHESIVE",
@@ -585,38 +631,6 @@ export const Productdata = [
       ["5 Ltr.", "950.00", "1,121.00", "2,400", "N/A", "4"],
       ["25 Ltr.", "4,250.00", "5,015.00", "10,000.00", "N/A", "N/A"]
     ]
-  }
-},
-  {
-  id: 29,
-  title: "durofix 525 rubber base adhesive",
-  category: "Rubber Based Adhesive",
-  description: "Durofix is a high strength, medium viscous, synthetic rubber based adhesive which has multiple uses in Industries & DIY projects. This superior, yet cost effective product is widely used in many applications such as vinyl flooring, HVAC Ducting, Water Pipelines, Foam and Furniture, Footwear, etc. This quick-setting adhesive is easy to apply and offers all that you need. It is free from Benzene hence safe to use.",
-   tds:"https://wembleysquickfix.com/file/Durofix 525- TDS.pdf",
-    msds:"#",                     imgs: [sr525],
-  sizes: {
-    heading: [
-    ],
-    rows: []
-  },
-  usage: [
-    "Durofix is a multi-purpose adhesive and can be used on most materials such as leather, plastics, vinyl, rubber etc.",
-    "Durofix is well suited for use in vinyl flowing segment, AC Ducting & Insulation, Furniture & Upholstery, Rexine, Foam to wood or Metal, HVAC Ducting, Bus body making, etc."
-  ],
-  benefits: [
-    "Easy spread ability and high coverage",
-    "Exhibits high strength on curing.",
-    "Benzene free formulation.",
-    "Efficient heat resistance.",
-    "Economical in the long run.",
-    "Bonds are not rigid and have long durability.",
-    "Long Shelf life - 12 months from the date of manufacturing."
-  ],
-  precaution: [],
-  price: {
-    heading: [
-    ],
-    rows: []
   }
 },
   {
@@ -745,7 +759,7 @@ export const Productdata = [
   category: "Epoxy", 
   description: "QuickTITE is a high strength waterproof epoxy adhesive that is known for bonding goods for good!, QuickTite offers strong and durable bonding which are resistant to water, heat, corrosion and most chemicals. This versatile adhesive bonds anything to anything and is suited for all types of applications across the industrial and DIY sectors and is ideal for all surfaces such as stone, metal, ceramic glass, wood, rubber, etc.",
   tds:"https://wembleysquickfix.com/file/Quicktite - Standard Epoxy Adhesive - TDS.pdf",
-  msds:"https://wembleysquickfix.com/file/QuickTite - MSDS - Hardener.pdf",                   
+  msds:"https://wembleysquickfix.com/file/quicktite-msds.pdf",                   
   imgs: [quicktite1, quicktite2,quicktite3],
   sizes: {
     heading: [
@@ -928,8 +942,8 @@ export const Productdata = [
   description: "Quickfix CPVC Solvent Cement is medium bodied, fast setting Yellow Solvent Cement for use on all schedules and classes of CPVC pipes and fittings up to 6” diameter with interference fit. MEETS ASTM F-493. Available in collapsible aluminium tubes, Tin & Coex jars.",
    tds:"https://wembleysquickfix.com/file/CPVC - TDS - Medium.pdf",
     msds:"https://wembleysquickfix.com/file/CPVC-MSDS.pdf",                     imgs: [cpvc6, cpvc7, cpvc8, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5],
-  sizes: {
-    heading: [
+ "sizes": {
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -937,7 +951,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["5 ml", "QUICKFIX CPVC SOL CEM TUBE (J)", "50", "450", "21 x 18 x 7", "6.60"],
       ["10 ml", "QUICKFIX CPVC SOL CEM TUBE (J)", "50", "450", "21 x 18 x 7", "9.00"],
       ["20 ml", "QUICKFIX CPVC SOL CEM TUBE", "25", "300", "16 x 11.5 x 11", "10.00"],
@@ -946,7 +960,10 @@ export const Productdata = [
       ["100 ml", "QUICKFIX CPVC SOL CEM TIN", "24", "144", "18 x 13.5 x 12", "21.20"],
       ["200 ml", "QUICKFIX CPVC SOL CEM TIN", "24", "96", "22 x 17 x 9", "25.00"],
       ["500 ml", "QUICKFIX CPVC SOL CEM TIN", "N/A", "12", "14 x 10.5 x 5.5", "6.50"],
-      ["1 Ltr", "QUICKFIX CPVC SOL CEM TIN", "N/A", "12", "17 x 13 x 6.5", "12.50"]
+      ["1 Ltr", "QUICKFIX CPVC SOL CEM TIN", "N/A", "12", "17 x 13 x 6.5", "12.50"],
+      ["50 ml", "QUICKFIX CPVC 900 SOL CEM COEX", "24", "144", "24.6 x 13 x 7", "12.00"],
+      ["100 ml", "QUICKFIX CPVC 900 SOL CEM COEX", "24", "144", "24 x 12 x 9.5", "20.60"],
+      ["200 ml", "QUICKFIX CPVC 900 SOL CEM COEX", "24", "96", "21.5 x 16.2 x 9.3", "24.30"]
     ]
   },
   usage: [
@@ -1064,8 +1081,8 @@ export const Productdata = [
   description: "Quickfix PVC is a regular bodied, fast setting Clear Solvent Cement for use on all schedules and classes of PVC pipes and fittings up to 12” diameter with interference fit for non-pressure pipes. Meets ASTM D2564. ISI 14182 certified. Available in collapsible aluminium tubes, Tin & CO-EX jars.",
    tds:"https://wembleysquickfix.com/file/PVC - TDS.pdf",
     msds:"https://wembleysquickfix.com/file/PVC - MSDS.pdf",                     imgs: [pvcSolventCement6, pvcSolventCement7, pvcSolventCement8, pvcSolventCement1, pvcSolventCement2, pvcSolventCement3, pvcSolventCement4, pvcSolventCement5],
-  sizes: {
-    heading: [
+  "sizes": {
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1073,14 +1090,17 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
-      ["20 ml", "QUICKFIX PVC SOL CEM TUBE", "25", "300", "16x11.5x11", "9.60"],
-      ["50 ml", "QUICKFIX PVC SOL CEM TUBE", "25", "200", "15x12.5x13.8", "13.00"],
-      ["50 ml", "QUICKFIX PVC SOL CEM TIN", "12", "144", "17.5x13.8x8", "12.60"],
-      ["100 ml", "QUICKFIX PVC SOL CEM TIN", "24", "144", "18x13.5x12", "20.30"],
-      ["200 ml", "QUICKFIX PVC SOL CEM TIN", "24", "96", "22x17x9", "23.80"],
-      ["500 ml", "QUICKFIX PVC SOL CEM TIN", "N/A", "12", "14x10.5x5.5", "6.10"],
-      ["1 Ltr", "QUICKFIX PVC SOL CEM TIN", "N/A", "12", "17x13x6.5", "11.80"]
+    "rows": [
+      ["20 ml", "QUICKFIX PVC SOL CEM TUBE", "25", "300", "16 x 11.5 x 11", "9.60"],
+      ["50 ml", "QUICKFIX PVC SOL CEM TUBE", "25", "200", "15 x 12.5 x 13.8", "13.00"],
+      ["50 ml", "QUICKFIX PVC SOL CEM TIN", "12", "144", "17.5 x 13.8 x 8", "12.60"],
+      ["100 ml", "QUICKFIX PVC SOL CEM TIN", "24", "144", "18 x 13.5 x 12", "20.30"],
+      ["200 ml", "QUICKFIX PVC SOL CEM TIN", "24", "96", "22 x 17 x 9", "23.80"],
+      ["500 ml", "QUICKFIX PVC SOL CEM TIN", "N/A", "12", "14 x 10.5 x 5.5", "6.10"],
+      ["1 Ltr", "QUICKFIX PVC SOL CEM TIN", "N/A", "12", "17 x 13 x 6.5", "11.80"],
+      ["50 ml", "QUICKFIX PVC 500 SOL CEM COEX", "24", "144", "24.6 x 13 x 7", "12.00"],
+      ["100 ml", "QUICKFIX PVC 500 SOL CEM COEX", "24", "144", "24 x 12 x 9.5", "20.60"],
+      ["200 ml", "QUICKFIX PVC 500 SOL CEM COEX", "24", "96", "21.5 x 16.2 x 9.3", "24.30"]
     ]
   },
   usage: [
@@ -1192,8 +1212,8 @@ export const Productdata = [
   description: "Quickfix UPVC is a medium bodied, medium set, Blue Solvent Cement for all classes and schedules with interference fit schedule 40 through 6” diameter and schedule 80 through 4” diameter. Meets ASTM D2564. ISI 14182 certified. Available in collapsible aluminium tubes, Tin & Coex jars.",
    tds:"https://wembleysquickfix.com/file/UPVC - TDS.pdf",
     msds:"https://wembleysquickfix.com/file/UPVC - MSDS.pdf",                     imgs: [upvc4, upvc5, upvc6, upvc1, upvc2, upvc3],
-  sizes: {
-    heading: [
+  "sizes": {
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1201,11 +1221,14 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
-      ["20 ml", "QUICKFIX UPVC SOL CEM TUBE", "25", "300", "16x11.5x11", "10.00"],
-      ["50 ml", "QUICKFIX UPVC SOL CEM TIN", "12", "144", "17.5x13.8x8", "13.00"],
-      ["100 ml", "QUICKFIX UPVC SOL CEM TIN", "24", "144", "18x13.5x12", "21.20"],
-      ["200 ml", "QUICKFIX UPVC SOL CEM TIN", "24", "96", "22x17x9", "25.00"]
+    "rows": [
+      ["20 ml", "QUICKFIX UPVC SOL CEM TUBE", "25", "300", "16 x 11.5 x 11", "10.00"],
+      ["50 ml", "QUICKFIX UPVC SOL CEM TIN", "12", "144", "17.5 x 13.8 x 8", "13.00"],
+      ["100 ml", "QUICKFIX UPVC SOL CEM TIN", "24", "144", "18 x 13.5 x 12", "21.20"],
+      ["200 ml", "QUICKFIX UPVC SOL CEM TIN", "24", "96", "22 x 17 x 9", "25.00"],
+      ["50 ml", "QUICKFIX UPVC 700 SOL CEM COEX", "24", "144", "24.6 x 13 x 7", "12.00"],
+      ["100 ml", "QUICKFIX UPVC 700 SOL CEM COEX", "24", "144", "24 x 12 x 9.5", "20.60"],
+      ["200 ml", "QUICKFIX UPVC 700 SOL CEM COEX", "24", "96", "21.5 x 16.2 x 9.3", "24.30"]
     ]
   },
   usage: [
@@ -1256,8 +1279,8 @@ export const Productdata = [
   description: "Quickfix UPVC is a medium bodied, medium set, Clear Solvent Cement for all classes and schedules with interference fit schedule 40 through 6” diameter and schedule 80 through 4” diameter. Meets ASTM D2564. ISI 14182 certified. Available in collapsible aluminium tubes, Tin & CO-EX jars.",
    tds:"#",
     msds:"#",                     imgs: [upvcClear1, upvcClear2, upvcClear3],
-  sizes: {
-    heading: [
+   "sizes": {
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1265,10 +1288,13 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
-      ["50 ml", "QUICKFIX UPVC CLEAR SOL CEM TIN", "12", "144", "17.5x13.8x8", "13.00"],
-      ["100 ml", "QUICKFIX UPVC CLEAR SOL CEM TIN", "24", "144", "18 x13.5x12", "21.20"],
-      ["200 ml", "QUICKFIX UPVC CLEAR SOL CEM TIN", "24", "96", "22x17x9", "25.00"]
+    "rows": [
+      ["50 ml", "QUICKFIX UPVC CLEAR SOL CEM TIN", "12", "144", "17.5 x 13.8 x 8", "13.00"],
+      ["100 ml", "QUICKFIX UPVC CLEAR SOL CEM TIN", "24", "144", "18 x 13.5 x 12", "21.20"],
+      ["200 ml", "QUICKFIX UPVC CLEAR SOL CEM TIN", "24", "96", "22 x 17 x 9", "25.00"],
+      ["50 ml", "QUICKFIX UPVC CLEAR 701 SOL CEM COEX", "24", "144", "24.6 x 13 x 7", "12.00"],
+      ["100 ml", "QUICKFIX UPVC CLEAR 701 SOL CEM COEX", "24", "144", "24 x 12 x 9.5", "20.60"],
+      ["200 ml", "QUICKFIX UPVC CLEAR 701 SOL CEM COEX", "24", "96", "21.5 x 16.2 x 9.3", "24.30"]
     ]
   },
   usage: [
@@ -1889,9 +1915,20 @@ export const Productdata = [
   tds:"https://wembleysquickfix.com/file/DuroTACK - SP500 - TDS.pdf",
     msds:"https://wembleysquickfix.com/file/DuroTACK SP500 - MSDS.pdf",
   imgs: [sp500],
-  sizes: {
-    heading: [ ],
-    rows: []
+  "sizes": {
+    "heading": [
+      "Size",
+      "Description",
+      "Box Qty",
+      "Shipper Qty",
+      "Dimensions (in Inches)",
+      "Gross Wt (in Kgs)"
+    ],
+    "rows": [
+      ["1 Ltr.", "DUROTACK SP500 SPRAYABLE", "N/A", "12", "17 x 13.2 x 6", "13.00"],
+      ["4.5 Ltr.", "DUROTACK SP500 SPRAYABLE", "N/A", "1", "", ""],
+      ["25 Ltr.", "DUROTACK SP500 SPRAYABLE", "N/A", "1", "11 x 11 x 18", "25.50"]
+    ]
   },
   usage: [
     "DuroTACK SP500 is ideal for foam to foam bonding in the manufacturing of sofa, chair, and mattress.",
