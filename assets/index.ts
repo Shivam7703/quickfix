@@ -44,7 +44,7 @@ import cpvc8 from "@/assets/products/cpvc8.webp";
 import cpvcValve1 from "@/assets/products/cpvcvalve.webp";
 import cpvcValve2 from "@/assets/products/cpvcvalve2.webp";
 
-import drainQure from "@/assets/products/drainqure.webp";
+import drainQure from "@/assets/products/drainqure.png";
 
 import durobond from "@/assets/products/durobond.webp";
 
