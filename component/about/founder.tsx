@@ -15,48 +15,16 @@ export default function AboutCeo() {
           {/* Tag & Heading */}
           <div className="space-y-3">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
-              About Our CEO
+              About Our Founder
             </h2>
             <div className="w-16 h-1 bg-blue-600 rounded-full"></div>
           </div>
 
           {/* CEO Bio / Message */}
           <div className="space-y-4 text-slate-600 text-base md:text-lg leading-relaxed font-normal">
-            <p className="text-xl font-medium text-slate-800 italic border-l-4 border-blue-600 pl-4 py-1 bg-slate-50/50 rounded-r-lg">
-              &ldquo;Guided by Innovation and Quality
-              &rdquo;
-            </p>
+           
             <p>
-              At Wembley Laboratories Ltd., our leadership is driven by a commitment to innovation, quality, and manufacturing excellence. By investing in advanced research, precision production, and continuous improvement, we continue to strengthen the Quickfix legacy while delivering reliable adhesive solutions trusted by customers across industries.
-            </p>
-          </div>
-
-          {/* Two Feature Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
-
-            {/* Feature 1 */}
-            <div className="group p-5 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all duration-300">
-              <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-                <LuTrendingUp className="w-6 h-6" />
-              </div>
-              <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">
-                Research-Driven Development              </h3>
-              <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-                Focused on continuous product improvement through dedicated research and technical expertise.
-              </p>
-            </div>
-
-            {/* Feature 2 */}
-            <div className="group p-5 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all duration-300">
-              <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-                <LuSend className="w-6 h-6" />
-              </div>
-              <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">
-                Customer-Focused Solutions              </h3>
-              <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-                Developing adhesive products that address practical applications across household, commercial, and industrial sectors.
-              </p>
-            </div>
+Wembley Laboratories Ltd. embraces the entrepreneurial spirit of our founder, S. Amarjit Singh Lamba, and his core values of honesty, integrity, respect and responsibility. In 1952, S. Amarjit Singh Lamba, developed India’s first ready-to-use, transparent artificial resin adhesive. It reliably bonded all materials known at the time, even the first plastics such as Bakelit. This breakthrough adhesive was aptly named QUICKFIX, and it soon became the most preferred adhesive countrywide, to the extent that today its name is synonymous with the word adhesive. The next three decades and more saw Wembley Labs Ltd consistently widen its horizons in terms of product range as well as distribution and marketing network. The turning point for the company came in 1994, when the 8th International Award for Quality was conferred on Wembley Laboratories Ltd. by the Editorial Office in Madrid, Spain. Continuing the QUICKFIX tradition and relentlessly pursuing innovation, Wembley Laboratories Ltd has consistently moved on to newer vistas and today is India’s leading adhesive manufacturer.            </p>
           </div>
         </div>
 
@@ -71,7 +39,7 @@ export default function AboutCeo() {
             <div className="relative h-112.5 sm:h-140 rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 shadow-xl">
               <Image
                 src={ceo}
-                alt="Alexander Wright - CEO"
+                alt="Amarjit Singh Lamba - Founder"
                 fill
                 className="object-cover object-top hover:scale-105 transition-transform duration-500"
                 priority
@@ -85,7 +53,7 @@ export default function AboutCeo() {
                       Amarjit Singh Lamba
                     </h3>
                     <p className="text-xs font-semibold text-blue-600 tracking-wide uppercase">
-                      Founder & Chief Executive Officer
+                      Founder
                     </p>
                   </div>
                   {/* <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-100 text-[11px] font-semibold">

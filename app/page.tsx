@@ -2,6 +2,7 @@ import AboutSection from "@/component/home/about";
 import HomeBanner from "@/component/home/banner";
 import BlogSection from "@/component/home/blogs";
 import Boxes from "@/component/home/boxes";
+import StatsCounter from "@/component/home/count";
 import FaqSection from "@/component/home/faq";
 import GallerySection from "@/component/home/gallery";
 import Process from "@/component/home/process";
@@ -16,11 +17,12 @@ export default function Home() {
      <HomeBanner/>
      <Boxes/>
      <AboutSection/>
+     <StatsCounter/>
      {/* <ServicesSection/> */}
      <ProductSection isHome={true}/>
      <WhyChooseSection/>
      <Process/>
-     <FaqSection/>
+     {/* <FaqSection/> */}
           <GallerySection/>
     {/* <BlogSection/> */}
     </main>

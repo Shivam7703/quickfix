@@ -163,9 +163,9 @@ export default function AboutSection() {
                     <span className="text-sm font-medium text-zinc-700">{highlight}</span>
                   </div>
                 ))}
-                <div className="mt-3">
+                {/* <div className="mt-3">
                   <Buttonmain href="/about-us" text="Explore More" variant="primary" />
-                </div>
+                </div> */}
               </motion.div>
               {/* Certifications Block */}
               <motion.div variants={itemVariants} className=" border-gray-100">

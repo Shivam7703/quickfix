@@ -112,7 +112,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
           </Link>
 
           {/* Ratings Block */}
-          <div className="flex items-center gap-1">
+          {/* <div className="flex items-center gap-1">
             <span className="text-xs font-bold text-zinc-900">
               {rating.toFixed(1)}
             </span>
@@ -121,7 +121,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
                 <FiStar key={i} size={11} fill="currentColor" />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -179,8 +179,8 @@ export default function ProductSection({ isHome = true }: ProductSectionProps) {
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-zinc-900 tracking-tight max-w-2xl leading-tight">
-            Instant Bonding Solutions For{" "}
-            <span className="text-yellow-500">Every Repair Need</span>
+            Solutions For Every{" "}
+            <span className="text-yellow-500">Repair Need</span>
           </h2>
         </div>
 

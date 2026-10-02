@@ -4,10 +4,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiPhone, FiMail } from "react-icons/fi";
-import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
-// Brand logo asset import (Apna real path use karein)
-import logo from "@/assets/logo.png"; 
+import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa"; 
+import { footlogo } from "@/assets";
 
 export default function Footer() {
   const WHATSAPP_NUMBER = '+918527499493';
@@ -50,7 +48,7 @@ const WHATSAPP_MESSAGE = "Hi Quickfix! I'd like to know more about becoming a ve
           <div className="lg:col-span-4 space-y-4 flex flex-col items-start text-left">
             <div className="relative w-44 h-16 select-none">
               <Image
-                src={logo}
+                src={footlogo}
                 alt="Wembley's Quickfix Logo"
                 fill
                 className="object-contain object-left"

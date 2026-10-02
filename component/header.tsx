@@ -159,7 +159,7 @@ const navLinks = [
   ],
 },
   { name: "Career", href: "/career" },
-  { name: "Sustainability", href: "/sustainability" },
+  { name: "OEM", href: "/oem" },
   // { name: "Blogs", href: "/blogs" },
   { name: "Contact Us", href: "/contact-us" },
 ];
@@ -211,7 +211,7 @@ const [isHidden, setIsHidden] = useState(false);
 
       {/* Red Highlight Branding Strip */}
       <div className="bg-red-600 text-white text-center py-1.5 text-[10px] md:text-xs font-medium tracking-wide uppercase shadow-inner">
-        India's Trusted Instant Adhesive Brand
+        India's Trusted Adhesive Brand
       </div>
 
       {/* Main Nav Wrapper */}

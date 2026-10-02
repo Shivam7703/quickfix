@@ -15,11 +15,9 @@ function page() {
       <AllBanner title='about us' para="QuickFix is Wembley Laboratories Ltd.' trusted adhesive brand, offering dependable bonding solutions for everyday repairs, professional work, and industrial applications." slug="about-us" />
       <AboutSection />
       <MissionVisionSection />
-      <Story />
+      {/* <Story /> */}
       <AboutCeo />
-      <FeatureCards />
       <Aboutchoose />
-      <ServiceHighlights />
     </div>
   )
 }
