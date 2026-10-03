@@ -221,11 +221,11 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
 
               {/* Direct Mail Link Button */}
               <a 
-                href="mailto:careers@yourcompany.com?subject=Job%20Application%20-%20CV" 
+                href="mailto:hr@wembleysquickfix.com?subject=Job%20Application%20-%20CV" 
                 className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-6 rounded-xl bg-white text-slate-900 hover:bg-slate-100 font-bold text-sm transition-all shadow-md group"
               >
                 <LuMail className="w-4 h-4 text-blue-600 group-hover:scale-110 transition-transform" /> 
-                Send Your CV (Mail Link)
+                Send Your CV
               </a>
 
               <div className="mt-6 pt-6 border-t border-slate-800 text-xs text-slate-400 space-y-2">

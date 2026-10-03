@@ -14,7 +14,7 @@ export default function AboutCeo() {
 
           {/* Tag & Heading */}
           <div className="space-y-3">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
               About Our Founder
             </h2>
             <div className="w-16 h-1 bg-blue-600 rounded-full"></div>

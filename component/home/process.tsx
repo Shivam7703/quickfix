@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { about, ptfetape, pvshield2, quickguard2, quickseal2, sus2 } from "@/assets";
+import { about, fact8, ptfetape, pvshield2, quickguard2, quickseal2, sus2 } from "@/assets";
 
 
 const processSteps = [
@@ -59,7 +59,7 @@ export default function Process() {
               className="w-full aspect-4/3 relative  shadow-md border rounded-2xl  border-gray-100"
             >
               <Image
-                src={quickseal2}
+                src={fact8}
                 alt="Quickfix"
                 fill
                 className="object-contain object-center"

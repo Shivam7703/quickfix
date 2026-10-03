@@ -350,7 +350,7 @@ export default function Aboutchoose() {
                     <FiMapPin size={22} />
                   </div>
                   <div>
-                    <p className="text-3xl font-extrabold leading-none tracking-tight text-zinc-900 md:text-4xl">
+                    <p className="text-2xl font-bold leading-none tracking-tight text-zinc-900 md:text-4xl">
                       {stat.value}
                     </p>
                     <p className="mt-1.5 text-sm text-zinc-500">{stat.label}</p>

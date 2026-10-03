@@ -18,6 +18,16 @@ import img9 from "@/assets/home/img9.webp";
 import img10 from "@/assets/home/img10.webp";
 import img11 from "@/assets/home/img11.webp";
 
+import fact1 from "@/assets/home/fact1.jpg";
+import fact2 from "@/assets/home/fact2.jpg";
+import fact3 from "@/assets/home/fact3.jpg";
+import fact4 from "@/assets/home/fact4.jpg";
+import fact5 from "@/assets/home/fact5.jpg";
+import fact6 from "@/assets/home/fact6.jpg";
+import fact7 from "@/assets/home/fact7.jpg";
+import fact8 from "@/assets/home/fact8.jpg";
+import fact9 from "@/assets/home/fact9.jpg";
+
 import processimg from "@/assets/home/img9.webp";
 import ceo from "@/assets/home/ceo.jpg"
 import sus2 from "@/assets/home/sustain2.webp"
@@ -164,14 +174,8 @@ import quickplumb from "@/assets/products/quickplumb.png";
 
 export {footlogo,team,sus2,ceo, noimg,logo, banner1, banner2, banner3,banner4, about, about1, 
   img2, blg1,blg2,blg3,
-  img4,
-  img5,
-  img7,
-  img8,
-  img9,
-  img10,
-  img11,
- processimg, astm, isi,
+  img4,  img5,  img7,  img8,  img9,  img10,  img11,
+ processimg, astm, isi, fact1, fact2, fact3, fact4, fact5, fact6, fact7, fact8, fact9,
 
     // product
 quickplumb, allPurposeAdhesive1, multipurpose, multipurpose2, ptfetape, ptfetape2, quickcolsh, quickcolsh2, allPurposeAdhesive2, cpvc1, cpvc2, cpvc3, cpvc4, cpvc5, cpvc6, cpvc7, cpvc8, cpvcValve1, cpvcValve2, drainQure, durobond, durofix1, durofix2, epoxyAdhesives, gluepen1, gluepen2, gluepen3, gluepen4, gluepen5, paintStripper,  pvcSolventCement1, pvcSolventCement2,   pvcSolventCement3,

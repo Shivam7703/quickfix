@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { FiCheckCircle, FiAward } from "react-icons/fi";
 import Buttonmain from "../global/button";
-import { astm, img8,  isi,  processimg } from "@/assets";
+import { astm, fact1, img8,  isi,  processimg } from "@/assets";
 
 // Stagger animation container variants
 const containerVariants: Variants = {
@@ -55,7 +55,7 @@ export default function AboutSection() {
               className="w-full h-full relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100  transition-all duration-500 hover:shadow-yellow-500/15"
             >
               <Image
-                src={processimg}
+                src={fact1}
                 alt="Wembley's Premium Production Operations"
                 fill
                 className="object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
@@ -134,7 +134,6 @@ export default function AboutSection() {
               <span className=" text-yellow-500">
                 & Industrial Applications
                 {/* Underline Accent */}
-
               </span>
               .
             </motion.h3>
@@ -145,14 +144,12 @@ export default function AboutSection() {
               className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal"
             >
               Quickfix, the flagship brand of Wembley Laboratories Ltd., offers a comprehensive range of adhesives developed for repair, maintenance, DIY, plumbing, construction, manufacturing, and industrial applications. Every product is manufactured with carefully selected raw materials and stringent quality control to deliver consistent performance and dependable bonding.
-
             </motion.p>
 
             {/* Feature Check Grid list (Uncommented & Dynamic Ready) */}
             <div
               className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 py-2"
             >
-
               <motion.div variants={itemVariants}>
                 {corporateHighlights.map((highlight, index) => (
                   <div
