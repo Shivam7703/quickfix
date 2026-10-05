@@ -96,7 +96,7 @@ export default function OemManufacturing() {
                 alt="Quickfix OEM adhesive manufacturing"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain"
+                className="object-cover"
                 priority
               />
             </motion.div>
@@ -206,7 +206,7 @@ export default function OemManufacturing() {
                 alt="Quickfix quality-controlled adhesive production"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain"
+                className="object-cover"
               />
             </motion.div>
           </div>
