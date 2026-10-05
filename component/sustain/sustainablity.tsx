@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import { LuLeaf, LuRecycle, LuZap } from 'react-icons/lu';
-import { cpvc4, durobond } from "@/assets";
+import {  fact4, fact3 } from "@/assets";
 import { FaCheckCircle } from 'react-icons/fa';
 import Buttonmain from '../global/button';
 
@@ -42,16 +42,14 @@ export default function Sustain() {
               className="relative h-[320px] sm:h-[420px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl shadow-yellow-500/10 border p-4 border-slate-100"
             >
               <Image 
-                src={cpvc4} 
+                src={fact4} 
                 alt="Eco-friendly innovation" 
                 fill 
                 className="object-contain transition-transform duration-700 hover:scale-105"
                 priority
               />
               {/* Corner Badge */}
-              <div className="absolute top-4 left-4 bg-yellow-400/90 backdrop-blur-md text-slate-950 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-md flex items-center gap-1.5">
-                <LuLeaf className="w-4 h-4" /> Eco Vision
-              </div>
+            
             </motion.div>
           </div>
 
@@ -61,19 +59,22 @@ export default function Sustain() {
            Responsible Manufacturing
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
-              Building a More Sustainable <span className="text-yellow-500"> Future</span>
+              Manufacturing Solutions Built Around 
+ <span className="text-yellow-500"> Your Brand</span>
             </h2>
             <p className="text-slate-600 leading-relaxed text-base md:text-lg">
-At Quickfix, sustainability is more than a responsibility it's a part of how we design, manufacture, and deliver our products. By embracing smarter processes, efficient resource management, and continuous innovation, we create high-performance adhesive solutions that support long-term value for our customers, our communities, and the environment. 
+At Quickfix, OEM manufacturing is built around quality, consistency, and customer-specific requirements. From formulation and production to quality checks and packaging, we work to deliver adhesive solutions that meet your product needs while maintaining reliable manufacturing standards.
             </p>
             <ul className="space-y-3 pt-2 text-slate-700 font-medium text-sm md:text-base">
               <li className="flex items-center gap-3">
                 <FaCheckCircle className="text-yellow-500 w-5 h-5 flex-shrink-0" />
-                <span>Responsible Manufacturing Practices</span>
+                <span>Custom Adhesive Manufacturing
+</span>
               </li>
               <li className="flex items-center gap-3">
                 <FaCheckCircle className="text-yellow-500 w-5 h-5 flex-shrink-0" />
-                <span>Continuous Process Improvement</span>
+                <span>Consistent Quality & Production
+</span>
               </li>
             </ul>
                        <Buttonmain text="Learn More" href="/contact-us" variant="primary"/>
@@ -99,9 +100,9 @@ At Quickfix, sustainability is more than a responsibility it's a part of how we 
             <div className="w-14 h-14 rounded-2xl bg-yellow-100 text-yellow-600 flex items-center justify-center mb-6 group-hover:bg-yellow-400 group-hover:text-slate-950 transition-colors duration-300">
               <LuZap className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-yellow-600 transition-colors"> Efficient Manufacturing</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-yellow-600 transition-colors">Efficient Production</h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-We optimize our production processes to reduce material waste, improve efficiency, and maintain the highest standards of product quality.
+We follow streamlined manufacturing practices to maintain consistent quality, improve production efficiency, and meet customer requirements with reliable adhesive solutions.
             </p>
           </motion.div>
 
@@ -114,10 +115,10 @@ We optimize our production processes to reduce material waste, improve efficienc
             <div className="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
               <LuRecycle className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Resource Responsibility
+            <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Responsible Resource Use
 </h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-              We promote responsible use of raw materials and manufacturing resources to support sustainable operations and long-term environmental stewardship.
+We focus on careful use of raw materials, energy, and production resources to support efficient operations and reduce unnecessary waste wherever possible.
             </p>
           </motion.div>
 
@@ -132,7 +133,7 @@ We optimize our production processes to reduce material waste, improve efficienc
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-red-600 transition-colors"> Innovation & Quality</h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-             By investing in advanced technologies and continuous product development, we create adhesive solutions that deliver superior performance while supporting responsible growth.
+Our focus on research, product development, and quality control helps us create dependable adhesive solutions that meet different application and customer requirements.
             </p>
           </motion.div>
         </motion.div>
@@ -148,26 +149,26 @@ We optimize our production processes to reduce material waste, improve efficienc
         >
           {/* Left Content */}
           <div className="lg:col-span-6 space-y-6 order-2 lg:order-1">
-            <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-yellow-700 bg-yellow-50 border border-yellow-200 uppercase">
-              Sustainable Tomorrow
-            </span>
+          
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Building a Better Future Through <span className="text-yellow-500">Responsible</span> Innovation
+              Moving Forward with 
+ <span className="text-yellow-500"> Smarter Adhesive </span> Solutions
             </h2>
             <p className="text-slate-600 leading-relaxed text-base md:text-lg">
-At Quickfix, sustainability is part of our commitment to continuous improvement. By embracing responsible manufacturing, efficient operations, and innovative product development, we strive to create high-performance adhesive solutions that deliver lasting value while supporting a more sustainable future.
+At Quickfix, we focus on responsible manufacturing, consistent quality, and continuous improvement. Our approach combines efficient processes with product development to deliver reliable adhesive solutions that meet customer requirements and support long-term value.
             </p>
 
             {/* Quick Stats Highlights */}
             <div className="flex gap-4 pt-2">
               <div className="p-4 rounded-2xl bg-slate-50 border w-max border-slate-200/80">
-                <span className="text-lg  sm:text-xl font-bold text-blue-600">Quality-Driven</span>
-                <p className="text-sm  font-semibold text-slate-500 mt-1">Manufacturing Excellence
+                <span className="text-lg  sm:text-xl font-bold text-blue-600">Quality You Can Rely On</span>
+                <p className="text-sm  font-semibold text-slate-500 mt-1"> Consistent products made for dependable performance.
+
 </p>
               </div>
               <div className="p-4 rounded-2xl bg-slate-50 border w-max  border-slate-200/80">
-                <span className="text-lg  sm:text-xl font-bold  text-blue-600">Innovation-Focused</span>
-                <p className="text-sm font-semibold text-slate-500 mt-1">Continuous Product Development
+                <span className="text-lg  sm:text-xl font-bold  text-blue-600">Continuous Improvement</span>
+                <p className="text-sm font-semibold text-slate-500 mt-1"> Better processes for better adhesive solutions.
 </p>
               </div>
             </div>
@@ -183,15 +184,13 @@ At Quickfix, sustainability is part of our commitment to continuous improvement.
               className="relative h-[320px] sm:h-[420px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl shadow-red-500/10 border p-4 border-slate-100"
             >
               <Image 
-                src={durobond} 
+                src={fact3} 
                 alt="Sustainable Future" 
                 fill 
                 className="object-contain transition-transform duration-700 hover:scale-105"
               />
               {/* Corner Badge */}
-              <div className="absolute top-4 right-4 bg-green-600/90 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-md flex items-center gap-1.5">
-                <LuRecycle className="w-4 h-4" /> Eco Impact
-              </div>
+              
             </motion.div>
           </div>
         </motion.div>

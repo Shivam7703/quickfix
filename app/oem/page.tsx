@@ -5,7 +5,8 @@ import React from 'react'
 function page() {
   return (
     <div>
-                    <AllBanner title='Sustainability' para='Building stronger bonds through responsible innovation, sustainable manufacturing, and a commitment to a better tomorrow.' slug="sustainability"/>
+                    <AllBanner title=' Original Equipment Manufacturer' para='Building Bonds by creating reliable adhesive solutions with innovation, quality, and a commitment to responsible manufacturing. 
+' slug="oem"/>
                     <Sustain/>
     </div>
   )
