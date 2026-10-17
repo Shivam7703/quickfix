@@ -165,7 +165,7 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
                   <label className="block text-xs font-bold text-slate-700 uppercase mb-2">Phone Number</label>
                   <input 
                     type="tel" 
-                    placeholder="+1 (555) 000-0000" 
+                    placeholder="contact no." 
                     className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                   />
                 </div>
@@ -221,7 +221,7 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
 
               {/* Direct Mail Link Button */}
               <a 
-                href="mailto:hr@wembleysquickfix.com?subject=Job%20Application%20-%20CV" 
+                href="mailto:hr@wembleysquickfix.com" 
                 className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-6 rounded-xl bg-white text-slate-900 hover:bg-slate-100 font-bold text-sm transition-all shadow-md group"
               >
                 <LuMail className="w-4 h-4 text-blue-600 group-hover:scale-110 transition-transform" /> 
@@ -231,7 +231,7 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
               <div className="mt-6 pt-6 border-t border-slate-800 text-xs text-slate-400 space-y-2">
                 <p className="flex items-center gap-2">
                   <FaCheckCircle className="text-blue-400 w-4 h-4" />
-                  <span>Direct HR Contact: <strong>careers@company.com</strong></span>
+                  <span>Direct HR Contact: <strong>hr@wembleysquickfix.com</strong></span>
                 </p>
                 <p className="flex items-center gap-2">
                   <FaCheckCircle className="text-blue-400 w-4 h-4" />
