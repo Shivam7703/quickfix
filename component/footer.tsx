@@ -52,7 +52,13 @@ const linkClass = "hover:text-blue-600 transition-colors";
 const headingClass = "text-blue-700 text-base md:text-lg font-bold tracking-tight";
 const listClass = "space-y-2.5 text-xs md:text-sm font-medium text-zinc-700";
 
-function LinkColumn({ title, links }) {
+function LinkColumn({
+  title,
+  links,
+}: {
+  title: string;
+  links: { label: string; href: string }[];
+}) {
   return (
     <div className="lg:col-span-2 text-left space-y-4">
       <h3 className={headingClass}>{title}</h3>
