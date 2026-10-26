@@ -178,11 +178,11 @@ const supportChips: { icon: IconType; label: string }[] = [
   { icon: FiTruck, label: "Fast response" },
 ];
 
-const distributionStats = [
-  { value: "150+", label: "Direct distributors" },
-  { value: "15,000", label: "Retailers reached (approx.)" },
-  { value: "Pan-India", label: "Across the length and breadth of the country" },
-];
+// const distributionStats = [
+//   { value: "150+", label: "Direct distributors" },
+//   { value: "15,000", label: "Retailers reached (approx.)" },
+//   { value: "Pan-India", label: "Across the length and breadth of the country" },
+// ];
 
 /* -------------------------------------------------------------------------- */
 /*  Sections                                                                  */
@@ -325,7 +325,7 @@ export default function Aboutchoose() {
       </section>
 
       {/* ============================ 4. DISTRIBUTION =========================== */}
-      <section className="relative w-full overflow-hidden bg-zinc-50 px-4 py-12 md:px-12 md:py-16 lg:px-24">
+      {/* <section className="relative w-full overflow-hidden bg-zinc-50 px-4 py-12 md:px-12 md:py-16 lg:px-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="space-y-5 lg:col-span-6">
             <Heading
@@ -360,7 +360,7 @@ export default function Aboutchoose() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { about, fact8, ptfetape, pvshield2, quickguard2, quickseal2, sus2 } from "@/assets";
+import { fact7 } from "@/assets";
 
 
 const processSteps = [
@@ -56,13 +56,13 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="w-full aspect-4/3 relative  shadow-md border rounded-2xl  border-gray-100"
+              className="w-full aspect-square relative   shadow-md border rounded-2xl  border-gray-100"
             >
               <Image
-                src={fact8}
+                src={fact7}
                 alt="Quickfix"
-                fill
-                className="object-contain object-center"
+                
+                className="object-cover object-center"
                 sizes="(max-w-1024px) 100vw, 45vw"
               />
               {/* Prototype Signature Blue Border Accent Callout text box */}

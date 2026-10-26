@@ -11,7 +11,7 @@ import {
   LuTrendingUp,
   LuCheck,
 } from "react-icons/lu";
-import { fact3, fact4 } from "@/assets";
+import { fact3, fact5 } from "@/assets";
 import Buttonmain from "../global/button";
 
 /* ---------- Animation variants ---------- */
@@ -92,7 +92,7 @@ export default function OemManufacturing() {
               className="relative h-[320px] w-full overflow-hidden rounded-3xl border border-slate-100 p-4 shadow-2xl shadow-yellow-500/10 sm:h-[420px] md:h-[480px]"
             >
               <Image
-                src={fact4}
+                src={fact5}
                 alt="Quickfix OEM adhesive manufacturing"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -126,7 +126,7 @@ export default function OemManufacturing() {
                 </li>
               ))}
             </ul>
-            <Buttonmain text="Learn More" href="/contact-us" variant="primary" />
+            {/* <Buttonmain text="Learn More" href="/contact-us" variant="primary" /> */}
           </div>
         </motion.div>
 
@@ -193,7 +193,7 @@ export default function OemManufacturing() {
               ))}
             </div>
 
-            <Buttonmain text="Get Details" href="mailto:info@quickfix.com" variant="primary" />
+            {/* <Buttonmain text="Get Details" href="mailto:info@quickfix.com" variant="primary" /> */}
           </div>
 
           <div className="order-1 w-full lg:order-2 lg:col-span-6">

@@ -201,10 +201,10 @@ const [isHidden, setIsHidden] = useState(false);
           <span className="text-gray-300">|</span>
           <div className="flex items-center gap-3">
             <span className="text-gray-500">Follow</span>
-            <a href="https://www.facebook.com/wembleyadhesives" className="hover:text-blue-600 transition-colors"><FiFacebook /></a>
-            <a href="https://www.instagram.com/wembleyadhesives?utm_medium=copy_link" className="hover:text-blue-600 transition-colors"><FiInstagram /></a>
-            <a href="https://x.com/wembleyadhesive?s=09" className="hover:text-blue-600 transition-colors"><FiTwitter /></a>
-            <a href="https://www.linkedin.com/company/wembley-s-quickfix" className="hover:text-blue-600 transition-colors"><FiLinkedin /></a>
+            <a href="https://www.facebook.com/wembleyadhesives" target="_blank" className="hover:text-blue-600 transition-colors"><FiFacebook /></a>
+            <a href="https://www.instagram.com/wembleyadhesives?utm_medium=copy_link" target="_blank"  className="hover:text-blue-600 transition-colors"><FiInstagram /></a>
+            <a href="https://x.com/wembleyadhesive?s=09" target="_blank"  className="hover:text-blue-600 transition-colors"><FiTwitter /></a>
+            <a href="https://www.linkedin.com/company/wembley-s-quickfix" target="_blank" className="hover:text-blue-600 transition-colors"><FiLinkedin /></a>
           </div>
         </div>
       </div>
