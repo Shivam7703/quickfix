@@ -1,3 +1,5 @@
+// proxy.ts
+
 import { NextResponse, type NextRequest } from "next/server";
 import { verifyToken, COOKIE } from "@/lib/auth-edge";
 

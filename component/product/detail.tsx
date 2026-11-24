@@ -7,7 +7,7 @@ export default function Productdetail({pro}:any) {
   return (
     <div className='flex flex-wrap justify-center lg:p-16 bg-white md:p-12 relative xl:px-20' >
       <div className='md:w-[85%]  w-full'><ProductGallery data={pro}/><ProductTabs data={pro}/>        
-</div>
+      </div>
     </div>
   )
 }
