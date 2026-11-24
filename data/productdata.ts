@@ -79,7 +79,7 @@ export const Productdata = [
     description: "Quickfix is India's first indigenous all-purpose adhesive. It is a quick drying, clear and transparent adhesive which exhibits excellent bonding properties. Owing to its capacity to bond most substrates, it finds applications across various industries, as well as DIY and Household use.",
     tds:"https://wembleysquickfix.com/file/Quickfix - TDS.pdf",
     msds:"https://wembleysquickfix.com/file/Quickfix - All Purpose Adhesive - MSDS.pdf",
-"imgs": [
+   "imgs": [
       allPurposeAdhesive1, allPurposeAdhesive2
     ],
     sizes: {

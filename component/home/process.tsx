@@ -56,12 +56,11 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="w-full aspect-square relative   shadow-md border rounded-2xl  border-gray-100"
+              className="w-full aspect-square relative shadow-md border overflow-hidden rounded-2xl border-gray-100"
             >
               <Image
                 src={fact7}
                 alt="Quickfix"
-                
                 className="object-cover object-center"
                 sizes="(max-w-1024px) 100vw, 45vw"
               />

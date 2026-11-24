@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { blogData } from "@/data/blogdata";
 import { blg1 } from "@/assets";
-import { createSlug } from "@/app/products/[slug]/page";
 import AllBanner from "@/component/global/banner";
+import { createSlug } from "@/utils/createslug";
 
 interface PageProps {
   params: Promise<{

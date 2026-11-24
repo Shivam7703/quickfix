@@ -56,10 +56,7 @@ Wembley Laboratories Ltd. embraces the entrepreneurial spirit of our founder, S.
                       Founder
                     </p>
                   </div>
-                  {/* <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-100 text-[11px] font-semibold">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    Active
-                  </div> */}
+                 
                 </div>
               </div>
 

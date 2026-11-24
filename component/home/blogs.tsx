@@ -6,7 +6,7 @@ import { FiArrowRight } from "react-icons/fi";
 // User explicit asset path directive matching instructions
 import { blg1 } from "@/assets";
 import { blogData } from "@/data/blogdata";
-import { createSlug } from "@/app/products/[slug]/page";
+import { createSlug } from "@/utils/createslug";
 
 
 export default function BlogSection() {

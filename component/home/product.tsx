@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight, FiStar } from "react-icons/fi";
 
@@ -13,41 +13,13 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { Productdata } from "@/data/productdata";
-import { createSlug } from "@/app/products/[slug]/page";
+import { useCatalog } from "@/hooks/useCatalog";
+import type { Product } from "@/lib/types";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { createSlug } from "@/utils/createslug";
 
-// Interface for full product data
-export interface ProductItem {
-  id: number;
-  title: string;
-  category: string;
-  description: string;
-  imgs: (string | StaticImageData)[];
-}
-
-// Category list extracted directly from navigation subnav
-export const CATEGORIES = [
-  "All",
-  "All Purpose Adhesive",
-  "Cyanoacrylate",
-  "Fragrant Gum",
-  "White Adhesive",
-  "Rubber Based Adhesive",
-  "Epoxy Putty",
-  "Epoxy",
-  "Thread Sealant",
-  "PVC Electrical Tape",
-  "Solvent Cements",
-  "Ball Valve",
-  "Drain Cleaner",
-  "Wood Adhesive",
-  "Binder",
-  "NC Thinner",
-  "Paint Stripper",
-  "Tile Cleaner",
-] as const;
-
+// Ab product ka shape database wala hai
+export type ProductItem = Product;
 // Interface for Props
 interface ProductSectionProps {
   isHome?: boolean;
@@ -63,7 +35,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product, priority = false }: ProductCardProps) {
   const productSlug = createSlug(product.title);
-  const rating = 5.0;
+  const firstImg = product.imgs[0];
 
   return (
     <div className="w-full  text-left group bg-white rounded-2xl p-3 border border-zinc-300 hover:shadow-xl transition-all duration-300 select-none my-2">
@@ -72,15 +44,20 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
         href={`/products/${productSlug}`}
         className="w-full aspect-square bg-radial from-white via-white to-blue-100 rounded-xl p-4 flex items-center justify-center relative overflow-hidden mb-4"
       >
-        <Image
-          src={product.imgs[0]}
-          alt={product.title}
-          width={280}
-          height={280}
-          className="object-contain max-h-[85%] transform group-hover:scale-108 transition-transform duration-500"
-          sizes="(max-width: 768px) 260px, 300px"
-          priority={priority}
-        />
+        {firstImg ? (
+          <Image
+            src={firstImg}
+            alt={product.title}
+            width={280}
+            height={280}
+            className="object-contain max-h-[85%] transform group-hover:scale-108 transition-transform duration-500"
+            sizes="(max-width: 768px) 260px, 300px"
+            priority={priority}
+            unoptimized={firstImg.startsWith("http://localhost")}
+          />
+        ) : (
+          <span className="text-xs text-zinc-400">No image</span>
+        )}
       </Link>
 
       {/* Product Information Details */}
@@ -110,18 +87,6 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
               className="group-hover/btn:translate-x-1 transition-transform"
             />
           </Link>
-
-          {/* Ratings Block */}
-          {/* <div className="flex items-center gap-1">
-            <span className="text-xs font-bold text-zinc-900">
-              {rating.toFixed(1)}
-            </span>
-            <div className="flex items-center text-amber-500">
-              {[...Array(5)].map((_, i) => (
-                <FiStar key={i} size={11} fill="currentColor" />
-              ))}
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
@@ -133,13 +98,17 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
 // =======================================================
 export default function ProductSection({ isHome = true }: ProductSectionProps) {
   const [activeCategory, setActiveCategory] = useState<string>("All");
+  const { products, categories, loading, error } = useCatalog();
   const uniqueId = "product-section-slider";
 
-  // Filter products by selected category
+  // Tabs: "All" + database ki categories (serial_no ke order mein)
+  const tabs = ["All", ...categories.map((c) => c.label)];
+
+  // Selected category ke hisaab se products filter
   const filteredProducts =
     activeCategory === "All"
-      ? Productdata
-      : Productdata.filter((item) => item.category === activeCategory);
+      ? products
+      : products.filter((item) => item.category === activeCategory);
 
   const swiperOptions = {
     slidesPerView: 1,
@@ -149,7 +118,7 @@ export default function ProductSection({ isHome = true }: ProductSectionProps) {
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
-    loop: true,
+    loop: filteredProducts.length > 4, // kam products par loop band, warna Swiper warning deta hai
     navigation: {
       nextEl: `.${uniqueId}-next`,
       prevEl: `.${uniqueId}-prev`,
@@ -186,7 +155,7 @@ export default function ProductSection({ isHome = true }: ProductSectionProps) {
 
         {/* CATEGORY TABS SYSTEM */}
         <div className="flex items-center gap-2.5 overflow-x-auto pb-4 mb-6 sm:mb-8 w-full ">
-          {CATEGORIES.map((cat) => (
+          {tabs.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
@@ -201,8 +170,14 @@ export default function ProductSection({ isHome = true }: ProductSectionProps) {
           ))}
         </div>
 
-        {/* CONDITIONALLY RENDER SLIDER OR GRID */}
-        {isHome ? (
+        {/* LOADING / ERROR / EMPTY / SLIDER / GRID */}
+        {loading ? (
+          <p className="py-16 text-zinc-500">Loading products...</p>
+        ) : error ? (
+          <p className="py-16 text-red-600">{error}</p>
+        ) : filteredProducts.length === 0 ? (
+          <p className="py-16 text-zinc-500">No products in this category yet.</p>
+        ) : isHome ? (
           /* SLIDER VIEW FOR HOME */
           <>
             <div className="max-sm:px-8">
@@ -221,7 +196,7 @@ export default function ProductSection({ isHome = true }: ProductSectionProps) {
                 className="w-full py-2"
               >
                 {filteredProducts.map((product, index) => (
-                  <SwiperSlide key={product.id || index} className="py-1">
+                  <SwiperSlide key={product.id} className="py-1">
                     <ProductCard product={product} priority={index < 4} />
                   </SwiperSlide>
                 ))}
@@ -257,7 +232,7 @@ export default function ProductSection({ isHome = true }: ProductSectionProps) {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-6 sm:gap-10">
             {filteredProducts.map((product, index) => (
               <ProductCard
-                key={product.id || index}
+                key={product.id}
                 product={product}
                 priority={index < 8}
               />

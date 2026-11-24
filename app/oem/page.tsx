@@ -1,3 +1,4 @@
+// oem/page.tsx
 import AllBanner from '@/component/global/banner'
 import OemManufacturing from '@/component/sustain/sustainablity'
 import React from 'react'

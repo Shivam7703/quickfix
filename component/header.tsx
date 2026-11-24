@@ -240,7 +240,7 @@ const [isHidden, setIsHidden] = useState(false);
 
           {/* Action Call Button */}
           <div>
-            <Buttonmain text="Download Brochure" href="mailto:info@quickfix.com" variant="primary"/>
+            <Buttonmain text="Download Catalogue" href="https://wembleysquickfix.com/Catalogue.pdf" variant="primary"/>
           </div>
         </nav>
       </div>
@@ -291,8 +291,8 @@ const [isHidden, setIsHidden] = useState(false);
 
               {/* Mobile Drawer Footer */}
               <div className="border-t pt-4 bg-gray-50 -mx-6 -mb-6 p-6 space-y-3 mt-8">
-                <a href="tel:1800-XXX-XXXX" className="flex items-center gap-2 text-sm text-zinc-800"><FiPhone className="text-blue-600" /> 1800-XXX-XXXX</a>
-                <a href="mailto:care@quickfix.com" className="flex items-center gap-2 text-sm text-zinc-800"><FiMail className="text-blue-600" /> care@quickfix.com</a>
+                <a href="tel:+919805403302" className="flex items-center gap-2 text-sm text-zinc-800"><FiPhone className="text-blue-600" /> +91-9805403302</a>
+                <a href="mailto:care@quickfix.com" className="flex items-center gap-2 text-sm text-zinc-800"><FiMail className="text-blue-600" /> info@wembleysquickfix.com</a>
               </div>
             </motion.div>
           </>

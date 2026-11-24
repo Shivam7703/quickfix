@@ -1,6 +1,6 @@
+// career/page.tsx
 import CareerSection from '@/component/career/caree'
 import AllBanner from '@/component/global/banner'
-import React from 'react'
 
 function page() {
   return (

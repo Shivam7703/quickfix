@@ -1,43 +1,145 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { motion, Variants } from 'framer-motion';
-import { 
-  LuBriefcase, 
-  LuSend, 
-  LuMail, 
-  LuUpload, 
-  LuUsers, 
-  LuRocket, 
-  LuHeartHandshake 
-} from 'react-icons/lu';
+import React, { ChangeEvent, FormEvent, useRef, useState } from "react";
+import Image from "next/image";
+import Script from "next/script";
+import { motion, Variants } from "framer-motion";
+import {
+  LuBriefcase,
+  LuSend,
+  LuMail,
+  LuUpload,
+  LuUsers,
+  LuRocket,
+  LuHeartHandshake,
+} from "react-icons/lu";
+import { FaCheckCircle } from "react-icons/fa";
 
-import { team } from "@/assets"; 
-import { FaCheckCircle } from 'react-icons/fa';
+import { team } from "@/assets";
+
+/* ---------- reCAPTCHA types ---------- */
+declare global {
+  interface Window {
+    grecaptcha?: {
+      ready: (cb: () => void) => void;
+      render: (
+        el: HTMLElement,
+        opts: {
+          sitekey: string;
+          callback?: (token: string) => void;
+          "expired-callback"?: () => void;
+          "error-callback"?: () => void;
+        }
+      ) => number;
+      getResponse: (id?: number) => string;
+      reset: (id?: number) => void;
+    };
+  }
+}
+
+const SITE_KEY = "6LcX8gcuAAAAAO6I3L_iUPBeVwwu_IGggPD9XsN-";
+
+const MAX_SIZE = 5 * 1024 * 1024; // 5 MB
+const ALLOWED_EXT = ["pdf", "doc", "docx", "jpg", "jpeg", "png", "webp"];
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
-const data = [{id:1, title:"Career Development", description:" Unlock your potential with continuous learning, real-world experience, and opportunities to build a rewarding career."},{id:3, title:"Work-Life Balance", description:"We believe great work starts with a healthy balance, offering a positive environment that supports both your professional growth and personal well-being."},{id:2, title:"Collaborative Culture", description:" Join a supportive team where collaboration, respect, and fresh ideas drive innovation and shared success every day."},]
+const data = [
+  {
+    id: 1,
+    title: "Career Development",
+    description:
+      " Unlock your potential with continuous learning, real-world experience, and opportunities to build a rewarding career.",
+  },
+  {
+    id: 3,
+    title: "Work-Life Balance",
+    description:
+      "We believe great work starts with a healthy balance, offering a positive environment that supports both your professional growth and personal well-being.",
+  },
+  {
+    id: 2,
+    title: "Collaborative Culture",
+    description:
+      " Join a supportive team where collaboration, respect, and fresh ideas drive innovation and shared success every day.",
+  },
+];
 
 export default function CareerSection() {
-  const [fileName, setFileName] = useState<string>('');
+  const [fileName, setFileName] = useState("");
+  const [fileError, setFileError] = useState("");
+  const [captchaError, setCaptchaError] = useState(false);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setFileName(e.target.files[0].name);
+  const widgetId = useRef<number | null>(null);
+  const captchaRef = useRef<HTMLDivElement>(null);
+
+  /* ---------- Render captcha checkbox (explicit mode) ---------- */
+  const renderCaptcha = () => {
+    const g = window.grecaptcha;
+    if (!g || !captchaRef.current || widgetId.current !== null) return;
+
+    g.ready(() => {
+      if (!captchaRef.current || widgetId.current !== null) return;
+      widgetId.current = g.render(captchaRef.current, {
+        sitekey: SITE_KEY,
+        callback: () => setCaptchaError(false),
+        "expired-callback": () => setCaptchaError(true),
+      });
+    });
+  };
+
+  /* ---------- File validation ---------- */
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    setFileError("");
+
+    if (!file) {
+      setFileName("");
+      return;
     }
+
+    const ext = file.name.split(".").pop()?.toLowerCase() ?? "";
+    if (!ALLOWED_EXT.includes(ext)) {
+      setFileError("Only PDF, DOC, DOCX, JPG, PNG or WEBP files are allowed.");
+      e.target.value = "";
+      setFileName("");
+      return;
+    }
+    if (file.size > MAX_SIZE) {
+      setFileError("File size must be less than 5MB.");
+      e.target.value = "";
+      setFileName("");
+      return;
+    }
+
+    setFileName(file.name);
+  };
+
+  /* ---------- Block submit until captcha is solved ---------- */
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const token = window.grecaptcha?.getResponse(widgetId.current ?? undefined);
+    if (!token) {
+      e.preventDefault();
+      setCaptchaError(true);
+    }
+    // If a token exists, the native POST continues and the widget's
+    // hidden field "g-recaptcha-response" is sent to apply.php automatically.
   };
 
   return (
     <section className="bg-white text-slate-800 py-16 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24">
-      <div className="max-w-7xl mx-auto space-y-24">
+      <Script
+        src="https://www.google.com/recaptcha/api.js?render=explicit"
+        strategy="afterInteractive"
+        onReady={renderCaptcha}
+      />
 
+      <div className="max-w-7xl mx-auto space-y-24">
         {/* ==================== 1. WORK WITH US SECTION ==================== */}
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -51,11 +153,15 @@ export default function CareerSection() {
             </span>
 
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
-              Join the Team Behind Every <span className="text-yellow-500">Strong Bond</span>
+              Join the Team Behind Every{" "}
+              <span className="text-yellow-500">Strong Bond</span>
             </h1>
 
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-At Quickfix, we don't just manufacture adhesives we build opportunities. Join a workplace where innovation, collaboration, and continuous growth empower you to make a meaningful impact while creating solutions trusted by industries every day.
+              At Quickfix, we don&apos;t just manufacture adhesives we build
+              opportunities. Join a workplace where innovation, collaboration, and
+              continuous growth empower you to make a meaningful impact while
+              creating solutions trusted by industries every day.
             </p>
 
             {/* Perks / Culture Highlights */}
@@ -83,8 +189,8 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
           {/* Right Image */}
           <div className="lg:col-span-6">
             <div className="relative h-[350px] sm:h-[450px] w-full rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
-              <Image 
-                src={team} // Apni career related image pass karein
+              <Image
+                src={team}
                 alt="Work With Us"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -95,27 +201,26 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
                 <span className="text-xs font-semibold uppercase tracking-wider bg-blue-600/90 px-3 py-1 rounded-full">
                   Join Our Team
                 </span>
-                <p className="text-lg font-bold mt-2">Build products that millions of users love.</p>
+                <p className="text-lg font-bold mt-2">
+                  Build products that millions of users love.
+                </p>
               </div>
             </div>
           </div>
         </motion.div>
 
+        {/* ==================== 2nd part: Values ==================== */}
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
+          {data.map((item) => (
+            <div key={item.id}>
+              <h3 className="font-bold text-slate-900 text-lg sm:text-2xl">{item.title}</h3>
+              <p className="text-sm text-slate-500 mt-2 sm:text-base">{item.description}</p>
+            </div>
+          ))}
+        </div>
 
-{/* 2nd part */}
-<div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10'>
-  {data.map((item) => (
-    <div 
-      key={item.id}
-      >
-      <h3 className="font-bold text-slate-900 text-lg sm:text-2xl">{item.title}</h3>
-      <p className="text-sm text-slate-500 mt-2 sm:text-base">{item.description}</p>
-    </div>
-  ))}
-</div>
-
-        {/* ==================== 2. APPLICATION FORM & SEND CV BOX ==================== */}
-        <motion.div 
+        {/* ==================== 3. APPLICATION FORM & SEND CV BOX ==================== */}
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -125,25 +230,39 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
           {/* Left: Application Form (7 Cols) */}
           <div className="lg:col-span-7 bg-slate-50 border border-slate-200/80 p-6 sm:p-8 md:p-10 rounded-3xl shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Apply Now</h2>
-            <p className="text-slate-500 text-sm mb-6">Fill in your details below and we&apos;ll get back to you soon.</p>
+            <p className="text-slate-500 text-sm mb-6">
+              Fill in your details below and we&apos;ll get back to you soon.
+            </p>
 
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+            <form
+              className="space-y-5"
+              method="POST"
+              action="https://wembleysquickfix.com/apply.php"
+              encType="multipart/form-data"
+              onSubmit={handleSubmit}
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 uppercase mb-2">Full Name</label>
-                  <input 
-                    type="text" 
-                    placeholder="John Doe" 
+                  <label className="block text-xs font-bold text-slate-700 uppercase mb-2">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="John Doe"
+                    name="name"
                     className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 uppercase mb-2">Email Address</label>
-                  <input 
-                    type="email" 
-                    placeholder="john@example.com" 
+                  <label className="block text-xs font-bold text-slate-700 uppercase mb-2">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="john@example.com"
                     className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                     required
                   />
@@ -152,20 +271,27 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 uppercase mb-2">Applied for</label>
-                  <input 
-                    type="text" 
-                    placeholder="Eg. Machine Operator" 
+                  <label className="block text-xs font-bold text-slate-700 uppercase mb-2">
+                    Applied for
+                  </label>
+                  <input
+                    type="text"
+                    name="role"
+                    placeholder="Eg. Machine Operator"
                     className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 uppercase mb-2">Phone Number</label>
-                  <input 
-                    type="tel" 
-                    placeholder="contact no." 
+                  <label className="block text-xs font-bold text-slate-700 uppercase mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    required
+                    placeholder="contact no."
                     className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                   />
                 </div>
@@ -173,29 +299,52 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
 
               {/* Upload Resume Input */}
               <div>
-                <label className="block text-xs font-bold text-slate-700 uppercase mb-2">Upload CV / Resume</label>
+                <label className="block text-xs font-bold text-slate-700 uppercase mb-2">
+                  Upload CV / Resume
+                </label>
                 <label className="flex items-center justify-center w-full px-4 py-4 rounded-xl border-2 border-dashed border-slate-300 hover:border-blue-500 bg-white cursor-pointer transition-colors group">
                   <div className="flex items-center gap-3">
                     <LuUpload className="w-5 h-5 text-slate-400 group-hover:text-blue-600 transition-colors" />
                     <span className="text-sm font-medium text-slate-600">
-                      {fileName ? fileName : "Click to upload CV (PDF/DOCX)"}
+                      {fileName ? fileName : "Click to upload CV (PDF / DOC / DOCX / Image)"}
                     </span>
                   </div>
-                  <input type="file" onChange={handleFileChange} accept=".pdf,.doc,.docx" className="hidden" />
+                  <input
+                    type="file"
+                    name="resume"
+                    required
+                    onChange={handleFileChange}
+                    accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.webp,image/*"
+                    className="hidden"
+                  />
                 </label>
+                {fileError && <p className="text-xs text-red-600 mt-2">{fileError}</p>}
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-700 uppercase mb-2">Message (Optional)</label>
-                <textarea 
+                <label className="block text-xs font-bold text-slate-700 uppercase mb-2">
+                  Message (Optional)
+                </label>
+                <textarea
                   rows={3}
+                  name="message"
                   placeholder="Tell us a little bit about yourself..."
                   className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm resize-none"
                 ></textarea>
               </div>
 
-              <button 
-                type="submit" 
+              {/* reCAPTCHA v2 "I'm not a robot" checkbox */}
+              <div>
+                <div ref={captchaRef}></div>
+                {captchaError && (
+                  <p className="text-xs text-red-600 mt-2">
+                    Please tick the &quot;I&apos;m not a robot&quot; checkbox before submitting.
+                  </p>
+                )}
+              </div>
+
+              <button
+                type="submit"
                 className="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-600/20 transition-all flex items-center justify-center gap-2 text-sm"
               >
                 <LuSend className="w-4 h-4" /> Submit Application
@@ -205,37 +354,41 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
 
           {/* Right: Direct Mail / CV Box (5 Cols) */}
           <div className="lg:col-span-5 space-y-6">
-            
             {/* Direct Send CV Box */}
             <div className="p-8 rounded-3xl bg-slate-900 text-white shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-bl-full pointer-events-none" />
-              
+
               <div className="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-6">
                 <LuMail className="w-6 h-6" />
               </div>
 
               <h3 className="text-2xl font-bold mb-3">Prefer Direct Email?</h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                Don&apos;t want to fill out the form? Send your CV directly to our HR team via email.
+                Don&apos;t want to fill out the form? Send your CV directly to our HR team via
+                email.
               </p>
 
               {/* Direct Mail Link Button */}
-              <a 
-                href="mailto:hr@wembleysquickfix.com" 
+              <a
+                href="mailto:hr@wembleysquickfix.com"
                 className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-6 rounded-xl bg-white text-slate-900 hover:bg-slate-100 font-bold text-sm transition-all shadow-md group"
               >
-                <LuMail className="w-4 h-4 text-blue-600 group-hover:scale-110 transition-transform" /> 
+                <LuMail className="w-4 h-4 text-blue-600 group-hover:scale-110 transition-transform" />
                 Send Your CV
               </a>
 
               <div className="mt-6 pt-6 border-t border-slate-800 text-xs text-slate-400 space-y-2">
                 <p className="flex items-center gap-2">
                   <FaCheckCircle className="text-blue-400 w-4 h-4" />
-                  <span>Direct HR Contact: <strong>hr@wembleysquickfix.com</strong></span>
+                  <span>
+                    Direct HR Contact: <strong>hr@wembleysquickfix.com</strong>
+                  </span>
                 </p>
                 <p className="flex items-center gap-2">
                   <FaCheckCircle className="text-blue-400 w-4 h-4" />
-                  <span>Response Time: <strong>Within 24-48 Hours</strong></span>
+                  <span>
+                    Response Time: <strong>Within 24-48 Hours</strong>
+                  </span>
                 </p>
               </div>
             </div>
@@ -244,13 +397,12 @@ At Quickfix, we don't just manufacture adhesives we build opportunities. Join a 
             <div className="p-6 rounded-3xl bg-yellow-50 border border-red-100">
               <h4 className="font-bold text-slate-900 text-sm mb-1">Open Applications</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                We always accept spontaneous applications from talented individuals. If your profile fits, we will get in touch!
+                We always accept spontaneous applications from talented individuals. If your
+                profile fits, we will get in touch!
               </p>
             </div>
-
           </div>
         </motion.div>
-
       </div>
     </section>
   );

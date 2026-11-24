@@ -1,3 +1,4 @@
+// products/page.tsx
 import AllBanner from '@/component/global/banner'
 import ProductSection from '@/component/home/product'
 import React from 'react'

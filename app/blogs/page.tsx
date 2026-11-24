@@ -1,3 +1,4 @@
+// blogs/page.tsx
 import AllBanner from '@/component/global/banner'
 import BlogSection from '@/component/home/blogs'
 import React from 'react'
