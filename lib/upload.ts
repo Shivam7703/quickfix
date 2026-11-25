@@ -8,7 +8,7 @@ const IMG_TYPES: Record<string, string> = {
   'image/webp': 'webp',
 };
 const MAX_IMG = 5 * 1024 * 1024; // 5 MB
-const MAX_PDF = 10 * 1024 * 1024; // 10 MB
+const MAX_PDF = 20 * 1024 * 1024; // 20 MB
 
 // Upload ke time padhta hai, isliye setting missing ho to saaf error aata hai
 function cfg() {
@@ -62,7 +62,7 @@ export async function saveImage(file: File): Promise<string> {
 
 export async function savePdf(file: File): Promise<string> {
   if (file.type !== 'application/pdf') throw new Error('Only PDF files are allowed');
-  if (file.size > MAX_PDF) throw new Error('PDF is larger than 10 MB');
+  if (file.size > MAX_PDF) throw new Error('PDF is larger than 20 MB');
   const { pdfDir, pdfUrl, backupPdfDir } = cfg();
   const name = randomName('pdf');
   await store(Buffer.from(await file.arrayBuffer()), name, pdfDir, backupPdfDir);
