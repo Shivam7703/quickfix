@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import {
-  FiPackage,
-  FiList,
-  FiCheckCircle,
-  FiCheck,
-} from "react-icons/fi";
+import { FiPackage, FiList, FiCheckCircle, FiCheck } from "react-icons/fi";
 import { TbFlask } from "react-icons/tb";
+
+type TableShape = {
+  heading?: string[];
+  rows?: string[][];
+};
 
 interface ProductTabsProps {
   data?: {
@@ -16,17 +16,11 @@ interface ProductTabsProps {
     category?: string;
     description?: string;
     imgs?: string[];
-    sizes?: {
-      heading?: string[];
-      rows?: string[][];
-    };
-    usage?: string[];
-    benefits?: string[];
-    precaution?: string[];
-    price?: {
-      heading?: string[];
-      rows?: string[][];
-    };
+    sizes?: TableShape | null;
+    usage?: string[] | null;
+    benefits?: string[] | null;
+    precaution?: string[] | null;
+    price?: TableShape | null;
   };
 }
 
@@ -38,23 +32,54 @@ const TABS = [
 
 type TabId = (typeof TABS)[number]["id"];
 
+// Khali ya sirf spaces wali values hata deta hai
+const cleanList = (list?: string[] | null): string[] =>
+  (list ?? []).filter((s): s is string => typeof s === "string" && s.trim() !== "");
+
+// Table tabhi valid hai jab heading ho aur kam se kam ek row mein koi value ho.
+// Poori khali rows hata di jaati hain.
+function cleanTable(t?: TableShape | null): { heading: string[]; rows: string[][] } | null {
+  const heading = t?.heading ?? [];
+  const rows = (t?.rows ?? []).filter(
+    (r) => Array.isArray(r) && r.some((c) => typeof c === "string" && c.trim() !== "")
+  );
+  return heading.length > 0 && rows.length > 0 ? { heading, rows } : null;
+}
+
 export default function ProductTabs({ data }: ProductTabsProps) {
   const [activeTab, setActiveTab] = useState<TabId>("description");
 
-  const { description, sizes, usage = [], benefits = [], precaution = [], price } = data || {};
+  const sizes = useMemo(() => cleanTable(data?.sizes), [data?.sizes]);
+  const usage = useMemo(() => cleanList(data?.usage), [data?.usage]);
+  const benefits = useMemo(() => cleanList(data?.benefits), [data?.benefits]);
 
   // Separate regular benefits from chemical composition
   const { regularBenefits, compositionDetail } = useMemo(() => {
     let composition = "";
     const list = benefits.filter((item) => {
       if (item.toLowerCase().includes("composition:")) {
-        composition = item.replace(/composition:\s*/i, "");
+        composition = item.replace(/composition:\s*/i, "").trim();
         return false;
       }
       return true;
     });
     return { regularBenefits: list, compositionDetail: composition };
   }, [benefits]);
+
+  // Jis tab mein dikhane ko kuch nahi, wo tab bhi nahi dikhega
+  const hasContent: Record<TabId, boolean> = {
+    description: !!sizes,
+    additional: usage.length > 0 || regularBenefits.length > 0 || !!compositionDetail,
+  };
+  const visibleTabs = TABS.filter((t) => hasContent[t.id]);
+
+  // Kisi tab ka data nahi hai to poora section hi nahi dikhega
+  if (visibleTabs.length === 0) return null;
+
+  // Selected tab chhup gaya ho to pehla available tab khulega
+  const currentTab: TabId = visibleTabs.some((t) => t.id === activeTab)
+    ? activeTab
+    : visibleTabs[0].id;
 
   return (
     <section className=" max-w-6xl mx-auto p-3 ">
@@ -64,8 +89,8 @@ export default function ProductTabs({ data }: ProductTabsProps) {
           className="flex gap-2 sm:gap-6 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none"
           aria-label="Product Tabs"
         >
-          {TABS.map((tab) => {
-            const isActive = activeTab === tab.id;
+          {visibleTabs.map((tab) => {
+            const isActive = currentTab === tab.id;
             const Icon = tab.icon;
             return (
               <button
@@ -95,23 +120,19 @@ export default function ProductTabs({ data }: ProductTabsProps) {
       {/* Tab Panels */}
       <div className="pt-6 text-zinc-700">
         {/* 1. Packaging Details Tab */}
-        {activeTab === "description" && (
+        {currentTab === "description" && sizes && (
           <div className="space-y-6 animate-fadeIn">
-            
-
-            {sizes?.heading && sizes?.rows && sizes.rows.length > 0 && (
-              <div>
-                <h3 className="font-bold text-blue-600 mb-4 text-base md:text-lg flex items-center gap-2">
-                  <FiPackage className="text-red-600" /> Packaging & Specification Chart
-                </h3>
-                <TableContainer headings={sizes.heading} rows={sizes.rows} />
-              </div>
-            )}
+            <div>
+              <h3 className="font-bold text-blue-600 mb-4 text-base md:text-lg flex items-center gap-2">
+                <FiPackage className="text-red-600" /> Packaging & Specification Chart
+              </h3>
+              <TableContainer headings={sizes.heading} rows={sizes.rows} />
+            </div>
           </div>
         )}
 
         {/* 2. Usage & Benefits Tab */}
-        {activeTab === "additional" && (
+        {currentTab === "additional" && (
           <div className="grid grid-cols-1 gap-6 animate-fadeIn">
             {/* Usage Instructions */}
             {usage.length > 0 && (
@@ -159,21 +180,12 @@ export default function ProductTabs({ data }: ProductTabsProps) {
         )}
 
         {/* 3. Prices Tab */}
-        {/* {activeTab === "prices" && (
+        {/* {currentTab === "prices" && price && (
           <div className="space-y-4 animate-fadeIn">
-            <div className="flex items-center justify-between">
-              <h3 className="font-bold text-blue-600 text-base md:text-lg flex items-center gap-2">
-                <FiDollarSign className="text-emerald-600" /> Price List & Commercial Terms
-              </h3>
-            </div>
-            {price?.heading && price?.rows && price.rows.length > 0 ? (
-              <TableContainer headings={price.heading} rows={price.rows} isPriceTable />
-            ) : (
-              <div className="text-center py-12 bg-white rounded-2xl border border-zinc-200/80">
-                <FiInfo className="mx-auto text-3xl text-zinc-300 mb-2" />
-                <p className="text-zinc-500 text-sm">Price information is currently unavailable for this product.</p>
-              </div>
-            )}
+            <h3 className="font-bold text-blue-600 text-base md:text-lg flex items-center gap-2">
+              <FiDollarSign className="text-emerald-600" /> Price List & Commercial Terms
+            </h3>
+            <TableContainer headings={price.heading} rows={price.rows} isPriceTable />
           </div>
         )} */}
       </div>
@@ -234,6 +246,7 @@ function TableContainer({
                 const headerName = headings[cIdx]?.toLowerCase() || "";
                 const isCurrency =
                   isPriceTable &&
+                  cell?.trim() !== "" &&
                   (headerName.includes("rate") ||
                     headerName.includes("gst") ||
                     headerName.includes("mrp") ||

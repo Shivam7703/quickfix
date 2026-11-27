@@ -304,7 +304,7 @@ export function DesktopNavItem({ item, active }: { item: any; active: boolean })
 
   return (
     <div 
-      className="relative py-2" 
+      className="relative py-2 capitalize" 
       onMouseEnter={() => setIsOpen(true)} 
       onMouseLeave={() => setIsOpen(false)}
     >
@@ -334,7 +334,7 @@ export function DesktopNavItem({ item, active }: { item: any; active: boolean })
             animate={{ opacity: 1, y: 0 }} 
             exit={{ opacity: 0, y: 8 }}
             className={`absolute top-full left-0 bg-white shadow-2xl border border-gray-100 rounded-lg py-2 z-60 mt-1 ${
-              isLargeSubnav ? "w-[416px] grid grid-cols-2 gap-x-1" : "w-52"
+              isLargeSubnav ? "w-md grid grid-cols-2 gap-x-1" : "w-52"
             }`}
           >
             {item.subnav.map((sub: any, index: number) => {
