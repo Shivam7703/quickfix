@@ -5,29 +5,19 @@ import AllBanner from '@/component/global/banner';
 import Productdetail from '@/component/product/detail';
 import ServiceHighlights from '@/component/about/highlight';
 import ProductSection from '@/component/home/product';
-import { Productdata } from '@/data/productdata';
-import { createSlug } from '@/utils/createslug';
+import { getProductBySlug } from '@/lib/catalog';
 
-// export mode me zaroori: jo slug build me nahi bana, wo 404 dega
-export const dynamicParams = false;
-
-
-export function generateStaticParams() {
-  return Productdata.map((product) => ({
-    slug: createSlug(product.title),
-  }));
-}
+// Page request aane par banta hai aur 60 second cache rehta hai.
+// Dashboard mein naya product jodne ya badalne par rebuild nahi chahiye.
+export const revalidate = 60;
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-const getProduct = (slug: string) =>
-  Productdata.find((p) => createSlug(p.title) === createSlug(decodeURIComponent(slug)));
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const product = getProduct(slug);
+  const product = await getProductBySlug(slug);
   if (!product) return {};
   return {
     title: `${product.title} | Wembley's Quickfix`,
@@ -37,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function Page({ params }: PageProps) {
   const { slug } = await params;
-  const singleproduct = getProduct(slug);
+  const singleproduct = await getProductBySlug(slug);
 
   if (!singleproduct) notFound();
 

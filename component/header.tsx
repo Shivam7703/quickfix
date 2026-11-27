@@ -1,6 +1,8 @@
 "use client";
-
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { useCatalog } from "@/hooks/useCatalog";
+import { createSlug } from "@/utils/createslug";
+import type { Category, Product } from "@/lib/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
@@ -14,158 +16,40 @@ import {
 import { logo } from "@/assets";
 import Buttonmain from "./global/button";
 
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/about-us" },
-  // { name: "Services", href: "/services" },
- {
-  name: "Products",
-  href: "/products",
-  subnav: [
-    {
-      name: "All Purpose Adhesive",
+type NavChild = { name: string; href: string };
+type NavSub = { name: string; href: string; subnav?: NavChild[] };
+type NavLink = { name: string; href: string; subnav?: NavSub[] };
+
+// Products ka menu database ki categories aur products se banta hai
+function buildNavLinks(categories: Category[], products: Product[]): NavLink[] {
+  const productMenu: NavSub[] = categories
+    .map((c) => ({
+      name: c.label,
       href: "#",
-      subnav: [
-        { name: "Quickfix All Purpose Adhesive", href: "/products/quickfix-all-purpose-adhesive" },
-      ],
-    },
+      subnav: products
+        .filter((p) => p.category_id === c.id)
+        .map((p) => ({ name: p.title, href: `/products/${createSlug(p.title)}` })),
+    }))
+    .filter((c) => c.subnav.length > 0); // khali category menu mein nahi dikhegi
+
+  return [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about-us" },
     {
-      name: "Cyanoacrylate",
-      href: "#",
-      subnav: [
-        { name: "Superglue", href: "/products/super-glue-cyanoacrylate-adhesive" },
-        { name: "Durobond", href: "/products/durobond-cyanoacrylate-adhesive" },
-        { name: "Superglue HV", href: "/products/super-glue-hv-700-rapid-hv-glue" },
-      ],
+      name: "Products",
+      href: "/products",
+      subnav: productMenu.length > 0 ? productMenu : undefined,
     },
-    {
-      name: "Fragrant Gum",
-      href: "#",
-      subnav: [
-        { name: "Quickgum & Gluepen", href: "/products/quickgum-glupen-coloured-synthetic-gum" },
-      ],
-    },
-    {
-      name: "White Adhesive",
-      href: "#",
-      subnav: [
-        { name: "Quickkraft", href: "/products/quickkraft-white-glue" },
-      ],
-    },
-    {
-      name: "Rubber Based Adhesive",
-      href: "#",
-      subnav: [
-        { name: "Durofix", href: "/products/durofix-rubber-base-adhesive" },
-        { name: "SR-525", href: "/products/durofix-525-rubber-base-adhesive" },
-        { name: "SR-535", href: "/products/durofix-535-rubber-base-adhesive" },
-        { name: "SP-500 Sprayable", href: "/products/durotack-sp500-sprayable-adhesive" },
-      ],
-    },
-    {
-      name: "Epoxy Putty",
-      href: "#",
-      subnav: [
-        { name: "Quickseal", href: "/products/quickseal-epoxy-putty" },
-        { name: "Quickseal Rapid", href: "/products/quickseal-rapid" },
-        { name: "Quickseal Sanitary", href: "/products/quickseal-sanitary-epoxy-putty-white" },
-      ],
-    },
-    {
-      name: "Epoxy",
-      href: "#",
-      subnav: [
-        { name: "Quicktite", href: "/products/quicktite-standard-epoxy-adhesive" },
-      ],
-    },
-    {
-      name: "Thread Sealant",
-      href: "#",
-      subnav: [
-        { name: "PTFE Tape", href: "/products/quickfix-ptfe-tape" },
-        { name: "Quickplumb", href: "/products/quickplumb-liquid-pipe-sealant" },
-      ],
-    },
-    {
-      name: "PVC Electrical Tape",
-      href: "#",
-      subnav: [
-        { name: "PV Shield", href: "/products/pv-shield-electrical-pvc-tape" },
-      ],
-    },
-    {
-      name: "Solvent Cements",
-      href: "#",
-      subnav: [
-        { name: "CPVC", href: "/products/quickfix-cpvc-solvent-cement" },
-        { name: "PVC", href: "/products/quickfix-pvc-solvent-cement" },
-        { name: "PVFix", href: "/products/pv-fix-clear-solvent-cement" },
-        { name: "UPVC", href: "/products/quickfix-upvc-solvent-cement-blue" },
-        { name: "UPVC Clear", href: "/products/quickfix-upvc-solvent-cement-clear" },
-        { name: "Multipurpose", href: "/products/quickfix-multipurpose-solvent-cement" },
-        { name: "Quickguard", href: "/products/quickguard-pvc-solvent-cement" },
-      ],
-    },
-    {
-      name: "Ball Valve",
-      href: "#",
-      subnav: [
-        { name: "CPVC Ball Valve", href: "/products/quickfix-cpvc-ball-valve-non-threaded" },
-        { name: "UPVC Ball Valve", href: "/products/quickfix-upvc-ball-valve-non-threaded" },
-      ],
-    },
-    {
-      name: "Drain Cleaner",
-      href: "#",
-      subnav: [
-        { name: "DrainQure", href: "/products/drainqure-instant-drain-cleaner" },
-      ],
-    },
-    {
-      name: "Wood Adhesive",
-      href: "#",
-      subnav: [
-        { name: "Quickcol SH", href: "/products/quickcol-wsh-synthetic-resin-adhesive" },
-      ],
-    },
-    {
-      name: "Binder",
-      href: "#",
-      subnav: [
-        { name: "Quickcol WDB", href: "/products/quickcol-wdb-synthetic-adhesive-binder" },
-      ],
-    },
-    {
-      name: "NC Thinner",
-      href: "#",
-      subnav: [
-        { name: "Wemlac", href: "/products/wemlac-high-gloss-nc-reducer" },
-      ],
-    },
-    {
-      name: "Paint Stripper",
-      href: "#",
-      subnav: [
-        { name: "Paint Stripper", href: "/products/wemlac-paint-stripper" },
-      ],
-    },
-    {
-      name: "Tile Cleaner",
-      href: "#",
-      subnav: [
-        { name: "TileQure", href: "/products/wemlac-tilequre-the-tile-cleaning-expert" },
-      ],
-    },
-  ],
-},
-  { name: "Career", href: "/career" },
-  { name: "OEM", href: "/oem" },
-  // { name: "Blogs", href: "/blogs" },
-  { name: "Contact Us", href: "/contact-us" },
-];
+    { name: "Career", href: "/career" },
+    { name: "OEM", href: "/oem" },
+    { name: "Contact Us", href: "/contact-us" },
+  ];
+}
 
 export default function Header() {
   const pathname = usePathname();
+  const { products, categories } = useCatalog();
+  const navLinks = useMemo(() => buildNavLinks(categories, products), [categories, products]);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 const [isHidden, setIsHidden] = useState(false);

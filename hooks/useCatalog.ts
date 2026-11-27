@@ -1,10 +1,7 @@
-// hooks/useCatalog.ts
-
 "use client";
 import { useEffect, useState } from "react";
 import type { Category, Product } from "@/lib/types";
 
-// Admin app ka address. Website static export hai, isliye ye zaroor set karna
 const API = process.env.NEXT_PUBLIC_API_URL ?? "";
 
 async function getJson<T>(path: string): Promise<T> {
@@ -13,33 +10,49 @@ async function getJson<T>(path: string): Promise<T> {
   return res.json();
 }
 
+type Catalog = { products: Product[]; categories: Category[] };
+const EMPTY: Catalog = { products: [], categories: [] };
+
+// Header aur ProductSection dono use karte hain, to 60 second tak ek hi fetch chalta hai
+let cache: { at: number; promise: Promise<Catalog> } | null = null;
+
+function loadCatalog(): Promise<Catalog> {
+  if (!cache || Date.now() - cache.at > 60_000) {
+    const promise = Promise.all([
+      getJson<Product[]>("/api/products"),
+      getJson<Category[]>("/api/categories"),
+    ]).then(([products, categories]) => ({ products, categories }));
+    cache = { at: Date.now(), promise };
+    promise.catch(() => {
+      cache = null; // fail hua to agli baar dobara try ho
+    });
+  }
+  return cache.promise;
+}
+
 export function useCatalog() {
-  const [products, setProducts] = useState<Product[]>([]);
-  const [categories, setCategories] = useState<Category[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState<Catalog | null>(null);
   const [error, setError] = useState("");
 
   useEffect(() => {
     let cancelled = false;
-    Promise.all([
-      getJson<Product[]>("/api/products"),
-      getJson<Category[]>("/api/categories"),
-    ])
-      .then(([p, c]) => {
-        if (cancelled) return;
-        setProducts(p);
-        setCategories(c);
+    loadCatalog()
+      .then((d) => {
+        if (!cancelled) setData(d);
       })
       .catch(() => {
         if (!cancelled) setError("Could not load products. Please try again.");
-      })
-      .finally(() => {
-        if (!cancelled) setLoading(false);
       });
     return () => {
       cancelled = true;
     };
   }, []);
 
-  return { products, categories, loading, error };
+  const d = data ?? EMPTY;
+  return {
+    products: d.products,
+    categories: d.categories,
+    loading: !data && !error,
+    error,
+  };
 }

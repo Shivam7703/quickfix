@@ -83,7 +83,7 @@ export const Productdata = [
       allPurposeAdhesive1, allPurposeAdhesive2
     ],
     sizes: {
-      heading: [
+      "heading": [
         "Size",
         "Description",
         "Box Quantity",
@@ -91,7 +91,7 @@ export const Productdata = [
         "Dimensions (in Inches)",
         "Gross Wt (in Kgs)"
       ],
-      rows: [
+      "rows": [
         ["10ml", "QUICKFIX ADHESIVE TUBE", "50", "1600", "19x14.5x17.7", "27.00"],
         ["15ml", "QUICKFIX ADHESIVE TUBE", "50", "900", "21.4x16x14.7", "21.50"],
         ["30ml", "QUICKFIX ADHESIVE TUBE", "25", "600", "19.3x13x21.2", "25.00"],
@@ -125,7 +125,7 @@ export const Productdata = [
     ],
 
     price: {
-      heading: [
+      "heading": [
         "SKU",
         "Basic Rate",
         "With GST",
@@ -133,7 +133,7 @@ export const Productdata = [
         "Inner Carton",
         "Master Carton"
       ],
-      rows: [
+      "rows": [
         ["10 ml", "10.00", "11.80", "25.00", "50", "1600"],
         ["15 ml", "13.50", "15.93", "30.00", "50", "900"],
         ["30 ml", "20.00", "23.60", "40.00", "25", "600"],
@@ -219,7 +219,7 @@ export const Productdata = [
     msds:"#", 
     imgs: [durobond],
     sizes: {
-      heading: [
+      "heading": [
         "Size",
         "Description",
         "Box Quantity",
@@ -227,7 +227,7 @@ export const Productdata = [
         "Dimensions(in Inches)",
         "Gross Wt(in Kgs)"
       ],
-      rows: [
+      "rows": [
         ["12 g", "DUROBOND FC", "25", "200", "15.15x11x10", "6.00"],
         ["15 g", "DUROBOND FC", "25", "200", "15.5x11x10", "6.50"],
         ["20 g", "DUROBOND FC", "25", "200", "15.5x11x10", "7.50"],
@@ -257,7 +257,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
     price: {
-      heading: [
+      "heading": [
         "SKU",
         "Basic Rate",
         "With GST",
@@ -265,7 +265,7 @@ export const Productdata = [
         "Inner Carton",
         "Master Carton"
       ],
-      rows: [
+      "rows": [
         ["12 g", "18.00", "21.24", "50.00", "25", "200"],
         ["15 g", "21.00", "24.78", "60.00", "25", "200"],
         ["20 g", "27.00", "31.86", "80.00", "25", "200"],
@@ -282,7 +282,7 @@ export const Productdata = [
     msds:"https://wembleysquickfix.com/file/SuperGlue HV - MSDS.pdf", 
      imgs: [superGlueHV1, superGlueHV2, superGlueHV3],
     sizes: {
-      heading: [
+      "heading": [
         "Size",
         "Description",
         "Box Quantity",
@@ -290,7 +290,7 @@ export const Productdata = [
         "Dimensions (in Inches)",
         "Gross Wt (in Kgs)"
       ],
-      rows: [
+      "rows": [
         ["20 g", "SUPER GLUE HV-700", "25", "200", "16x11x10.5", "8.00"],
         ["50 g", "SUPER GLUE HV-700", "10", "120", "15x13x11.5", "10.20"],
         ["125 g", "SUPER GLUE HV-700", "N/A", "48", "13.1x10.1x9", "8.50"],
@@ -318,7 +318,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
     price: {
-      heading: [
+      "heading": [
         "SKU",
         "Basic Rate",
         "With GST",
@@ -326,7 +326,7 @@ export const Productdata = [
         "Inner Carton",
         "Master Carton"
       ],
-      rows: [
+      "rows": [
         ["20 g", "33.21", "39.19", "90.00", "25", "200"],
         ["50 g", "71.96", "84.91", "180.00", "10", "120"],
         ["125 g", "149.45", "176.35", "380.00", "6", "48"],
@@ -349,7 +349,7 @@ export const Productdata = [
       quickgum12,
       quickgum13,],
     sizes: {
-      heading: [
+      "heading": [
         "Size",
         "Description",
         "Box Qty",
@@ -357,7 +357,7 @@ export const Productdata = [
         "Dimensions (in Inches)",
         "Gross Wt (in Kgs)"
       ],
-      rows: [
+      "rows": [
         ["18 ml", "GLUPEN SYN GUM SQ TUBE MIX (H)", "100", "1200", "19x15.5x12.5", "30.50"],
         ["18 ml", "GLUPEN SYN GUM SQ TUBE MIX (J)", "30", "720", "17x12.5x13.5", "18.50"],
         ["20 ml", "QUICKGUM SYN GUM SQ BTL MIX (H)", "50", "800", "19.5x18.5x9", "22.00"],
@@ -389,7 +389,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
     price: {
-      heading: [
+      "heading": [
         "SKU",
         "Basic Rate",
         "With GST",
@@ -397,7 +397,7 @@ export const Productdata = [
         "Inner Carton",
         "Master Carton"
       ],
-      rows: [
+      "rows": [
         ["GluePen 18ml (Hanger)", "2.85", "3.36", "5.00", "100", "1200"],
         ["GluePen 18ml (Jar)", "2.85", "3.36", "5.00", "30", "720"],
         ["QuickGum 20ml (Hanger)", "2.85", "3.36", "5.00", "50", "800"],
@@ -417,7 +417,7 @@ export const Productdata = [
     msds:"https://wembleysquickfix.com/file/QuickKraft White Glue - MSDS.pdf", 
     imgs:[quickraft1, quickraft2, quickraft3, quickraft4, quickraft5],
     sizes: {
-      heading: [
+      "heading": [
         "Size",
         "Description",
         "Box Qty",
@@ -425,7 +425,7 @@ export const Productdata = [
         "Dimensions (in Inches)",
         "Gross Wt (in Kgs)"
       ],
-      rows: [
+      "rows": [
         ["10 g", "QUICKKRAFT WT GLUE TUBE (H)", "100", "1600", "22.5x14.5x10.5", "26.00"],
         ["20 g", "QUICKKRAFT WT GLUE SQ BTL (H)", "50", "800", "19.5x18.5x9", "22.00"],
         ["20 g", "QUICKKRAFT WT GLUE SQ BTL (J)", "30", "720", "21x12.5x14", "20.00"],
@@ -452,7 +452,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
     price: {
-      heading: [
+      "heading": [
         "SKU",
         "Basic Rate",
         "With GST",
@@ -460,7 +460,7 @@ export const Productdata = [
         "Inner Carton",
         "Master Carton"
       ],
-      rows: [
+      "rows": [
         ["10g (Hanger)", "2.85", "3.36", "5.00", "100", "1600"],
         ["20g (Hanger)", "5.30", "6.25", "10.00", "50", "800"],
         ["20g (Jar)", "5.30", "6.25", "10.00", "30", "720"],
@@ -479,7 +479,7 @@ export const Productdata = [
      tds:"#",
     msds:"#",                     imgs: [durofix1, durofix2],
     sizes: {
-      heading: [
+      "heading": [
         "Size",
         "Description",
         "Box Qty",
@@ -487,7 +487,7 @@ export const Productdata = [
         "Dimensions (in Inches)",
         "Gross Wt (in Kgs)"
       ],
-      rows: [
+      "rows": [
         ["10 ml", "DUROFIX RUB BASE TUBE", "50", "400", "21.1x11x10", "8.00"],
         ["50 ml", "DUROFIX RUB BASE TUBE", "25", "200", "15x12.5x13.8", "13.50"]
       ]
@@ -513,7 +513,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
     price: {
-      heading: [
+      "heading": [
         "SKU",
         "Basic Rate",
         "With GST",
@@ -521,7 +521,7 @@ export const Productdata = [
         "Inner Carton",
         "Master Carton"
       ],
-      rows: [
+      "rows": [
         ["10 ml", "7.50", "8.85", "20.00", "25", "400"],
         ["50 ml", "21.00", "24.78", "50.00", "25", "200"]
       ]
@@ -568,9 +568,9 @@ export const Productdata = [
   ],
   precaution: [],
   price: {
-    heading: [
+    "heading": [
     ],
-    rows: []
+    "rows": []
   }
 },
  {
@@ -581,7 +581,7 @@ export const Productdata = [
    tds:"https://wembleysquickfix.com/file/Durofix 535 - TDS.pdf",
     msds:"#",                     imgs: [sr5354],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -589,7 +589,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["200 ml", "DUROFIX SR535 RUB BASE TIN", "15", "60", "19x15.5x6.2", "14.00"],
       ["500 ml", "DUROFIX SR535 RUB BASE TIN", "N/A", "24", "14x11x9", "12.30"],
       ["1 Ltr.", "DUROFIX SR535 RUB BASE TIN", "N/A", "12", "17x13.2x6", "13.00"],
@@ -616,7 +616,7 @@ export const Productdata = [
     "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
   ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -624,7 +624,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["200 ml", "58.00", "68.44", "150.00", "15", "60"],
       ["500 ml", "110.00", "129.80", "300.00", "N/A", "24"],
       ["1 Ltr.", "200.00", "236.00", "550.00", "N/A", "12"],
@@ -642,7 +642,7 @@ export const Productdata = [
     msds:"https://wembleysquickfix.com/file/Quickseal - MSDS.pdf",                  
     imgs: [quickseal1, quickseal2, epoxyAdhesives],
     sizes: {
-      heading: [
+      "heading": [
         "Size",
         "Description",
         "Box Qty",
@@ -650,7 +650,7 @@ export const Productdata = [
         "Dimensions (in Inches)",
         "Gross Wt (in Kgs)"
       ],
-      rows: [
+      "rows": [
         ["25 g (Hanger)", "QUICKSEAL EPOXYPUTTY (H20)", "20/100", "400", "17x16x6.5", "10.50"],
         ["25 g (Jar)", "QUICKSEAL EPOXYPUTTY (J40)", "40", "360", "14.3x13.8x9", "13.50"],
         ["60 g (Jar)", "QUICKSEAL EPOXYPUTTY (J30)", "30", "270", "20.3x18x7", "20.40"],
@@ -680,7 +680,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
     price: {
-      heading: [
+      "heading": [
         "SKU",
         "Basic Rate",
         "With GST",
@@ -688,7 +688,7 @@ export const Productdata = [
         "Inner Carton",
         "Master Carton"
       ],
-      rows: [
+      "rows": [
         ["25 g (Hanger)", "5.50", "6.49", "10.00", "20/100", "400"],
         ["25 g (Jar)", "5.50", "6.49", "10.00", "40", "360"],
         ["60 g (Jar)", "11.00", "12.98", "20.00", "30", "270"],
@@ -706,7 +706,7 @@ export const Productdata = [
    tds:"https://wembleysquickfix.com/file/QuickSeal White - TDS.pdf",
     msds:"#",                     imgs: [quicksealSanitary],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -714,7 +714,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["50 g (Jar)", "QUICKSEAL EPOXYPUTTY (J30)", "30", "270", "20.3x18x7", "20.40"]
     ]
   },
@@ -740,7 +740,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -748,7 +748,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["50 g (Jar)", "11.00", "12.98", "20.00", "30", "270"]
     ]
   }
@@ -762,7 +762,7 @@ export const Productdata = [
   msds:"https://wembleysquickfix.com/file/quicktite-msds.pdf",                   
   imgs: [quicktite1, quicktite2,quicktite3],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -770,7 +770,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["13g", "QUICKTITE EP ADH GP TUBE 13GM", "20", "160", "12.1x8x7.7", "5.00"],
       ["36g", "QUICKTITE EP ADH GP TUBE 36GM", "10", "80", "10.2x10.4x9.8", "5.00"],
       ["90g", "QUICKTITE EP ADH GP TUBE 90GM", "10", "40", "12.5x11x6.4", "5.50"],
@@ -800,7 +800,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -808,7 +808,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["13 g", "25.00", "29.50", "50.00", "20", "160"],
       ["36 g", "46.00", "54.28", "110.00", "10", "80"],
       ["90 g", "100.00", "118.00", "200.00", "10", "40"],
@@ -819,7 +819,7 @@ export const Productdata = [
     ]
   }
   },
-{
+  {
   id: 12,
   title: "quickfix PTFE tape",
   category: "Thread Sealant",
@@ -827,7 +827,7 @@ export const Productdata = [
    tds:"https://wembleysquickfix.com/file/P.T.F.E. Tape - TDS.pdf",
     msds:"https://wembleysquickfix.com/file/P.T.F.E. Tape - MSDS.pdf",                     imgs: [ptfetape, ptfetape2],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -835,7 +835,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["4 Mtr", "QUICKFIX PTFE THREAD TAPE HD", "100", "1000", "20.5 x 10.2 x 14.2", "8.00"],
       ["8 Mtr", "QUICKFIX PTFE THREAD TAPE HD", "100", "1000", "23 x 11.5 x 15.2", "11.00"],
       ["10 Mtr", "QUICKFIX PTFE THREAD TAPE HD", "250", "1000", "23 x 11.5 x 15.2", "12.00"]
@@ -863,7 +863,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -871,7 +871,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["4 mtr.", "5.50", "6.49", "15.00", "100", "1000"],
       ["8 mtr.", "8.00", "9.44", "25.00", "100", "1000"],
       ["10 mtr.", "9.00", "10.62", "30.00", "250", "1000"]
@@ -886,7 +886,7 @@ export const Productdata = [
    tds:"#",
     msds:"#",                     imgs: [pvshield, pvshield2],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -894,7 +894,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["6m", "PV SHIELD PVC ELECTRICAL TAPE 6M", "30", "480", "19x14.5x8.3", "12.80"]
     ]
   },
@@ -923,7 +923,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -931,7 +931,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [["6 Mtr", "6.30", "7.43", "15.00", "30", "480"]]
+    "rows": [["6 Mtr", "6.30", "7.43", "15.00", "30", "480"]]
   }
 },
 
@@ -989,7 +989,7 @@ export const Productdata = [
     "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
   ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -997,7 +997,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["5 ml (Jar)", "6.80", "8.02", "15.00", "50", "450"],
       ["10 ml (Jar)", "11.00", "12.98", "350.00", "50", "450"],
       ["20 ml", "20.00", "23.60", "60.00", "25", "300"],
@@ -1019,7 +1019,7 @@ export const Productdata = [
    tds:"https://wembleysquickfix.com/file/PVFix - TDS.pdf",
     msds:"#",                     imgs: [pvfix1, pvfix2, pvfix3, pvfix4, pvfix5],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1027,7 +1027,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["10 ml", "PVFIX SOL CEM TUBE (J)", "50", "450", "21x18x7", "9.00"],
       ["20 ml", "PVFIX SOL CEM TUBE", "25", "300", "16x11.5x11", "10.00"],
       ["50 ml", "PVFIX SOL CEM TUBE", "25", "200", "15x12.5x13.8", "13.50"],
@@ -1059,7 +1059,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1067,7 +1067,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["100 ml", "72.00", "84.96", "240.00", "24", "144"],
       ["200 ml", "120.00", "141.60", "400.00", "24", "96"]
     ]
@@ -1125,7 +1125,7 @@ export const Productdata = [
     "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
   ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1133,7 +1133,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["10 ml (Jar)", "7.00", "8.26", "20.00", "50", "450"],
       ["20 ml", "8.50", "10.03", "35.00", "25", "300"],
       ["50 ml", "17.50", "20.65", "50.00", "25", "200"],
@@ -1154,7 +1154,7 @@ export const Productdata = [
    tds:"https://wembleysquickfix.com/file/QuickGuard - TDS.pdf",
     msds:"#",                     imgs: [quickguard1, quickguard2, quickguard3, quickguard4],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1162,7 +1162,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["100 ml", "QUICKGUARD PVC SOL CEM BTL", "10", "120", "19.7x12.7x10.5", "14.50"],
       ["200 ml", "QUICKGUARD PVC SOL CEM BTL", "N/A", "80", "20x13x10", "17.50"],
       ["500 ml", "QUICKGUARD PVC SOL CEM BTL", "N/A", "36", "18.6x18.5x7.1", "18.50"],
@@ -1188,7 +1188,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1196,7 +1196,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["100 ml", "28.00", "33.04", "110.00", "10", "120"],
       ["200 ml", "55.00", "64.90", "200.00", "N/A", "80"],
       ["500 ml", "107.00", "126.26", "350.00", "N/A", "36"],
@@ -1255,7 +1255,7 @@ export const Productdata = [
     "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
   ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1263,7 +1263,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["20 ml", "11.00", "12.98", "40.00", "25", "300"],
       ["50 ml", "39.00", "46.02", "110.00", "12", "144"],
       ["100 ml", "55.00", "64.90", "190.00", "24", "144"],
@@ -1321,7 +1321,7 @@ export const Productdata = [
     "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
   ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1329,7 +1329,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["50 ml", "39.00", "46.02", "110.00", "12", "144"],
       ["100 ml", "55.00", "64.90", "190.00", "24", "144"],
       ["200 ml", "96.00", "113.28", "310.00", "24", "96"]
@@ -1345,7 +1345,7 @@ export const Productdata = [
    tds:"#",
     msds:"#",                     imgs: [cpvcValve1, cpvcValve2],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1353,7 +1353,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["1/2\"", "QUICKFIX CPVC BALL VALVE NT", "N/A", "240", "13x20.5x12", "17.30"],
       ["3/4\"", "QUICKFIX CPVC BALL VALVE NT", "N/A", "120", "13x19.5x13", "16.80"],
       ["1\"", "QUICKFIX CPVC BALL VALVE NT", "N/A", "60", "12x20.5x11.5", "13.30"],
@@ -1381,7 +1381,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1389,7 +1389,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["1/2\"", "41.00", "48.38", "130.00", "N/A", "240"],
       ["3/4\"", "74.00", "87.32", "220.00", "N/A", "120"],
       ["1\"", "115.00", "135.70", "350.00", "N/A", "60"],
@@ -1408,7 +1408,7 @@ export const Productdata = [
    tds:"https://wembleysquickfix.com/file/UPVC Ball Valve - TDS.pdf",
     msds:"#",                     imgs: [upvcValve2, upvcValve1],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1416,7 +1416,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["1/2\"", "QUICKFIX UPVC BALL VALVE NT", "N/A", "196", "12x19x13.5", "17.50"],
       ["3/4\"", "QUICKFIX UPVC BALL VALVE NT", "N/A", "120", "11x19x15", "16.00"],
       ["1\"", "QUICKFIX UPVC BALL VALVE NT", "N/A", "60", "12x20.5x11.5", "13.30"],
@@ -1447,7 +1447,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1455,7 +1455,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["1/2\"", "34.00", "40.12", "110.00", "N/A", "196"],
       ["3/4\"", "48.00", "56.64", "150.00", "N/A", "120"],
       ["1\"", "73.00", "86.14", "220.00", "N/A", "60"],
@@ -1477,7 +1477,7 @@ export const Productdata = [
    tds:"#",
     msds:"#",                     imgs: [drainQure],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1485,7 +1485,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["40 g", "DRAINQURE INSTANT DRAIN CLEANER (J)", "40", "360", "16.7 X 16.8 X 9.6", "17"]
     ]
   },
@@ -1509,7 +1509,7 @@ export const Productdata = [
     "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
   ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1517,7 +1517,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["50g(Jar)", "11.50", "13.57", "30.00", "40", "360"]
     ]
   }
@@ -1531,7 +1531,7 @@ export const Productdata = [
    tds:"#",
     msds:"#",                     imgs: [quickcolsh, quickcolsh2],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1539,7 +1539,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["100 g", "QUICKCOL WOOD ADHESIVE", "40", "80", "16 x 10.11 x 7.9", "11.50"],
       ["250 g", "QUICKCOL WOOD ADHESIVE", "N/A", "40", "12 x 10.1 x 8.4", "12.00"],
       ["500 g", "QUICKCOL WOOD ADHESIVE", "N/A", "30", "19.2 x 14.1 x 5.2", "17.00"],
@@ -1571,7 +1571,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1579,7 +1579,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["100 g", "25.00", "29.50", "50.00", "40", "80"],
       ["250 g", "50.00", "59.00", "100.00", "N/A", "40"],
       ["500 g", "90.00", "106.20", "180.00", "N/A", "30"],
@@ -1601,7 +1601,7 @@ export const Productdata = [
    tds:"https://wembleysquickfix.com/file/QuickCol WDB - TDS.pdf",
     msds:"https://wembleysquickfix.com/file/QuickCol WDB - MSDS.pdf",                     imgs: [quickcol],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1609,7 +1609,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["125 g", "QUICKCOL WDB SYN BINDER (BKT)", "N/A", "80", "10.1x10.8", "11.00"],
       ["250 g", "QUICKCOL WDB SYN BINDER (BKT)", "N/A", "40", "10.1x10.8", "11.00"],
       ["500 g", "QUICKCOL WDB SYN BINDER (BKT)", "N/A", "40", "15.5x13.3", "21.00"],
@@ -1635,7 +1635,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1643,7 +1643,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["125 g", "11.00", "12.98", "30.00", "N/A", "80"],
       ["250 g", "19.00", "22.42", "45.00", "N/A", "40"],
       ["500 g", "33.00", "38.94", "85.00", "N/A", "40"],
@@ -1652,7 +1652,6 @@ export const Productdata = [
     ]
   }
 },
-
 
 {
   id: 24,
@@ -1663,7 +1662,7 @@ export const Productdata = [
     msds:"https://wembleysquickfix.com/file/WemLAC - MSDS.pdf",     
   imgs: [wemlac1, wemlac2],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1671,7 +1670,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["1 Ltr.", "WEMLAC PREMIUM REDUCER", "N/A", "12", "17.5x12x8.9", "12.50"],
       ["5 Ltr.", "WEMLAC PREMIUM REDUCER", "N/A", "4", "18.6x9.5x13.4", "22.50"],
       ["20 Ltr.", "WEMLAC PREMIUM REDUCER", "N/A", "1", "11.3x8.5x15.5", "18.50"]
@@ -1704,7 +1703,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1712,7 +1711,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["1 Ltr.", "142.00", "167.56", "310.00", "N/A", "12"],
       ["5 Ltr.", "680.00", "802.40", "1,525.00", "N/A", "4"],
       ["20 Ltr.", "2,600.00", "3,068.00", "6,000.00", "N/A", "1"]
@@ -1728,7 +1727,7 @@ export const Productdata = [
    tds:"https://wembleysquickfix.com/file/Paint Stripper - TDS.pdf",
     msds:"https://wembleysquickfix.com/file/Paint Stripper - MSDS.pdf",                     imgs: [paintStripper],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1736,7 +1735,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["1 Ltr.", "WEMLAC PAINT STRIPPER", "N/A", "12", "15.5x12x8.5", "15.00"]
     ]
   },
@@ -1765,7 +1764,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1773,7 +1772,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["1 Ltr.", "170.00", "200.60", "400.00", "N/A", "12"]
     ]
   }
@@ -1787,7 +1786,7 @@ export const Productdata = [
    tds:"#",
     msds:"#",                     imgs: [tileCure],
   sizes: {
-    heading: [
+    "heading": [
       "Size",
       "Description",
       "Box Qty",
@@ -1795,7 +1794,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["1 Ltr", "TILEQURE TILE CLEANER BTL 1LTR", "N/A", "18", "17 x 17 x 9", "21.90"],
       ["5 Ltr", "TILEQURE TILE CLEANER BTL 5LTR", "N/A", "N/A", "N/A", "N/A"]
     ]
@@ -1808,7 +1807,7 @@ export const Productdata = [
       "Do Not Freeze – temperatures less than 3°C can adversely affect product properties."
     ],
   price: {
-    heading: [
+    "heading": [
       "SKU",
       "Basic Rate",
       "With GST",
@@ -1816,7 +1815,7 @@ export const Productdata = [
       "Inner Carton",
       "Master Carton"
     ],
-    rows: [
+    "rows": [
       ["1 Ltr.", "85.00", "100.30", "280.00", "N/A", "18"]
     ]
   }
@@ -1830,7 +1829,7 @@ export const Productdata = [
    tds:"https://wembleysquickfix.com/file/Multipurpose - TDS.pdf",
     msds:"#",                     imgs: [multipurpose, multipurpose2],
   sizes: {
-    heading: [
+    "heading": [
       "Product Code",
       "Size",
       "Description",
@@ -1839,7 +1838,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["LMS001", "100 ml", "MULTIPURPOSE SOL CEM", "N/A", "60", "13.4 x 11 x 7", "8.60"],
       ["LMS002", "200 ml", "MULTIPURPOSE SOL CEM", "N/A", "40", "13.5 x 11 x 8", "9.90"]
     ]
@@ -1873,7 +1872,7 @@ export const Productdata = [
    tds:"#",
     msds:"#",                     imgs: [quickplumb],
   sizes: {
-    heading: [
+    "heading": [
       "Product Code",
       "Size",
       "Description",
@@ -1882,7 +1881,7 @@ export const Productdata = [
       "Dimensions (in Inches)",
       "Gross Wt (in Kgs)"
     ],
-    rows: [
+    "rows": [
       ["QPS001", "20g", "QUICKPLUMB LIQUID SEALENT", "40", "320", "14.1 x 12.5 x 8.4", "10.00"],
       ["QPS002", "40g", "QUICKPLUMB LIQUID SEALENT", "40", "320", "17 x 14 x 8.1", "17.00"],
       ["QPS003", "100g", "QUICKPLUMB LIQUID SEALENT", "20", "160", "21 x 17 x 7", "20.00"],
@@ -1907,6 +1906,7 @@ export const Productdata = [
   precaution: [],
   price: []
 },
+
 {
   id: 30,
   title: "Durotack Sp500 Sprayable Adhesive",
@@ -1945,8 +1945,8 @@ export const Productdata = [
   ],
   precaution: [],
   price: {
-    heading: [],
-    rows: []
+    "heading": [],
+    "rows": []
   }
 }
 ]

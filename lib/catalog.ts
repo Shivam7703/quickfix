@@ -1,17 +1,20 @@
+import { cache } from 'react';
+import type { RowDataPacket } from 'mysql2';
+import { pool } from '@/lib/db';
+import { PRODUCT_SELECT, rowToProduct } from '@/lib/products';
+import { createSlug } from '@/utils/createslug';
 import type { Product } from '@/lib/types';
 
-const API = process.env.NEXT_PUBLIC_API_URL;
+// Ek request mein generateMetadata aur Page dono call karein, tab bhi DB ek hi baar hit hoga
+export const getProducts = cache(async (): Promise<Product[]> => {
+  const [rows] = await pool.query<RowDataPacket[]>(
+    `${PRODUCT_SELECT} ORDER BY p.series_number ASC, p.id ASC`
+  );
+  return rows.map(rowToProduct);
+});
 
-async function load(): Promise<Product[]> {
-  if (!API) throw new Error('NEXT_PUBLIC_API_URL is not set');
-  const res = await fetch(`${API}/api/products`);
-  if (!res.ok) throw new Error(`Products API failed: ${res.status}`);
-  return res.json();
-}
-
-// Ek build mein bar bar API na bulani pade, isliye ek baar laakar yaad rakhte hain
-let cached: Promise<Product[]> | null = null;
-export function fetchProducts() {
-  cached ??= load();
-  return cached;
+export async function getProductBySlug(slug: string): Promise<Product | undefined> {
+  const wanted = createSlug(decodeURIComponent(slug));
+  const products = await getProducts();
+  return products.find((p) => createSlug(p.title) === wanted);
 }
