@@ -334,7 +334,7 @@ export function DesktopNavItem({ item, active }: { item: any; active: boolean })
             animate={{ opacity: 1, y: 0 }} 
             exit={{ opacity: 0, y: 8 }}
             className={`absolute top-full left-0 bg-white shadow-2xl border border-gray-100 rounded-lg py-2 z-60 mt-1 ${
-              isLargeSubnav ? "w-md grid grid-cols-2 gap-x-1" : "w-52"
+              isLargeSubnav ? "w-102 grid grid-cols-2 gap-x-1" : "w-52"
             }`}
           >
             {item.subnav.map((sub: any, index: number) => {
@@ -362,7 +362,7 @@ export function DesktopNavItem({ item, active }: { item: any; active: boolean })
                   
                   {sub.subnav && (
                     <div 
-                      className={`absolute top-0 bg-white shadow-xl shadow-black/30 border border-gray-500 rounded-lg py-2 w-48 hidden group-hover:block ${
+                      className={`absolute top-0 bg-white shadow-xl shadow-black/30 border border-gray-500 rounded-lg py-2 w-60 hidden group-hover:block ${
                         isLeftColumn ? "right-[98%]" : "left-[98%]"
                       }`}
                     >
@@ -370,7 +370,7 @@ export function DesktopNavItem({ item, active }: { item: any; active: boolean })
                         <Link 
                           key={child.name} 
                           href={child.href} 
-                          className="block px-4 py-2.5 text-sm text-zinc-800 hover:text-blue-600 hover:bg-gray-50"
+                          className="block px-4 py-2.5 line-clamp-2 text-sm text-zinc-800 hover:text-blue-600 hover:bg-gray-50"
                         >
                           {child.name}
                         </Link>
